@@ -35,8 +35,8 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2117
-   * Name: IBCJOBLIEGP
+   * CmdId: 27963
+   * Obf: DIKFBCIJBMP
    * </pre>
    *
    * Protobuf type {@code TreasureMapRegionInfoNotify}
@@ -316,8 +316,8 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2117
-     * Name: IBCJOBLIEGP
+     * CmdId: 27963
+     * Obf: DIKFBCIJBMP
      * </pre>
      *
      * Protobuf type {@code TreasureMapRegionInfoNotify}

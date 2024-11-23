@@ -44,7 +44,7 @@ public final class AbilityControlBlockOuterClass {
   }
   /**
    * <pre>
-   * Name: AKFKOGCMMAF
+   * Obf: GGPHMELJCOL
    * </pre>
    *
    * Protobuf type {@code AbilityControlBlock}
@@ -336,7 +336,7 @@ public final class AbilityControlBlockOuterClass {
     }
     /**
      * <pre>
-     * Name: AKFKOGCMMAF
+     * Obf: GGPHMELJCOL
      * </pre>
      *
      * Protobuf type {@code AbilityControlBlock}

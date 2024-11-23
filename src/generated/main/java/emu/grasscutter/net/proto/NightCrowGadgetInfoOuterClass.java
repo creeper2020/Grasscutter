@@ -37,7 +37,7 @@ public final class NightCrowGadgetInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: PCHOAFIIIDE
+   * Obf: OHIBCIDJNDB
    * </pre>
    *
    * Protobuf type {@code NightCrowGadgetInfo}
@@ -344,7 +344,7 @@ public final class NightCrowGadgetInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PCHOAFIIIDE
+     * Obf: OHIBCIDJNDB
      * </pre>
      *
      * Protobuf type {@code NightCrowGadgetInfo}

@@ -19,28 +19,52 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+     * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
      * @return A list containing the deleteCustomFurnitureList.
      */
     java.util.List<java.lang.Integer> getDeleteCustomFurnitureListList();
     /**
-     * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+     * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
      * @return The count of deleteCustomFurnitureList.
      */
     int getDeleteCustomFurnitureListCount();
     /**
-     * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+     * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
      * @param index The index of the element to return.
      * @return The deleteCustomFurnitureList at the given index.
      */
     int getDeleteCustomFurnitureList(int index);
 
     /**
-     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> 
+        getCustomFurnitureInfoListList();
+    /**
+     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+     */
+    emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo getCustomFurnitureInfoList(int index);
+    /**
+     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+     */
+    int getCustomFurnitureInfoListCount();
+    /**
+     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> 
+        getCustomFurnitureInfoListOrBuilderList();
+    /**
+     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+     */
+    emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder getCustomFurnitureInfoListOrBuilder(
+        int index);
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
      */
     int getUsedSubFurnitureCountMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
      */
     boolean containsUsedSubFurnitureCountMap(
         int key);
@@ -51,52 +75,28 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getUsedSubFurnitureCountMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getUsedSubFurnitureCountMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
      */
 
     int getUsedSubFurnitureCountMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
      */
 
     int getUsedSubFurnitureCountMapOrThrow(
         int key);
-
-    /**
-     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> 
-        getCustomFurnitureInfoListList();
-    /**
-     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-     */
-    emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo getCustomFurnitureInfoList(int index);
-    /**
-     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-     */
-    int getCustomFurnitureInfoListCount();
-    /**
-     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> 
-        getCustomFurnitureInfoListOrBuilderList();
-    /**
-     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-     */
-    emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder getCustomFurnitureInfoListOrBuilder(
-        int index);
   }
   /**
    * <pre>
-   * CmdId: 4510
-   * Name: DOOMGCGOIBA
+   * CmdId: 7355
+   * Obf: CJIKNHKLFEB
    * </pre>
    *
    * Protobuf type {@code HomeCustomFurnitureInfoNotify}
@@ -146,20 +146,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                usedSubFurnitureCountMap_ = com.google.protobuf.MapField.newMapField(
-                    UsedSubFurnitureCountMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              usedSubFurnitureCountMap__ = input.readMessage(
-                  UsedSubFurnitureCountMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              usedSubFurnitureCountMap_.getMutableMap().put(
-                  usedSubFurnitureCountMap__.getKey(), usedSubFurnitureCountMap__.getValue());
-              break;
-            }
-            case 80: {
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 deleteCustomFurnitureList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -167,7 +154,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
               deleteCustomFurnitureList_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -180,10 +167,23 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 114: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                customFurnitureInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo>();
+                usedSubFurnitureCountMap_ = com.google.protobuf.MapField.newMapField(
+                    UsedSubFurnitureCountMapDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000004;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              usedSubFurnitureCountMap__ = input.readMessage(
+                  UsedSubFurnitureCountMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              usedSubFurnitureCountMap_.getMutableMap().put(
+                  usedSubFurnitureCountMap__.getKey(), usedSubFurnitureCountMap__.getValue());
+              break;
+            }
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                customFurnitureInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo>();
+                mutable_bitField0_ |= 0x00000002;
               }
               customFurnitureInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.parser(), extensionRegistry));
@@ -207,7 +207,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           deleteCustomFurnitureList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           customFurnitureInfoList_ = java.util.Collections.unmodifiableList(customFurnitureInfoList_);
         }
         this.unknownFields = unknownFields.build();
@@ -224,7 +224,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 1:
+        case 10:
           return internalGetUsedSubFurnitureCountMap();
         default:
           throw new RuntimeException(
@@ -239,10 +239,10 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
               emu.grasscutter.net.proto.HomeCustomFurnitureInfoNotifyOuterClass.HomeCustomFurnitureInfoNotify.class, emu.grasscutter.net.proto.HomeCustomFurnitureInfoNotifyOuterClass.HomeCustomFurnitureInfoNotify.Builder.class);
     }
 
-    public static final int DELETE_CUSTOM_FURNITURE_LIST_FIELD_NUMBER = 10;
+    public static final int DELETE_CUSTOM_FURNITURE_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList deleteCustomFurnitureList_;
     /**
-     * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+     * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
      * @return A list containing the deleteCustomFurnitureList.
      */
     @java.lang.Override
@@ -251,14 +251,14 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
       return deleteCustomFurnitureList_;
     }
     /**
-     * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+     * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
      * @return The count of deleteCustomFurnitureList.
      */
     public int getDeleteCustomFurnitureListCount() {
       return deleteCustomFurnitureList_.size();
     }
     /**
-     * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+     * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
      * @param index The index of the element to return.
      * @return The deleteCustomFurnitureList at the given index.
      */
@@ -267,7 +267,47 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
     }
     private int deleteCustomFurnitureListMemoizedSerializedSize = -1;
 
-    public static final int USED_SUB_FURNITURE_COUNT_MAP_FIELD_NUMBER = 1;
+    public static final int CUSTOM_FURNITURE_INFO_LIST_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> customFurnitureInfoList_;
+    /**
+     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> getCustomFurnitureInfoListList() {
+      return customFurnitureInfoList_;
+    }
+    /**
+     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> 
+        getCustomFurnitureInfoListOrBuilderList() {
+      return customFurnitureInfoList_;
+    }
+    /**
+     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public int getCustomFurnitureInfoListCount() {
+      return customFurnitureInfoList_.size();
+    }
+    /**
+     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo getCustomFurnitureInfoList(int index) {
+      return customFurnitureInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder getCustomFurnitureInfoListOrBuilder(
+        int index) {
+      return customFurnitureInfoList_.get(index);
+    }
+
+    public static final int USED_SUB_FURNITURE_COUNT_MAP_FIELD_NUMBER = 10;
     private static final class UsedSubFurnitureCountMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -294,7 +334,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
       return internalGetUsedSubFurnitureCountMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
      */
 
     @java.lang.Override
@@ -312,7 +352,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
       return getUsedSubFurnitureCountMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
      */
     @java.lang.Override
 
@@ -320,7 +360,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
       return internalGetUsedSubFurnitureCountMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
      */
     @java.lang.Override
 
@@ -333,7 +373,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
      */
     @java.lang.Override
 
@@ -346,46 +386,6 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
-    }
-
-    public static final int CUSTOM_FURNITURE_INFO_LIST_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> customFurnitureInfoList_;
-    /**
-     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> getCustomFurnitureInfoListList() {
-      return customFurnitureInfoList_;
-    }
-    /**
-     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> 
-        getCustomFurnitureInfoListOrBuilderList() {
-      return customFurnitureInfoList_;
-    }
-    /**
-     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-     */
-    @java.lang.Override
-    public int getCustomFurnitureInfoListCount() {
-      return customFurnitureInfoList_.size();
-    }
-    /**
-     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo getCustomFurnitureInfoList(int index) {
-      return customFurnitureInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder getCustomFurnitureInfoListOrBuilder(
-        int index) {
-      return customFurnitureInfoList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -403,21 +403,21 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetUsedSubFurnitureCountMap(),
-          UsedSubFurnitureCountMapDefaultEntryHolder.defaultEntry,
-          1);
       if (getDeleteCustomFurnitureListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(66);
         output.writeUInt32NoTag(deleteCustomFurnitureListMemoizedSerializedSize);
       }
       for (int i = 0; i < deleteCustomFurnitureList_.size(); i++) {
         output.writeUInt32NoTag(deleteCustomFurnitureList_.getInt(i));
       }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetUsedSubFurnitureCountMap(),
+          UsedSubFurnitureCountMapDefaultEntryHolder.defaultEntry,
+          10);
       for (int i = 0; i < customFurnitureInfoList_.size(); i++) {
-        output.writeMessage(14, customFurnitureInfoList_.get(i));
+        output.writeMessage(12, customFurnitureInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -428,16 +428,6 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetUsedSubFurnitureCountMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        usedSubFurnitureCountMap__ = UsedSubFurnitureCountMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(1, usedSubFurnitureCountMap__);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < deleteCustomFurnitureList_.size(); i++) {
@@ -452,9 +442,19 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         }
         deleteCustomFurnitureListMemoizedSerializedSize = dataSize;
       }
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetUsedSubFurnitureCountMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        usedSubFurnitureCountMap__ = UsedSubFurnitureCountMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(10, usedSubFurnitureCountMap__);
+      }
       for (int i = 0; i < customFurnitureInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, customFurnitureInfoList_.get(i));
+          .computeMessageSize(12, customFurnitureInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -473,10 +473,10 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
 
       if (!getDeleteCustomFurnitureListList()
           .equals(other.getDeleteCustomFurnitureListList())) return false;
-      if (!internalGetUsedSubFurnitureCountMap().equals(
-          other.internalGetUsedSubFurnitureCountMap())) return false;
       if (!getCustomFurnitureInfoListList()
           .equals(other.getCustomFurnitureInfoListList())) return false;
+      if (!internalGetUsedSubFurnitureCountMap().equals(
+          other.internalGetUsedSubFurnitureCountMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -492,13 +492,13 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         hash = (37 * hash) + DELETE_CUSTOM_FURNITURE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDeleteCustomFurnitureListList().hashCode();
       }
-      if (!internalGetUsedSubFurnitureCountMap().getMap().isEmpty()) {
-        hash = (37 * hash) + USED_SUB_FURNITURE_COUNT_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetUsedSubFurnitureCountMap().hashCode();
-      }
       if (getCustomFurnitureInfoListCount() > 0) {
         hash = (37 * hash) + CUSTOM_FURNITURE_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCustomFurnitureInfoListList().hashCode();
+      }
+      if (!internalGetUsedSubFurnitureCountMap().getMap().isEmpty()) {
+        hash = (37 * hash) + USED_SUB_FURNITURE_COUNT_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetUsedSubFurnitureCountMap().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -597,8 +597,8 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4510
-     * Name: DOOMGCGOIBA
+     * CmdId: 7355
+     * Obf: CJIKNHKLFEB
      * </pre>
      *
      * Protobuf type {@code HomeCustomFurnitureInfoNotify}
@@ -616,7 +616,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 1:
+          case 10:
             return internalGetUsedSubFurnitureCountMap();
           default:
             throw new RuntimeException(
@@ -627,7 +627,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 1:
+          case 10:
             return internalGetMutableUsedSubFurnitureCountMap();
           default:
             throw new RuntimeException(
@@ -663,13 +663,13 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         super.clear();
         deleteCustomFurnitureList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        internalGetMutableUsedSubFurnitureCountMap().clear();
         if (customFurnitureInfoListBuilder_ == null) {
           customFurnitureInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           customFurnitureInfoListBuilder_.clear();
         }
+        internalGetMutableUsedSubFurnitureCountMap().clear();
         return this;
       }
 
@@ -702,17 +702,17 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.deleteCustomFurnitureList_ = deleteCustomFurnitureList_;
-        result.usedSubFurnitureCountMap_ = internalGetUsedSubFurnitureCountMap();
-        result.usedSubFurnitureCountMap_.makeImmutable();
         if (customFurnitureInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             customFurnitureInfoList_ = java.util.Collections.unmodifiableList(customFurnitureInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.customFurnitureInfoList_ = customFurnitureInfoList_;
         } else {
           result.customFurnitureInfoList_ = customFurnitureInfoListBuilder_.build();
         }
+        result.usedSubFurnitureCountMap_ = internalGetUsedSubFurnitureCountMap();
+        result.usedSubFurnitureCountMap_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -771,13 +771,11 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
           }
           onChanged();
         }
-        internalGetMutableUsedSubFurnitureCountMap().mergeFrom(
-            other.internalGetUsedSubFurnitureCountMap());
         if (customFurnitureInfoListBuilder_ == null) {
           if (!other.customFurnitureInfoList_.isEmpty()) {
             if (customFurnitureInfoList_.isEmpty()) {
               customFurnitureInfoList_ = other.customFurnitureInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureCustomFurnitureInfoListIsMutable();
               customFurnitureInfoList_.addAll(other.customFurnitureInfoList_);
@@ -790,7 +788,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
               customFurnitureInfoListBuilder_.dispose();
               customFurnitureInfoListBuilder_ = null;
               customFurnitureInfoList_ = other.customFurnitureInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
               customFurnitureInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getCustomFurnitureInfoListFieldBuilder() : null;
@@ -799,6 +797,8 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
             }
           }
         }
+        internalGetMutableUsedSubFurnitureCountMap().mergeFrom(
+            other.internalGetUsedSubFurnitureCountMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -837,7 +837,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+       * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
        * @return A list containing the deleteCustomFurnitureList.
        */
       public java.util.List<java.lang.Integer>
@@ -846,14 +846,14 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
                  java.util.Collections.unmodifiableList(deleteCustomFurnitureList_) : deleteCustomFurnitureList_;
       }
       /**
-       * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+       * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
        * @return The count of deleteCustomFurnitureList.
        */
       public int getDeleteCustomFurnitureListCount() {
         return deleteCustomFurnitureList_.size();
       }
       /**
-       * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+       * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
        * @param index The index of the element to return.
        * @return The deleteCustomFurnitureList at the given index.
        */
@@ -861,7 +861,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return deleteCustomFurnitureList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+       * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
        * @param index The index to set the value at.
        * @param value The deleteCustomFurnitureList to set.
        * @return This builder for chaining.
@@ -874,7 +874,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+       * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
        * @param value The deleteCustomFurnitureList to add.
        * @return This builder for chaining.
        */
@@ -885,7 +885,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+       * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
        * @param values The deleteCustomFurnitureList to add.
        * @return This builder for chaining.
        */
@@ -898,7 +898,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 delete_custom_furniture_list = 10;</code>
+       * <code>repeated uint32 delete_custom_furniture_list = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeleteCustomFurnitureList() {
@@ -906,6 +906,246 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> customFurnitureInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureCustomFurnitureInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          customFurnitureInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo>(customFurnitureInfoList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> customFurnitureInfoListBuilder_;
+
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> getCustomFurnitureInfoListList() {
+        if (customFurnitureInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(customFurnitureInfoList_);
+        } else {
+          return customFurnitureInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public int getCustomFurnitureInfoListCount() {
+        if (customFurnitureInfoListBuilder_ == null) {
+          return customFurnitureInfoList_.size();
+        } else {
+          return customFurnitureInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo getCustomFurnitureInfoList(int index) {
+        if (customFurnitureInfoListBuilder_ == null) {
+          return customFurnitureInfoList_.get(index);
+        } else {
+          return customFurnitureInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public Builder setCustomFurnitureInfoList(
+          int index, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo value) {
+        if (customFurnitureInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCustomFurnitureInfoListIsMutable();
+          customFurnitureInfoList_.set(index, value);
+          onChanged();
+        } else {
+          customFurnitureInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public Builder setCustomFurnitureInfoList(
+          int index, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder builderForValue) {
+        if (customFurnitureInfoListBuilder_ == null) {
+          ensureCustomFurnitureInfoListIsMutable();
+          customFurnitureInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          customFurnitureInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public Builder addCustomFurnitureInfoList(emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo value) {
+        if (customFurnitureInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCustomFurnitureInfoListIsMutable();
+          customFurnitureInfoList_.add(value);
+          onChanged();
+        } else {
+          customFurnitureInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public Builder addCustomFurnitureInfoList(
+          int index, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo value) {
+        if (customFurnitureInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCustomFurnitureInfoListIsMutable();
+          customFurnitureInfoList_.add(index, value);
+          onChanged();
+        } else {
+          customFurnitureInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public Builder addCustomFurnitureInfoList(
+          emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder builderForValue) {
+        if (customFurnitureInfoListBuilder_ == null) {
+          ensureCustomFurnitureInfoListIsMutable();
+          customFurnitureInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          customFurnitureInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public Builder addCustomFurnitureInfoList(
+          int index, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder builderForValue) {
+        if (customFurnitureInfoListBuilder_ == null) {
+          ensureCustomFurnitureInfoListIsMutable();
+          customFurnitureInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          customFurnitureInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public Builder addAllCustomFurnitureInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> values) {
+        if (customFurnitureInfoListBuilder_ == null) {
+          ensureCustomFurnitureInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, customFurnitureInfoList_);
+          onChanged();
+        } else {
+          customFurnitureInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public Builder clearCustomFurnitureInfoList() {
+        if (customFurnitureInfoListBuilder_ == null) {
+          customFurnitureInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          customFurnitureInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public Builder removeCustomFurnitureInfoList(int index) {
+        if (customFurnitureInfoListBuilder_ == null) {
+          ensureCustomFurnitureInfoListIsMutable();
+          customFurnitureInfoList_.remove(index);
+          onChanged();
+        } else {
+          customFurnitureInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder getCustomFurnitureInfoListBuilder(
+          int index) {
+        return getCustomFurnitureInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder getCustomFurnitureInfoListOrBuilder(
+          int index) {
+        if (customFurnitureInfoListBuilder_ == null) {
+          return customFurnitureInfoList_.get(index);  } else {
+          return customFurnitureInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> 
+           getCustomFurnitureInfoListOrBuilderList() {
+        if (customFurnitureInfoListBuilder_ != null) {
+          return customFurnitureInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(customFurnitureInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder addCustomFurnitureInfoListBuilder() {
+        return getCustomFurnitureInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder addCustomFurnitureInfoListBuilder(
+          int index) {
+        return getCustomFurnitureInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 12;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder> 
+           getCustomFurnitureInfoListBuilderList() {
+        return getCustomFurnitureInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> 
+          getCustomFurnitureInfoListFieldBuilder() {
+        if (customFurnitureInfoListBuilder_ == null) {
+          customFurnitureInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder>(
+                  customFurnitureInfoList_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          customFurnitureInfoList_ = null;
+        }
+        return customFurnitureInfoListBuilder_;
       }
 
       private com.google.protobuf.MapField<
@@ -935,7 +1175,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return internalGetUsedSubFurnitureCountMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
        */
 
       @java.lang.Override
@@ -953,7 +1193,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return getUsedSubFurnitureCountMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
        */
       @java.lang.Override
 
@@ -961,7 +1201,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return internalGetUsedSubFurnitureCountMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
        */
       @java.lang.Override
 
@@ -974,7 +1214,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
        */
       @java.lang.Override
 
@@ -995,7 +1235,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
        */
 
       public Builder removeUsedSubFurnitureCountMap(
@@ -1014,7 +1254,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return internalGetMutableUsedSubFurnitureCountMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
        */
       public Builder putUsedSubFurnitureCountMap(
           int key,
@@ -1026,7 +1266,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; used_sub_furniture_count_map = 10;</code>
        */
 
       public Builder putAllUsedSubFurnitureCountMap(
@@ -1034,246 +1274,6 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
         internalGetMutableUsedSubFurnitureCountMap().getMutableMap()
             .putAll(values);
         return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> customFurnitureInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureCustomFurnitureInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          customFurnitureInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo>(customFurnitureInfoList_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> customFurnitureInfoListBuilder_;
-
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> getCustomFurnitureInfoListList() {
-        if (customFurnitureInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(customFurnitureInfoList_);
-        } else {
-          return customFurnitureInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public int getCustomFurnitureInfoListCount() {
-        if (customFurnitureInfoListBuilder_ == null) {
-          return customFurnitureInfoList_.size();
-        } else {
-          return customFurnitureInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo getCustomFurnitureInfoList(int index) {
-        if (customFurnitureInfoListBuilder_ == null) {
-          return customFurnitureInfoList_.get(index);
-        } else {
-          return customFurnitureInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public Builder setCustomFurnitureInfoList(
-          int index, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo value) {
-        if (customFurnitureInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCustomFurnitureInfoListIsMutable();
-          customFurnitureInfoList_.set(index, value);
-          onChanged();
-        } else {
-          customFurnitureInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public Builder setCustomFurnitureInfoList(
-          int index, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder builderForValue) {
-        if (customFurnitureInfoListBuilder_ == null) {
-          ensureCustomFurnitureInfoListIsMutable();
-          customFurnitureInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          customFurnitureInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public Builder addCustomFurnitureInfoList(emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo value) {
-        if (customFurnitureInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCustomFurnitureInfoListIsMutable();
-          customFurnitureInfoList_.add(value);
-          onChanged();
-        } else {
-          customFurnitureInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public Builder addCustomFurnitureInfoList(
-          int index, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo value) {
-        if (customFurnitureInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCustomFurnitureInfoListIsMutable();
-          customFurnitureInfoList_.add(index, value);
-          onChanged();
-        } else {
-          customFurnitureInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public Builder addCustomFurnitureInfoList(
-          emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder builderForValue) {
-        if (customFurnitureInfoListBuilder_ == null) {
-          ensureCustomFurnitureInfoListIsMutable();
-          customFurnitureInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          customFurnitureInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public Builder addCustomFurnitureInfoList(
-          int index, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder builderForValue) {
-        if (customFurnitureInfoListBuilder_ == null) {
-          ensureCustomFurnitureInfoListIsMutable();
-          customFurnitureInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          customFurnitureInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public Builder addAllCustomFurnitureInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo> values) {
-        if (customFurnitureInfoListBuilder_ == null) {
-          ensureCustomFurnitureInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, customFurnitureInfoList_);
-          onChanged();
-        } else {
-          customFurnitureInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public Builder clearCustomFurnitureInfoList() {
-        if (customFurnitureInfoListBuilder_ == null) {
-          customFurnitureInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          customFurnitureInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public Builder removeCustomFurnitureInfoList(int index) {
-        if (customFurnitureInfoListBuilder_ == null) {
-          ensureCustomFurnitureInfoListIsMutable();
-          customFurnitureInfoList_.remove(index);
-          onChanged();
-        } else {
-          customFurnitureInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder getCustomFurnitureInfoListBuilder(
-          int index) {
-        return getCustomFurnitureInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder getCustomFurnitureInfoListOrBuilder(
-          int index) {
-        if (customFurnitureInfoListBuilder_ == null) {
-          return customFurnitureInfoList_.get(index);  } else {
-          return customFurnitureInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> 
-           getCustomFurnitureInfoListOrBuilderList() {
-        if (customFurnitureInfoListBuilder_ != null) {
-          return customFurnitureInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(customFurnitureInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder addCustomFurnitureInfoListBuilder() {
-        return getCustomFurnitureInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder addCustomFurnitureInfoListBuilder(
-          int index) {
-        return getCustomFurnitureInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .HomeCustomFurnitureInfo custom_furniture_info_list = 14;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder> 
-           getCustomFurnitureInfoListBuilderList() {
-        return getCustomFurnitureInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> 
-          getCustomFurnitureInfoListFieldBuilder() {
-        if (customFurnitureInfoListBuilder_ == null) {
-          customFurnitureInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder>(
-                  customFurnitureInfoList_,
-                  ((bitField0_ & 0x00000004) != 0),
-                  getParentForChildren(),
-                  isClean());
-          customFurnitureInfoList_ = null;
-        }
-        return customFurnitureInfoListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1350,11 +1350,11 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
       "\n#HomeCustomFurnitureInfoNotify.proto\032\035H" +
       "omeCustomFurnitureInfo.proto\"\250\002\n\035HomeCus" +
       "tomFurnitureInfoNotify\022$\n\034delete_custom_" +
-      "furniture_list\030\n \003(\r\022b\n\034used_sub_furnitu" +
-      "re_count_map\030\001 \003(\0132<.HomeCustomFurniture" +
-      "InfoNotify.UsedSubFurnitureCountMapEntry" +
-      "\022<\n\032custom_furniture_info_list\030\016 \003(\0132\030.H" +
-      "omeCustomFurnitureInfo\032?\n\035UsedSubFurnitu" +
+      "furniture_list\030\010 \003(\r\022<\n\032custom_furniture" +
+      "_info_list\030\014 \003(\0132\030.HomeCustomFurnitureIn" +
+      "fo\022b\n\034used_sub_furniture_count_map\030\n \003(\013" +
+      "2<.HomeCustomFurnitureInfoNotify.UsedSub" +
+      "FurnitureCountMapEntry\032?\n\035UsedSubFurnitu" +
       "reCountMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 " +
       "\001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
@@ -1369,7 +1369,7 @@ public final class HomeCustomFurnitureInfoNotifyOuterClass {
     internal_static_HomeCustomFurnitureInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeCustomFurnitureInfoNotify_descriptor,
-        new java.lang.String[] { "DeleteCustomFurnitureList", "UsedSubFurnitureCountMap", "CustomFurnitureInfoList", });
+        new java.lang.String[] { "DeleteCustomFurnitureList", "CustomFurnitureInfoList", "UsedSubFurnitureCountMap", });
     internal_static_HomeCustomFurnitureInfoNotify_UsedSubFurnitureCountMapEntry_descriptor =
       internal_static_HomeCustomFurnitureInfoNotify_descriptor.getNestedTypes().get(0);
     internal_static_HomeCustomFurnitureInfoNotify_UsedSubFurnitureCountMapEntry_fieldAccessorTable = new

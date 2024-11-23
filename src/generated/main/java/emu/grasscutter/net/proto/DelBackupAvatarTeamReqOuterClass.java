@@ -26,8 +26,8 @@ public final class DelBackupAvatarTeamReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1680
-   * Name: BHDFBGFEGPC
+   * CmdId: 9455
+   * Obf: KIFNLHMNCMM
    * </pre>
    *
    * Protobuf type {@code DelBackupAvatarTeamReq}
@@ -279,8 +279,8 @@ public final class DelBackupAvatarTeamReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1680
-     * Name: BHDFBGFEGPC
+     * CmdId: 9455
+     * Obf: KIFNLHMNCMM
      * </pre>
      *
      * Protobuf type {@code DelBackupAvatarTeamReq}

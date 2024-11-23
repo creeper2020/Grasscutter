@@ -19,26 +19,26 @@ public final class CharAmusementStageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>bool is_open = 6;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
+
+    /**
      * <code>uint32 finish_time = 12;</code>
      * @return The finishTime.
      */
     int getFinishTime();
 
     /**
-     * <code>bool is_open = 10;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
-
-    /**
-     * <code>uint32 stage_id = 2;</code>
+     * <code>uint32 stage_id = 7;</code>
      * @return The stageId.
      */
     int getStageId();
   }
   /**
    * <pre>
-   * Name: HDNFJFOBDNE
+   * Obf: NODKOHOHHDL
    * </pre>
    *
    * Protobuf type {@code CharAmusementStageData}
@@ -85,14 +85,14 @@ public final class CharAmusementStageDataOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 48: {
 
               isOpen_ = input.readBool();
+              break;
+            }
+            case 56: {
+
+              stageId_ = input.readUInt32();
               break;
             }
             case 96: {
@@ -132,6 +132,17 @@ public final class CharAmusementStageDataOuterClass {
               emu.grasscutter.net.proto.CharAmusementStageDataOuterClass.CharAmusementStageData.class, emu.grasscutter.net.proto.CharAmusementStageDataOuterClass.CharAmusementStageData.Builder.class);
     }
 
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
+    private boolean isOpen_;
+    /**
+     * <code>bool is_open = 6;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
     public static final int FINISH_TIME_FIELD_NUMBER = 12;
     private int finishTime_;
     /**
@@ -143,21 +154,10 @@ public final class CharAmusementStageDataOuterClass {
       return finishTime_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 10;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 10;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 2;
+    public static final int STAGE_ID_FIELD_NUMBER = 7;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 2;</code>
+     * <code>uint32 stage_id = 7;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -179,11 +179,11 @@ public final class CharAmusementStageDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (stageId_ != 0) {
-        output.writeUInt32(2, stageId_);
-      }
       if (isOpen_ != false) {
-        output.writeBool(10, isOpen_);
+        output.writeBool(6, isOpen_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(7, stageId_);
       }
       if (finishTime_ != 0) {
         output.writeUInt32(12, finishTime_);
@@ -197,13 +197,13 @@ public final class CharAmusementStageDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, stageId_);
-      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isOpen_);
+          .computeBoolSize(6, isOpen_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, stageId_);
       }
       if (finishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -224,10 +224,10 @@ public final class CharAmusementStageDataOuterClass {
       }
       emu.grasscutter.net.proto.CharAmusementStageDataOuterClass.CharAmusementStageData other = (emu.grasscutter.net.proto.CharAmusementStageDataOuterClass.CharAmusementStageData) obj;
 
-      if (getFinishTime()
-          != other.getFinishTime()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
+      if (getFinishTime()
+          != other.getFinishTime()) return false;
       if (getStageId()
           != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -241,11 +241,11 @@ public final class CharAmusementStageDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FINISH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishTime();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
+      hash = (37 * hash) + FINISH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getFinishTime();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -345,7 +345,7 @@ public final class CharAmusementStageDataOuterClass {
     }
     /**
      * <pre>
-     * Name: HDNFJFOBDNE
+     * Obf: NODKOHOHHDL
      * </pre>
      *
      * Protobuf type {@code CharAmusementStageData}
@@ -385,9 +385,9 @@ public final class CharAmusementStageDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        finishTime_ = 0;
-
         isOpen_ = false;
+
+        finishTime_ = 0;
 
         stageId_ = 0;
 
@@ -417,8 +417,8 @@ public final class CharAmusementStageDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CharAmusementStageDataOuterClass.CharAmusementStageData buildPartial() {
         emu.grasscutter.net.proto.CharAmusementStageDataOuterClass.CharAmusementStageData result = new emu.grasscutter.net.proto.CharAmusementStageDataOuterClass.CharAmusementStageData(this);
-        result.finishTime_ = finishTime_;
         result.isOpen_ = isOpen_;
+        result.finishTime_ = finishTime_;
         result.stageId_ = stageId_;
         onBuilt();
         return result;
@@ -468,11 +468,11 @@ public final class CharAmusementStageDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CharAmusementStageDataOuterClass.CharAmusementStageData other) {
         if (other == emu.grasscutter.net.proto.CharAmusementStageDataOuterClass.CharAmusementStageData.getDefaultInstance()) return this;
-        if (other.getFinishTime() != 0) {
-          setFinishTime(other.getFinishTime());
-        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
+        }
+        if (other.getFinishTime() != 0) {
+          setFinishTime(other.getFinishTime());
         }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
@@ -503,6 +503,37 @@ public final class CharAmusementStageDataOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private boolean isOpen_ ;
+      /**
+       * <code>bool is_open = 6;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool is_open = 6;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        
+        isOpen_ = false;
+        onChanged();
         return this;
       }
 
@@ -537,40 +568,9 @@ public final class CharAmusementStageDataOuterClass {
         return this;
       }
 
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 10;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 10;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 7;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class CharAmusementStageDataOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 7;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class CharAmusementStageDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -666,8 +666,8 @@ public final class CharAmusementStageDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034CharAmusementStageData.proto\"P\n\026CharAm" +
-      "usementStageData\022\023\n\013finish_time\030\014 \001(\r\022\017\n" +
-      "\007is_open\030\n \001(\010\022\020\n\010stage_id\030\002 \001(\rB\033\n\031emu." +
+      "usementStageData\022\017\n\007is_open\030\006 \001(\010\022\023\n\013fin" +
+      "ish_time\030\014 \001(\r\022\020\n\010stage_id\030\007 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +679,7 @@ public final class CharAmusementStageDataOuterClass {
     internal_static_CharAmusementStageData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CharAmusementStageData_descriptor,
-        new java.lang.String[] { "FinishTime", "IsOpen", "StageId", });
+        new java.lang.String[] { "IsOpen", "FinishTime", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

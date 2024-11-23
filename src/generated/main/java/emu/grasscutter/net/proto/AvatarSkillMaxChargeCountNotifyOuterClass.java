@@ -19,27 +19,27 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 skill_id = 10;</code>
+     * <code>uint32 skill_id = 15;</code>
      * @return The skillId.
      */
     int getSkillId();
 
     /**
-     * <code>uint64 avatar_guid = 15;</code>
-     * @return The avatarGuid.
-     */
-    long getAvatarGuid();
-
-    /**
-     * <code>uint32 max_charge_count = 13;</code>
+     * <code>uint32 max_charge_count = 4;</code>
      * @return The maxChargeCount.
      */
     int getMaxChargeCount();
+
+    /**
+     * <code>uint64 avatar_guid = 7;</code>
+     * @return The avatarGuid.
+     */
+    long getAvatarGuid();
   }
   /**
    * <pre>
-   * CmdId: 1041
-   * Name: OGKJAJFBMIO
+   * CmdId: 22843
+   * Obf: MIPDHBPHHBA
    * </pre>
    *
    * Protobuf type {@code AvatarSkillMaxChargeCountNotify}
@@ -86,19 +86,19 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              skillId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 32: {
 
               maxChargeCount_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 56: {
 
               avatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 120: {
+
+              skillId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +133,10 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarSkillMaxChargeCountNotifyOuterClass.AvatarSkillMaxChargeCountNotify.class, emu.grasscutter.net.proto.AvatarSkillMaxChargeCountNotifyOuterClass.AvatarSkillMaxChargeCountNotify.Builder.class);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 10;
+    public static final int SKILL_ID_FIELD_NUMBER = 15;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 10;</code>
+     * <code>uint32 skill_id = 15;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -144,26 +144,26 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
       return skillId_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 15;
-    private long avatarGuid_;
-    /**
-     * <code>uint64 avatar_guid = 15;</code>
-     * @return The avatarGuid.
-     */
-    @java.lang.Override
-    public long getAvatarGuid() {
-      return avatarGuid_;
-    }
-
-    public static final int MAX_CHARGE_COUNT_FIELD_NUMBER = 13;
+    public static final int MAX_CHARGE_COUNT_FIELD_NUMBER = 4;
     private int maxChargeCount_;
     /**
-     * <code>uint32 max_charge_count = 13;</code>
+     * <code>uint32 max_charge_count = 4;</code>
      * @return The maxChargeCount.
      */
     @java.lang.Override
     public int getMaxChargeCount() {
       return maxChargeCount_;
+    }
+
+    public static final int AVATAR_GUID_FIELD_NUMBER = 7;
+    private long avatarGuid_;
+    /**
+     * <code>uint64 avatar_guid = 7;</code>
+     * @return The avatarGuid.
+     */
+    @java.lang.Override
+    public long getAvatarGuid() {
+      return avatarGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (skillId_ != 0) {
-        output.writeUInt32(10, skillId_);
-      }
       if (maxChargeCount_ != 0) {
-        output.writeUInt32(13, maxChargeCount_);
+        output.writeUInt32(4, maxChargeCount_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(15, avatarGuid_);
+        output.writeUInt64(7, avatarGuid_);
+      }
+      if (skillId_ != 0) {
+        output.writeUInt32(15, skillId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (skillId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, skillId_);
-      }
       if (maxChargeCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, maxChargeCount_);
+          .computeUInt32Size(4, maxChargeCount_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(15, avatarGuid_);
+          .computeUInt64Size(7, avatarGuid_);
+      }
+      if (skillId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, skillId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,10 +227,10 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
 
       if (getSkillId()
           != other.getSkillId()) return false;
-      if (getAvatarGuid()
-          != other.getAvatarGuid()) return false;
       if (getMaxChargeCount()
           != other.getMaxChargeCount()) return false;
+      if (getAvatarGuid()
+          != other.getAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,11 +244,11 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSkillId();
+      hash = (37 * hash) + MAX_CHARGE_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxChargeCount();
       hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
-      hash = (37 * hash) + MAX_CHARGE_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxChargeCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,8 +346,8 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1041
-     * Name: OGKJAJFBMIO
+     * CmdId: 22843
+     * Obf: MIPDHBPHHBA
      * </pre>
      *
      * Protobuf type {@code AvatarSkillMaxChargeCountNotify}
@@ -389,9 +389,9 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         super.clear();
         skillId_ = 0;
 
-        avatarGuid_ = 0L;
-
         maxChargeCount_ = 0;
+
+        avatarGuid_ = 0L;
 
         return this;
       }
@@ -420,8 +420,8 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
       public emu.grasscutter.net.proto.AvatarSkillMaxChargeCountNotifyOuterClass.AvatarSkillMaxChargeCountNotify buildPartial() {
         emu.grasscutter.net.proto.AvatarSkillMaxChargeCountNotifyOuterClass.AvatarSkillMaxChargeCountNotify result = new emu.grasscutter.net.proto.AvatarSkillMaxChargeCountNotifyOuterClass.AvatarSkillMaxChargeCountNotify(this);
         result.skillId_ = skillId_;
-        result.avatarGuid_ = avatarGuid_;
         result.maxChargeCount_ = maxChargeCount_;
+        result.avatarGuid_ = avatarGuid_;
         onBuilt();
         return result;
       }
@@ -473,11 +473,11 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         if (other.getSkillId() != 0) {
           setSkillId(other.getSkillId());
         }
-        if (other.getAvatarGuid() != 0L) {
-          setAvatarGuid(other.getAvatarGuid());
-        }
         if (other.getMaxChargeCount() != 0) {
           setMaxChargeCount(other.getMaxChargeCount());
+        }
+        if (other.getAvatarGuid() != 0L) {
+          setAvatarGuid(other.getAvatarGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -510,7 +510,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 10;</code>
+       * <code>uint32 skill_id = 15;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -518,7 +518,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 10;</code>
+       * <code>uint32 skill_id = 15;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -529,7 +529,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 10;</code>
+       * <code>uint32 skill_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -539,40 +539,9 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         return this;
       }
 
-      private long avatarGuid_ ;
-      /**
-       * <code>uint64 avatar_guid = 15;</code>
-       * @return The avatarGuid.
-       */
-      @java.lang.Override
-      public long getAvatarGuid() {
-        return avatarGuid_;
-      }
-      /**
-       * <code>uint64 avatar_guid = 15;</code>
-       * @param value The avatarGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarGuid(long value) {
-        
-        avatarGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 avatar_guid = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarGuid() {
-        
-        avatarGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private int maxChargeCount_ ;
       /**
-       * <code>uint32 max_charge_count = 13;</code>
+       * <code>uint32 max_charge_count = 4;</code>
        * @return The maxChargeCount.
        */
       @java.lang.Override
@@ -580,7 +549,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         return maxChargeCount_;
       }
       /**
-       * <code>uint32 max_charge_count = 13;</code>
+       * <code>uint32 max_charge_count = 4;</code>
        * @param value The maxChargeCount to set.
        * @return This builder for chaining.
        */
@@ -591,12 +560,43 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_charge_count = 13;</code>
+       * <code>uint32 max_charge_count = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxChargeCount() {
         
         maxChargeCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long avatarGuid_ ;
+      /**
+       * <code>uint64 avatar_guid = 7;</code>
+       * @return The avatarGuid.
+       */
+      @java.lang.Override
+      public long getAvatarGuid() {
+        return avatarGuid_;
+      }
+      /**
+       * <code>uint64 avatar_guid = 7;</code>
+       * @param value The avatarGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarGuid(long value) {
+        
+        avatarGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 avatar_guid = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarGuid() {
+        
+        avatarGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -669,8 +669,8 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%AvatarSkillMaxChargeCountNotify.proto\"" +
       "b\n\037AvatarSkillMaxChargeCountNotify\022\020\n\010sk" +
-      "ill_id\030\n \001(\r\022\023\n\013avatar_guid\030\017 \001(\004\022\030\n\020max" +
-      "_charge_count\030\r \001(\rB\033\n\031emu.grasscutter.n" +
+      "ill_id\030\017 \001(\r\022\030\n\020max_charge_count\030\004 \001(\r\022\023" +
+      "\n\013avatar_guid\030\007 \001(\004B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +682,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
     internal_static_AvatarSkillMaxChargeCountNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarSkillMaxChargeCountNotify_descriptor,
-        new java.lang.String[] { "SkillId", "AvatarGuid", "MaxChargeCount", });
+        new java.lang.String[] { "SkillId", "MaxChargeCount", "AvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

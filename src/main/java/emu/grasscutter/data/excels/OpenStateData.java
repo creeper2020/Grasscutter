@@ -1,35 +1,22 @@
 package emu.grasscutter.data.excels;
 
-import emu.grasscutter.data.GameData;
-import emu.grasscutter.data.GameResource;
-import emu.grasscutter.data.ResourceType;
+import emu.grasscutter.data.*;
 import lombok.Getter;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @ResourceType(name = "OpenStateConfigData.json", loadPriority = ResourceType.LoadPriority.HIGHEST)
 public class OpenStateData extends GameResource {
     @Getter(onMethod_ = @Override)
     private int id;
-    @Getter private boolean defaultState;
-    @Getter private boolean allowClientOpen;
-    @Getter private int systemOpenUiId;
-    @Getter private List<OpenStateCond> cond;
-
-    public static class OpenStateCond {
-        @Getter private OpenStateCondType condType;
-        @Getter private int param;
-        @Getter private int param2;
-    }
-
-    public static enum OpenStateCondType {
-        OPEN_STATE_COND_PLAYER_LEVEL,
-        OPEN_STATE_COND_QUEST,
-        OPEN_STATE_OFFERING_LEVEL,
-        OPEN_STATE_CITY_REPUTATION_LEVEL,
-        OPEN_STATE_COND_PARENT_QUEST;
-    }
+    @Getter
+    private boolean defaultState;
+    @Getter
+    private boolean allowClientOpen;
+    @Getter
+    private int systemOpenUiId;
+    @Getter
+    private List<OpenStateCond> cond;
 
     @Override
     public void onLoad() {
@@ -42,6 +29,23 @@ public class OpenStateData extends GameResource {
         } else {
             this.cond = new ArrayList<>();
         }
+    }
+
+    public enum OpenStateCondType {
+        OPEN_STATE_COND_PLAYER_LEVEL,
+        OPEN_STATE_COND_QUEST,
+        OPEN_STATE_OFFERING_LEVEL,
+        OPEN_STATE_CITY_REPUTATION_LEVEL,
+        OPEN_STATE_COND_PARENT_QUEST
+    }
+
+    public static class OpenStateCond {
+        @Getter
+        private OpenStateCondType condType;
+        @Getter
+        private int param;
+        @Getter
+        private int param2;
     }
 }
 

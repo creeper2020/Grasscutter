@@ -16,7 +16,7 @@ public final class PlayerDieTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: AFOALEMHCMM
+   * Obf: NJLHPPKOGDB
    * </pre>
    *
    * Protobuf enum {@code PlayerDieType}

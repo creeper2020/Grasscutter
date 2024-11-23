@@ -44,8 +44,8 @@ public final class AbilityInvocationsNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1196
-   * Name: NHHOLCBCDGJ
+   * CmdId: 26313
+   * Obf: IFAKFDEJFLI
    * </pre>
    *
    * Protobuf type {@code AbilityInvocationsNotify}
@@ -337,8 +337,8 @@ public final class AbilityInvocationsNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1196
-     * Name: NHHOLCBCDGJ
+     * CmdId: 26313
+     * Obf: IFAKFDEJFLI
      * </pre>
      *
      * Protobuf type {@code AbilityInvocationsNotify}

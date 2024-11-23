@@ -54,7 +54,7 @@ public final class LunchBoxDataOuterClass {
   }
   /**
    * <pre>
-   * Name: DBDCBIBLLAE
+   * Obf: NKDOHGNGCLG
    * </pre>
    *
    * Protobuf type {@code LunchBoxData}
@@ -408,7 +408,7 @@ public final class LunchBoxDataOuterClass {
     }
     /**
      * <pre>
-     * Name: DBDCBIBLLAE
+     * Obf: NKDOHGNGCLG
      * </pre>
      *
      * Protobuf type {@code LunchBoxData}

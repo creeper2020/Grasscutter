@@ -26,7 +26,7 @@ public final class BonusOpActivityInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: IKECAOJEKPH
+   * Obf: COLPNJDOIDM
    * </pre>
    *
    * Protobuf type {@code BonusOpActivityInfo}
@@ -278,7 +278,7 @@ public final class BonusOpActivityInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: IKECAOJEKPH
+     * Obf: COLPNJDOIDM
      * </pre>
      *
      * Protobuf type {@code BonusOpActivityInfo}

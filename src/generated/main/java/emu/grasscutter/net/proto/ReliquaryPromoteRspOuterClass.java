@@ -19,67 +19,67 @@ public final class ReliquaryPromoteRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 target_reliquary_guid = 6;</code>
+     * <code>uint32 GDNPFIPFIOJ = 1;</code>
+     * @return The gDNPFIPFIOJ.
+     */
+    int getGDNPFIPFIOJ();
+
+    /**
+     * <code>uint64 target_reliquary_guid = 2;</code>
      * @return The targetReliquaryGuid.
      */
     long getTargetReliquaryGuid();
 
     /**
-     * <code>uint32 BDLCGNNPHLJ = 9;</code>
-     * @return The bDLCGNNPHLJ.
-     */
-    int getBDLCGNNPHLJ();
-
-    /**
-     * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-     * @return A list containing the fPGACFGKCCK.
-     */
-    java.util.List<java.lang.Integer> getFPGACFGKCCKList();
-    /**
-     * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-     * @return The count of fPGACFGKCCK.
-     */
-    int getFPGACFGKCCKCount();
-    /**
-     * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-     * @param index The index of the element to return.
-     * @return The fPGACFGKCCK at the given index.
-     */
-    int getFPGACFGKCCK(int index);
-
-    /**
-     * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-     * @return A list containing the pHGKJLPHCBI.
-     */
-    java.util.List<java.lang.Integer> getPHGKJLPHCBIList();
-    /**
-     * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-     * @return The count of pHGKJLPHCBI.
-     */
-    int getPHGKJLPHCBICount();
-    /**
-     * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-     * @param index The index of the element to return.
-     * @return The pHGKJLPHCBI at the given index.
-     */
-    int getPHGKJLPHCBI(int index);
-
-    /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 AKLAKDIDLBE = 14;</code>
-     * @return The aKLAKDIDLBE.
+     * <code>uint32 MCLHMKNEIKH = 11;</code>
+     * @return The mCLHMKNEIKH.
      */
-    int getAKLAKDIDLBE();
+    int getMCLHMKNEIKH();
+
+    /**
+     * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+     * @return A list containing the fJJPDKBCGND.
+     */
+    java.util.List<java.lang.Integer> getFJJPDKBCGNDList();
+    /**
+     * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+     * @return The count of fJJPDKBCGND.
+     */
+    int getFJJPDKBCGNDCount();
+    /**
+     * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+     * @param index The index of the element to return.
+     * @return The fJJPDKBCGND at the given index.
+     */
+    int getFJJPDKBCGND(int index);
+
+    /**
+     * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+     * @return A list containing the jNPAMCBCIMC.
+     */
+    java.util.List<java.lang.Integer> getJNPAMCBCIMCList();
+    /**
+     * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+     * @return The count of jNPAMCBCIMC.
+     */
+    int getJNPAMCBCIMCCount();
+    /**
+     * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+     * @param index The index of the element to return.
+     * @return The jNPAMCBCIMC at the given index.
+     */
+    int getJNPAMCBCIMC(int index);
   }
   /**
    * <pre>
-   * CmdId: 650
-   * Name: APPALGKPALK
+   * CmdId: 28265
+   * Obf: BHHEEALIMML
    * </pre>
    *
    * Protobuf type {@code ReliquaryPromoteRsp}
@@ -94,8 +94,8 @@ public final class ReliquaryPromoteRspOuterClass {
       super(builder);
     }
     private ReliquaryPromoteRsp() {
-      fPGACFGKCCK_ = emptyIntList();
-      pHGKJLPHCBI_ = emptyIntList();
+      fJJPDKBCGND_ = emptyIntList();
+      jNPAMCBCIMC_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -129,66 +129,66 @@ public final class ReliquaryPromoteRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
+
+              gDNPFIPFIOJ_ = input.readUInt32();
+              break;
+            }
+            case 16: {
 
               targetReliquaryGuid_ = input.readUInt64();
               break;
             }
             case 56: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                pHGKJLPHCBI_ = newIntList();
+                jNPAMCBCIMC_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              pHGKJLPHCBI_.addInt(input.readUInt32());
+              jNPAMCBCIMC_.addInt(input.readUInt32());
               break;
             }
             case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                pHGKJLPHCBI_ = newIntList();
+                jNPAMCBCIMC_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                pHGKJLPHCBI_.addInt(input.readUInt32());
+                jNPAMCBCIMC_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 72: {
+            case 88: {
 
-              bDLCGNNPHLJ_ = input.readUInt32();
+              mCLHMKNEIKH_ = input.readUInt32();
               break;
             }
-            case 80: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                fPGACFGKCCK_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              fPGACFGKCCK_.addInt(input.readUInt32());
-              break;
-            }
-            case 82: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                fPGACFGKCCK_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                fPGACFGKCCK_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 104: {
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
             }
             case 112: {
-
-              aKLAKDIDLBE_ = input.readUInt32();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                fJJPDKBCGND_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              fJJPDKBCGND_.addInt(input.readUInt32());
+              break;
+            }
+            case 114: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                fJJPDKBCGND_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                fJJPDKBCGND_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -207,10 +207,10 @@ public final class ReliquaryPromoteRspOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          pHGKJLPHCBI_.makeImmutable(); // C
+          jNPAMCBCIMC_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          fPGACFGKCCK_.makeImmutable(); // C
+          fJJPDKBCGND_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -229,10 +229,21 @@ public final class ReliquaryPromoteRspOuterClass {
               emu.grasscutter.net.proto.ReliquaryPromoteRspOuterClass.ReliquaryPromoteRsp.class, emu.grasscutter.net.proto.ReliquaryPromoteRspOuterClass.ReliquaryPromoteRsp.Builder.class);
     }
 
-    public static final int TARGET_RELIQUARY_GUID_FIELD_NUMBER = 6;
+    public static final int GDNPFIPFIOJ_FIELD_NUMBER = 1;
+    private int gDNPFIPFIOJ_;
+    /**
+     * <code>uint32 GDNPFIPFIOJ = 1;</code>
+     * @return The gDNPFIPFIOJ.
+     */
+    @java.lang.Override
+    public int getGDNPFIPFIOJ() {
+      return gDNPFIPFIOJ_;
+    }
+
+    public static final int TARGET_RELIQUARY_GUID_FIELD_NUMBER = 2;
     private long targetReliquaryGuid_;
     /**
-     * <code>uint64 target_reliquary_guid = 6;</code>
+     * <code>uint64 target_reliquary_guid = 2;</code>
      * @return The targetReliquaryGuid.
      */
     @java.lang.Override
@@ -240,77 +251,10 @@ public final class ReliquaryPromoteRspOuterClass {
       return targetReliquaryGuid_;
     }
 
-    public static final int BDLCGNNPHLJ_FIELD_NUMBER = 9;
-    private int bDLCGNNPHLJ_;
-    /**
-     * <code>uint32 BDLCGNNPHLJ = 9;</code>
-     * @return The bDLCGNNPHLJ.
-     */
-    @java.lang.Override
-    public int getBDLCGNNPHLJ() {
-      return bDLCGNNPHLJ_;
-    }
-
-    public static final int FPGACFGKCCK_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList fPGACFGKCCK_;
-    /**
-     * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-     * @return A list containing the fPGACFGKCCK.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getFPGACFGKCCKList() {
-      return fPGACFGKCCK_;
-    }
-    /**
-     * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-     * @return The count of fPGACFGKCCK.
-     */
-    public int getFPGACFGKCCKCount() {
-      return fPGACFGKCCK_.size();
-    }
-    /**
-     * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-     * @param index The index of the element to return.
-     * @return The fPGACFGKCCK at the given index.
-     */
-    public int getFPGACFGKCCK(int index) {
-      return fPGACFGKCCK_.getInt(index);
-    }
-    private int fPGACFGKCCKMemoizedSerializedSize = -1;
-
-    public static final int PHGKJLPHCBI_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList pHGKJLPHCBI_;
-    /**
-     * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-     * @return A list containing the pHGKJLPHCBI.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getPHGKJLPHCBIList() {
-      return pHGKJLPHCBI_;
-    }
-    /**
-     * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-     * @return The count of pHGKJLPHCBI.
-     */
-    public int getPHGKJLPHCBICount() {
-      return pHGKJLPHCBI_.size();
-    }
-    /**
-     * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-     * @param index The index of the element to return.
-     * @return The pHGKJLPHCBI at the given index.
-     */
-    public int getPHGKJLPHCBI(int index) {
-      return pHGKJLPHCBI_.getInt(index);
-    }
-    private int pHGKJLPHCBIMemoizedSerializedSize = -1;
-
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -318,16 +262,72 @@ public final class ReliquaryPromoteRspOuterClass {
       return retcode_;
     }
 
-    public static final int AKLAKDIDLBE_FIELD_NUMBER = 14;
-    private int aKLAKDIDLBE_;
+    public static final int MCLHMKNEIKH_FIELD_NUMBER = 11;
+    private int mCLHMKNEIKH_;
     /**
-     * <code>uint32 AKLAKDIDLBE = 14;</code>
-     * @return The aKLAKDIDLBE.
+     * <code>uint32 MCLHMKNEIKH = 11;</code>
+     * @return The mCLHMKNEIKH.
      */
     @java.lang.Override
-    public int getAKLAKDIDLBE() {
-      return aKLAKDIDLBE_;
+    public int getMCLHMKNEIKH() {
+      return mCLHMKNEIKH_;
     }
+
+    public static final int FJJPDKBCGND_FIELD_NUMBER = 14;
+    private com.google.protobuf.Internal.IntList fJJPDKBCGND_;
+    /**
+     * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+     * @return A list containing the fJJPDKBCGND.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getFJJPDKBCGNDList() {
+      return fJJPDKBCGND_;
+    }
+    /**
+     * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+     * @return The count of fJJPDKBCGND.
+     */
+    public int getFJJPDKBCGNDCount() {
+      return fJJPDKBCGND_.size();
+    }
+    /**
+     * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+     * @param index The index of the element to return.
+     * @return The fJJPDKBCGND at the given index.
+     */
+    public int getFJJPDKBCGND(int index) {
+      return fJJPDKBCGND_.getInt(index);
+    }
+    private int fJJPDKBCGNDMemoizedSerializedSize = -1;
+
+    public static final int JNPAMCBCIMC_FIELD_NUMBER = 7;
+    private com.google.protobuf.Internal.IntList jNPAMCBCIMC_;
+    /**
+     * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+     * @return A list containing the jNPAMCBCIMC.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getJNPAMCBCIMCList() {
+      return jNPAMCBCIMC_;
+    }
+    /**
+     * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+     * @return The count of jNPAMCBCIMC.
+     */
+    public int getJNPAMCBCIMCCount() {
+      return jNPAMCBCIMC_.size();
+    }
+    /**
+     * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+     * @param index The index of the element to return.
+     * @return The jNPAMCBCIMC at the given index.
+     */
+    public int getJNPAMCBCIMC(int index) {
+      return jNPAMCBCIMC_.getInt(index);
+    }
+    private int jNPAMCBCIMCMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -344,31 +344,31 @@ public final class ReliquaryPromoteRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (gDNPFIPFIOJ_ != 0) {
+        output.writeUInt32(1, gDNPFIPFIOJ_);
+      }
       if (targetReliquaryGuid_ != 0L) {
-        output.writeUInt64(6, targetReliquaryGuid_);
+        output.writeUInt64(2, targetReliquaryGuid_);
       }
-      if (getPHGKJLPHCBIList().size() > 0) {
+      if (getJNPAMCBCIMCList().size() > 0) {
         output.writeUInt32NoTag(58);
-        output.writeUInt32NoTag(pHGKJLPHCBIMemoizedSerializedSize);
+        output.writeUInt32NoTag(jNPAMCBCIMCMemoizedSerializedSize);
       }
-      for (int i = 0; i < pHGKJLPHCBI_.size(); i++) {
-        output.writeUInt32NoTag(pHGKJLPHCBI_.getInt(i));
+      for (int i = 0; i < jNPAMCBCIMC_.size(); i++) {
+        output.writeUInt32NoTag(jNPAMCBCIMC_.getInt(i));
       }
-      if (bDLCGNNPHLJ_ != 0) {
-        output.writeUInt32(9, bDLCGNNPHLJ_);
-      }
-      if (getFPGACFGKCCKList().size() > 0) {
-        output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(fPGACFGKCCKMemoizedSerializedSize);
-      }
-      for (int i = 0; i < fPGACFGKCCK_.size(); i++) {
-        output.writeUInt32NoTag(fPGACFGKCCK_.getInt(i));
+      if (mCLHMKNEIKH_ != 0) {
+        output.writeUInt32(11, mCLHMKNEIKH_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(12, retcode_);
       }
-      if (aKLAKDIDLBE_ != 0) {
-        output.writeUInt32(14, aKLAKDIDLBE_);
+      if (getFJJPDKBCGNDList().size() > 0) {
+        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(fJJPDKBCGNDMemoizedSerializedSize);
+      }
+      for (int i = 0; i < fJJPDKBCGND_.size(); i++) {
+        output.writeUInt32NoTag(fJJPDKBCGND_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -379,49 +379,49 @@ public final class ReliquaryPromoteRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (gDNPFIPFIOJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, gDNPFIPFIOJ_);
+      }
       if (targetReliquaryGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, targetReliquaryGuid_);
+          .computeUInt64Size(2, targetReliquaryGuid_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < pHGKJLPHCBI_.size(); i++) {
+        for (int i = 0; i < jNPAMCBCIMC_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(pHGKJLPHCBI_.getInt(i));
+            .computeUInt32SizeNoTag(jNPAMCBCIMC_.getInt(i));
         }
         size += dataSize;
-        if (!getPHGKJLPHCBIList().isEmpty()) {
+        if (!getJNPAMCBCIMCList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        pHGKJLPHCBIMemoizedSerializedSize = dataSize;
+        jNPAMCBCIMCMemoizedSerializedSize = dataSize;
       }
-      if (bDLCGNNPHLJ_ != 0) {
+      if (mCLHMKNEIKH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, bDLCGNNPHLJ_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < fPGACFGKCCK_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(fPGACFGKCCK_.getInt(i));
-        }
-        size += dataSize;
-        if (!getFPGACFGKCCKList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        fPGACFGKCCKMemoizedSerializedSize = dataSize;
+          .computeUInt32Size(11, mCLHMKNEIKH_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(12, retcode_);
       }
-      if (aKLAKDIDLBE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, aKLAKDIDLBE_);
+      {
+        int dataSize = 0;
+        for (int i = 0; i < fJJPDKBCGND_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(fJJPDKBCGND_.getInt(i));
+        }
+        size += dataSize;
+        if (!getFJJPDKBCGNDList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        fJJPDKBCGNDMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -438,18 +438,18 @@ public final class ReliquaryPromoteRspOuterClass {
       }
       emu.grasscutter.net.proto.ReliquaryPromoteRspOuterClass.ReliquaryPromoteRsp other = (emu.grasscutter.net.proto.ReliquaryPromoteRspOuterClass.ReliquaryPromoteRsp) obj;
 
+      if (getGDNPFIPFIOJ()
+          != other.getGDNPFIPFIOJ()) return false;
       if (getTargetReliquaryGuid()
           != other.getTargetReliquaryGuid()) return false;
-      if (getBDLCGNNPHLJ()
-          != other.getBDLCGNNPHLJ()) return false;
-      if (!getFPGACFGKCCKList()
-          .equals(other.getFPGACFGKCCKList())) return false;
-      if (!getPHGKJLPHCBIList()
-          .equals(other.getPHGKJLPHCBIList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getAKLAKDIDLBE()
-          != other.getAKLAKDIDLBE()) return false;
+      if (getMCLHMKNEIKH()
+          != other.getMCLHMKNEIKH()) return false;
+      if (!getFJJPDKBCGNDList()
+          .equals(other.getFJJPDKBCGNDList())) return false;
+      if (!getJNPAMCBCIMCList()
+          .equals(other.getJNPAMCBCIMCList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -461,23 +461,23 @@ public final class ReliquaryPromoteRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GDNPFIPFIOJ_FIELD_NUMBER;
+      hash = (53 * hash) + getGDNPFIPFIOJ();
       hash = (37 * hash) + TARGET_RELIQUARY_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getTargetReliquaryGuid());
-      hash = (37 * hash) + BDLCGNNPHLJ_FIELD_NUMBER;
-      hash = (53 * hash) + getBDLCGNNPHLJ();
-      if (getFPGACFGKCCKCount() > 0) {
-        hash = (37 * hash) + FPGACFGKCCK_FIELD_NUMBER;
-        hash = (53 * hash) + getFPGACFGKCCKList().hashCode();
-      }
-      if (getPHGKJLPHCBICount() > 0) {
-        hash = (37 * hash) + PHGKJLPHCBI_FIELD_NUMBER;
-        hash = (53 * hash) + getPHGKJLPHCBIList().hashCode();
-      }
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + AKLAKDIDLBE_FIELD_NUMBER;
-      hash = (53 * hash) + getAKLAKDIDLBE();
+      hash = (37 * hash) + MCLHMKNEIKH_FIELD_NUMBER;
+      hash = (53 * hash) + getMCLHMKNEIKH();
+      if (getFJJPDKBCGNDCount() > 0) {
+        hash = (37 * hash) + FJJPDKBCGND_FIELD_NUMBER;
+        hash = (53 * hash) + getFJJPDKBCGNDList().hashCode();
+      }
+      if (getJNPAMCBCIMCCount() > 0) {
+        hash = (37 * hash) + JNPAMCBCIMC_FIELD_NUMBER;
+        hash = (53 * hash) + getJNPAMCBCIMCList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -575,8 +575,8 @@ public final class ReliquaryPromoteRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 650
-     * Name: APPALGKPALK
+     * CmdId: 28265
+     * Obf: BHHEEALIMML
      * </pre>
      *
      * Protobuf type {@code ReliquaryPromoteRsp}
@@ -616,18 +616,18 @@ public final class ReliquaryPromoteRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        gDNPFIPFIOJ_ = 0;
+
         targetReliquaryGuid_ = 0L;
 
-        bDLCGNNPHLJ_ = 0;
-
-        fPGACFGKCCK_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        pHGKJLPHCBI_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         retcode_ = 0;
 
-        aKLAKDIDLBE_ = 0;
+        mCLHMKNEIKH_ = 0;
 
+        fJJPDKBCGND_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        jNPAMCBCIMC_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -655,20 +655,20 @@ public final class ReliquaryPromoteRspOuterClass {
       public emu.grasscutter.net.proto.ReliquaryPromoteRspOuterClass.ReliquaryPromoteRsp buildPartial() {
         emu.grasscutter.net.proto.ReliquaryPromoteRspOuterClass.ReliquaryPromoteRsp result = new emu.grasscutter.net.proto.ReliquaryPromoteRspOuterClass.ReliquaryPromoteRsp(this);
         int from_bitField0_ = bitField0_;
+        result.gDNPFIPFIOJ_ = gDNPFIPFIOJ_;
         result.targetReliquaryGuid_ = targetReliquaryGuid_;
-        result.bDLCGNNPHLJ_ = bDLCGNNPHLJ_;
+        result.retcode_ = retcode_;
+        result.mCLHMKNEIKH_ = mCLHMKNEIKH_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          fPGACFGKCCK_.makeImmutable();
+          fJJPDKBCGND_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.fPGACFGKCCK_ = fPGACFGKCCK_;
+        result.fJJPDKBCGND_ = fJJPDKBCGND_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          pHGKJLPHCBI_.makeImmutable();
+          jNPAMCBCIMC_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.pHGKJLPHCBI_ = pHGKJLPHCBI_;
-        result.retcode_ = retcode_;
-        result.aKLAKDIDLBE_ = aKLAKDIDLBE_;
+        result.jNPAMCBCIMC_ = jNPAMCBCIMC_;
         onBuilt();
         return result;
       }
@@ -717,37 +717,37 @@ public final class ReliquaryPromoteRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReliquaryPromoteRspOuterClass.ReliquaryPromoteRsp other) {
         if (other == emu.grasscutter.net.proto.ReliquaryPromoteRspOuterClass.ReliquaryPromoteRsp.getDefaultInstance()) return this;
+        if (other.getGDNPFIPFIOJ() != 0) {
+          setGDNPFIPFIOJ(other.getGDNPFIPFIOJ());
+        }
         if (other.getTargetReliquaryGuid() != 0L) {
           setTargetReliquaryGuid(other.getTargetReliquaryGuid());
-        }
-        if (other.getBDLCGNNPHLJ() != 0) {
-          setBDLCGNNPHLJ(other.getBDLCGNNPHLJ());
-        }
-        if (!other.fPGACFGKCCK_.isEmpty()) {
-          if (fPGACFGKCCK_.isEmpty()) {
-            fPGACFGKCCK_ = other.fPGACFGKCCK_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureFPGACFGKCCKIsMutable();
-            fPGACFGKCCK_.addAll(other.fPGACFGKCCK_);
-          }
-          onChanged();
-        }
-        if (!other.pHGKJLPHCBI_.isEmpty()) {
-          if (pHGKJLPHCBI_.isEmpty()) {
-            pHGKJLPHCBI_ = other.pHGKJLPHCBI_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensurePHGKJLPHCBIIsMutable();
-            pHGKJLPHCBI_.addAll(other.pHGKJLPHCBI_);
-          }
-          onChanged();
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getAKLAKDIDLBE() != 0) {
-          setAKLAKDIDLBE(other.getAKLAKDIDLBE());
+        if (other.getMCLHMKNEIKH() != 0) {
+          setMCLHMKNEIKH(other.getMCLHMKNEIKH());
+        }
+        if (!other.fJJPDKBCGND_.isEmpty()) {
+          if (fJJPDKBCGND_.isEmpty()) {
+            fJJPDKBCGND_ = other.fJJPDKBCGND_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureFJJPDKBCGNDIsMutable();
+            fJJPDKBCGND_.addAll(other.fJJPDKBCGND_);
+          }
+          onChanged();
+        }
+        if (!other.jNPAMCBCIMC_.isEmpty()) {
+          if (jNPAMCBCIMC_.isEmpty()) {
+            jNPAMCBCIMC_ = other.jNPAMCBCIMC_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureJNPAMCBCIMCIsMutable();
+            jNPAMCBCIMC_.addAll(other.jNPAMCBCIMC_);
+          }
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -779,9 +779,40 @@ public final class ReliquaryPromoteRspOuterClass {
       }
       private int bitField0_;
 
+      private int gDNPFIPFIOJ_ ;
+      /**
+       * <code>uint32 GDNPFIPFIOJ = 1;</code>
+       * @return The gDNPFIPFIOJ.
+       */
+      @java.lang.Override
+      public int getGDNPFIPFIOJ() {
+        return gDNPFIPFIOJ_;
+      }
+      /**
+       * <code>uint32 GDNPFIPFIOJ = 1;</code>
+       * @param value The gDNPFIPFIOJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGDNPFIPFIOJ(int value) {
+        
+        gDNPFIPFIOJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 GDNPFIPFIOJ = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGDNPFIPFIOJ() {
+        
+        gDNPFIPFIOJ_ = 0;
+        onChanged();
+        return this;
+      }
+
       private long targetReliquaryGuid_ ;
       /**
-       * <code>uint64 target_reliquary_guid = 6;</code>
+       * <code>uint64 target_reliquary_guid = 2;</code>
        * @return The targetReliquaryGuid.
        */
       @java.lang.Override
@@ -789,7 +820,7 @@ public final class ReliquaryPromoteRspOuterClass {
         return targetReliquaryGuid_;
       }
       /**
-       * <code>uint64 target_reliquary_guid = 6;</code>
+       * <code>uint64 target_reliquary_guid = 2;</code>
        * @param value The targetReliquaryGuid to set.
        * @return This builder for chaining.
        */
@@ -800,7 +831,7 @@ public final class ReliquaryPromoteRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 target_reliquary_guid = 6;</code>
+       * <code>uint64 target_reliquary_guid = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetReliquaryGuid() {
@@ -810,198 +841,9 @@ public final class ReliquaryPromoteRspOuterClass {
         return this;
       }
 
-      private int bDLCGNNPHLJ_ ;
-      /**
-       * <code>uint32 BDLCGNNPHLJ = 9;</code>
-       * @return The bDLCGNNPHLJ.
-       */
-      @java.lang.Override
-      public int getBDLCGNNPHLJ() {
-        return bDLCGNNPHLJ_;
-      }
-      /**
-       * <code>uint32 BDLCGNNPHLJ = 9;</code>
-       * @param value The bDLCGNNPHLJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBDLCGNNPHLJ(int value) {
-        
-        bDLCGNNPHLJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BDLCGNNPHLJ = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBDLCGNNPHLJ() {
-        
-        bDLCGNNPHLJ_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList fPGACFGKCCK_ = emptyIntList();
-      private void ensureFPGACFGKCCKIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          fPGACFGKCCK_ = mutableCopy(fPGACFGKCCK_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-       * @return A list containing the fPGACFGKCCK.
-       */
-      public java.util.List<java.lang.Integer>
-          getFPGACFGKCCKList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(fPGACFGKCCK_) : fPGACFGKCCK_;
-      }
-      /**
-       * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-       * @return The count of fPGACFGKCCK.
-       */
-      public int getFPGACFGKCCKCount() {
-        return fPGACFGKCCK_.size();
-      }
-      /**
-       * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-       * @param index The index of the element to return.
-       * @return The fPGACFGKCCK at the given index.
-       */
-      public int getFPGACFGKCCK(int index) {
-        return fPGACFGKCCK_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-       * @param index The index to set the value at.
-       * @param value The fPGACFGKCCK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFPGACFGKCCK(
-          int index, int value) {
-        ensureFPGACFGKCCKIsMutable();
-        fPGACFGKCCK_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-       * @param value The fPGACFGKCCK to add.
-       * @return This builder for chaining.
-       */
-      public Builder addFPGACFGKCCK(int value) {
-        ensureFPGACFGKCCKIsMutable();
-        fPGACFGKCCK_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-       * @param values The fPGACFGKCCK to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllFPGACFGKCCK(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureFPGACFGKCCKIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, fPGACFGKCCK_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 FPGACFGKCCK = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFPGACFGKCCK() {
-        fPGACFGKCCK_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList pHGKJLPHCBI_ = emptyIntList();
-      private void ensurePHGKJLPHCBIIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          pHGKJLPHCBI_ = mutableCopy(pHGKJLPHCBI_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-       * @return A list containing the pHGKJLPHCBI.
-       */
-      public java.util.List<java.lang.Integer>
-          getPHGKJLPHCBIList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(pHGKJLPHCBI_) : pHGKJLPHCBI_;
-      }
-      /**
-       * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-       * @return The count of pHGKJLPHCBI.
-       */
-      public int getPHGKJLPHCBICount() {
-        return pHGKJLPHCBI_.size();
-      }
-      /**
-       * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-       * @param index The index of the element to return.
-       * @return The pHGKJLPHCBI at the given index.
-       */
-      public int getPHGKJLPHCBI(int index) {
-        return pHGKJLPHCBI_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-       * @param index The index to set the value at.
-       * @param value The pHGKJLPHCBI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPHGKJLPHCBI(
-          int index, int value) {
-        ensurePHGKJLPHCBIIsMutable();
-        pHGKJLPHCBI_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-       * @param value The pHGKJLPHCBI to add.
-       * @return This builder for chaining.
-       */
-      public Builder addPHGKJLPHCBI(int value) {
-        ensurePHGKJLPHCBIIsMutable();
-        pHGKJLPHCBI_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-       * @param values The pHGKJLPHCBI to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllPHGKJLPHCBI(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensurePHGKJLPHCBIIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, pHGKJLPHCBI_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 PHGKJLPHCBI = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPHGKJLPHCBI() {
-        pHGKJLPHCBI_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -1009,7 +851,7 @@ public final class ReliquaryPromoteRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -1020,7 +862,7 @@ public final class ReliquaryPromoteRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -1030,33 +872,191 @@ public final class ReliquaryPromoteRspOuterClass {
         return this;
       }
 
-      private int aKLAKDIDLBE_ ;
+      private int mCLHMKNEIKH_ ;
       /**
-       * <code>uint32 AKLAKDIDLBE = 14;</code>
-       * @return The aKLAKDIDLBE.
+       * <code>uint32 MCLHMKNEIKH = 11;</code>
+       * @return The mCLHMKNEIKH.
        */
       @java.lang.Override
-      public int getAKLAKDIDLBE() {
-        return aKLAKDIDLBE_;
+      public int getMCLHMKNEIKH() {
+        return mCLHMKNEIKH_;
       }
       /**
-       * <code>uint32 AKLAKDIDLBE = 14;</code>
-       * @param value The aKLAKDIDLBE to set.
+       * <code>uint32 MCLHMKNEIKH = 11;</code>
+       * @param value The mCLHMKNEIKH to set.
        * @return This builder for chaining.
        */
-      public Builder setAKLAKDIDLBE(int value) {
+      public Builder setMCLHMKNEIKH(int value) {
         
-        aKLAKDIDLBE_ = value;
+        mCLHMKNEIKH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 AKLAKDIDLBE = 14;</code>
+       * <code>uint32 MCLHMKNEIKH = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAKLAKDIDLBE() {
+      public Builder clearMCLHMKNEIKH() {
         
-        aKLAKDIDLBE_ = 0;
+        mCLHMKNEIKH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList fJJPDKBCGND_ = emptyIntList();
+      private void ensureFJJPDKBCGNDIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          fJJPDKBCGND_ = mutableCopy(fJJPDKBCGND_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+       * @return A list containing the fJJPDKBCGND.
+       */
+      public java.util.List<java.lang.Integer>
+          getFJJPDKBCGNDList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(fJJPDKBCGND_) : fJJPDKBCGND_;
+      }
+      /**
+       * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+       * @return The count of fJJPDKBCGND.
+       */
+      public int getFJJPDKBCGNDCount() {
+        return fJJPDKBCGND_.size();
+      }
+      /**
+       * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+       * @param index The index of the element to return.
+       * @return The fJJPDKBCGND at the given index.
+       */
+      public int getFJJPDKBCGND(int index) {
+        return fJJPDKBCGND_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The fJJPDKBCGND to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFJJPDKBCGND(
+          int index, int value) {
+        ensureFJJPDKBCGNDIsMutable();
+        fJJPDKBCGND_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+       * @param value The fJJPDKBCGND to add.
+       * @return This builder for chaining.
+       */
+      public Builder addFJJPDKBCGND(int value) {
+        ensureFJJPDKBCGNDIsMutable();
+        fJJPDKBCGND_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+       * @param values The fJJPDKBCGND to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllFJJPDKBCGND(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureFJJPDKBCGNDIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, fJJPDKBCGND_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 FJJPDKBCGND = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFJJPDKBCGND() {
+        fJJPDKBCGND_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList jNPAMCBCIMC_ = emptyIntList();
+      private void ensureJNPAMCBCIMCIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          jNPAMCBCIMC_ = mutableCopy(jNPAMCBCIMC_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+       * @return A list containing the jNPAMCBCIMC.
+       */
+      public java.util.List<java.lang.Integer>
+          getJNPAMCBCIMCList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(jNPAMCBCIMC_) : jNPAMCBCIMC_;
+      }
+      /**
+       * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+       * @return The count of jNPAMCBCIMC.
+       */
+      public int getJNPAMCBCIMCCount() {
+        return jNPAMCBCIMC_.size();
+      }
+      /**
+       * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+       * @param index The index of the element to return.
+       * @return The jNPAMCBCIMC at the given index.
+       */
+      public int getJNPAMCBCIMC(int index) {
+        return jNPAMCBCIMC_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+       * @param index The index to set the value at.
+       * @param value The jNPAMCBCIMC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJNPAMCBCIMC(
+          int index, int value) {
+        ensureJNPAMCBCIMCIsMutable();
+        jNPAMCBCIMC_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+       * @param value The jNPAMCBCIMC to add.
+       * @return This builder for chaining.
+       */
+      public Builder addJNPAMCBCIMC(int value) {
+        ensureJNPAMCBCIMCIsMutable();
+        jNPAMCBCIMC_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+       * @param values The jNPAMCBCIMC to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllJNPAMCBCIMC(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureJNPAMCBCIMCIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, jNPAMCBCIMC_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 JNPAMCBCIMC = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJNPAMCBCIMC() {
+        jNPAMCBCIMC_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -1128,10 +1128,10 @@ public final class ReliquaryPromoteRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031ReliquaryPromoteRsp.proto\"\231\001\n\023Reliquar" +
-      "yPromoteRsp\022\035\n\025target_reliquary_guid\030\006 \001" +
-      "(\004\022\023\n\013BDLCGNNPHLJ\030\t \001(\r\022\023\n\013FPGACFGKCCK\030\n" +
-      " \003(\r\022\023\n\013PHGKJLPHCBI\030\007 \003(\r\022\017\n\007retcode\030\r \001" +
-      "(\005\022\023\n\013AKLAKDIDLBE\030\016 \001(\rB\033\n\031emu.grasscutt" +
+      "yPromoteRsp\022\023\n\013GDNPFIPFIOJ\030\001 \001(\r\022\035\n\025targ" +
+      "et_reliquary_guid\030\002 \001(\004\022\017\n\007retcode\030\014 \001(\005" +
+      "\022\023\n\013MCLHMKNEIKH\030\013 \001(\r\022\023\n\013FJJPDKBCGND\030\016 \003" +
+      "(\r\022\023\n\013JNPAMCBCIMC\030\007 \003(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1143,7 +1143,7 @@ public final class ReliquaryPromoteRspOuterClass {
     internal_static_ReliquaryPromoteRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReliquaryPromoteRsp_descriptor,
-        new java.lang.String[] { "TargetReliquaryGuid", "BDLCGNNPHLJ", "FPGACFGKCCK", "PHGKJLPHCBI", "Retcode", "AKLAKDIDLBE", });
+        new java.lang.String[] { "GDNPFIPFIOJ", "TargetReliquaryGuid", "Retcode", "MCLHMKNEIKH", "FJJPDKBCGND", "JNPAMCBCIMC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

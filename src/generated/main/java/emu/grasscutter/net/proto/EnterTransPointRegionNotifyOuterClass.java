@@ -25,15 +25,15 @@ public final class EnterTransPointRegionNotifyOuterClass {
     int getPointId();
 
     /**
-     * <code>uint32 scene_id = 11;</code>
+     * <code>uint32 scene_id = 12;</code>
      * @return The sceneId.
      */
     int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 275
-   * Name: LIDLBFDMGHA
+   * CmdId: 22064
+   * Obf: ECDCICGGBDA
    * </pre>
    *
    * Protobuf type {@code EnterTransPointRegionNotify}
@@ -85,7 +85,7 @@ public final class EnterTransPointRegionNotifyOuterClass {
               pointId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 96: {
 
               sceneId_ = input.readUInt32();
               break;
@@ -133,10 +133,10 @@ public final class EnterTransPointRegionNotifyOuterClass {
       return pointId_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 11;
+    public static final int SCENE_ID_FIELD_NUMBER = 12;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 11;</code>
+     * <code>uint32 scene_id = 12;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -162,7 +162,7 @@ public final class EnterTransPointRegionNotifyOuterClass {
         output.writeUInt32(5, pointId_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(11, sceneId_);
+        output.writeUInt32(12, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +179,7 @@ public final class EnterTransPointRegionNotifyOuterClass {
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, sceneId_);
+          .computeUInt32Size(12, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class EnterTransPointRegionNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 275
-     * Name: LIDLBFDMGHA
+     * CmdId: 22064
+     * Obf: ECDCICGGBDA
      * </pre>
      *
      * Protobuf type {@code EnterTransPointRegionNotify}
@@ -501,7 +501,7 @@ public final class EnterTransPointRegionNotifyOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 11;</code>
+       * <code>uint32 scene_id = 12;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class EnterTransPointRegionNotifyOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 11;</code>
+       * <code>uint32 scene_id = 12;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class EnterTransPointRegionNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 11;</code>
+       * <code>uint32 scene_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -598,7 +598,7 @@ public final class EnterTransPointRegionNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!EnterTransPointRegionNotify.proto\"A\n\033E" +
       "nterTransPointRegionNotify\022\020\n\010point_id\030\005" +
-      " \001(\r\022\020\n\010scene_id\030\013 \001(\rB\033\n\031emu.grasscutte" +
+      " \001(\r\022\020\n\010scene_id\030\014 \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

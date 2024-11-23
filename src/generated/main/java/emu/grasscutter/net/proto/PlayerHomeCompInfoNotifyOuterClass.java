@@ -35,8 +35,8 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4617
-   * Name: BFAIAEEOADP
+   * CmdId: 365
+   * Obf: JIGJFLJCOGP
    * </pre>
    *
    * Protobuf type {@code PlayerHomeCompInfoNotify}
@@ -316,8 +316,8 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4617
-     * Name: BFAIAEEOADP
+     * CmdId: 365
+     * Obf: JIGJFLJCOGP
      * </pre>
      *
      * Protobuf type {@code PlayerHomeCompInfoNotify}

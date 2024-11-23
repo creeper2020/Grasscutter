@@ -35,8 +35,8 @@ public final class WinterCampRecvItemNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8869
-   * Name: BFFJAMBLFHI
+   * CmdId: 23213
+   * Obf: LKKLNFAIADK
    * </pre>
    *
    * Protobuf type {@code WinterCampRecvItemNotify}
@@ -316,8 +316,8 @@ public final class WinterCampRecvItemNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8869
-     * Name: BFFJAMBLFHI
+     * CmdId: 23213
+     * Obf: LKKLNFAIADK
      * </pre>
      *
      * Protobuf type {@code WinterCampRecvItemNotify}

@@ -19,21 +19,21 @@ public final class GachaOpenWishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gachaScheduleId = 14;</code>
+     * <code>uint32 gachaScheduleId = 1;</code>
      * @return The gachaScheduleId.
      */
     int getGachaScheduleId();
 
     /**
-     * <code>uint32 gachaType = 2;</code>
+     * <code>uint32 gachaType = 15;</code>
      * @return The gachaType.
      */
     int getGachaType();
   }
   /**
    * <pre>
-   * CmdId: 1541
-   * Name: EHEPDPEIEHP
+   * CmdId: 24635
+   * Obf: OOFAKCOGPFK
    * </pre>
    *
    * Protobuf type {@code GachaOpenWishNotify}
@@ -80,14 +80,14 @@ public final class GachaOpenWishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              gachaType_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 8: {
 
               gachaScheduleId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              gachaType_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class GachaOpenWishNotifyOuterClass {
               emu.grasscutter.net.proto.GachaOpenWishNotifyOuterClass.GachaOpenWishNotify.class, emu.grasscutter.net.proto.GachaOpenWishNotifyOuterClass.GachaOpenWishNotify.Builder.class);
     }
 
-    public static final int GACHASCHEDULEID_FIELD_NUMBER = 14;
+    public static final int GACHASCHEDULEID_FIELD_NUMBER = 1;
     private int gachaScheduleId_;
     /**
-     * <code>uint32 gachaScheduleId = 14;</code>
+     * <code>uint32 gachaScheduleId = 1;</code>
      * @return The gachaScheduleId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class GachaOpenWishNotifyOuterClass {
       return gachaScheduleId_;
     }
 
-    public static final int GACHATYPE_FIELD_NUMBER = 2;
+    public static final int GACHATYPE_FIELD_NUMBER = 15;
     private int gachaType_;
     /**
-     * <code>uint32 gachaType = 2;</code>
+     * <code>uint32 gachaType = 15;</code>
      * @return The gachaType.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class GachaOpenWishNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gachaType_ != 0) {
-        output.writeUInt32(2, gachaType_);
-      }
       if (gachaScheduleId_ != 0) {
-        output.writeUInt32(14, gachaScheduleId_);
+        output.writeUInt32(1, gachaScheduleId_);
+      }
+      if (gachaType_ != 0) {
+        output.writeUInt32(15, gachaType_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class GachaOpenWishNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gachaType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, gachaType_);
-      }
       if (gachaScheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, gachaScheduleId_);
+          .computeUInt32Size(1, gachaScheduleId_);
+      }
+      if (gachaType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, gachaType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class GachaOpenWishNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1541
-     * Name: EHEPDPEIEHP
+     * CmdId: 24635
+     * Obf: OOFAKCOGPFK
      * </pre>
      *
      * Protobuf type {@code GachaOpenWishNotify}
@@ -470,7 +470,7 @@ public final class GachaOpenWishNotifyOuterClass {
 
       private int gachaScheduleId_ ;
       /**
-       * <code>uint32 gachaScheduleId = 14;</code>
+       * <code>uint32 gachaScheduleId = 1;</code>
        * @return The gachaScheduleId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class GachaOpenWishNotifyOuterClass {
         return gachaScheduleId_;
       }
       /**
-       * <code>uint32 gachaScheduleId = 14;</code>
+       * <code>uint32 gachaScheduleId = 1;</code>
        * @param value The gachaScheduleId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class GachaOpenWishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gachaScheduleId = 14;</code>
+       * <code>uint32 gachaScheduleId = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearGachaScheduleId() {
@@ -501,7 +501,7 @@ public final class GachaOpenWishNotifyOuterClass {
 
       private int gachaType_ ;
       /**
-       * <code>uint32 gachaType = 2;</code>
+       * <code>uint32 gachaType = 15;</code>
        * @return The gachaType.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class GachaOpenWishNotifyOuterClass {
         return gachaType_;
       }
       /**
-       * <code>uint32 gachaType = 2;</code>
+       * <code>uint32 gachaType = 15;</code>
        * @param value The gachaType to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class GachaOpenWishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gachaType = 2;</code>
+       * <code>uint32 gachaType = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearGachaType() {
@@ -597,8 +597,8 @@ public final class GachaOpenWishNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031GachaOpenWishNotify.proto\"A\n\023GachaOpen" +
-      "WishNotify\022\027\n\017gachaScheduleId\030\016 \001(\r\022\021\n\tg" +
-      "achaType\030\002 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "WishNotify\022\027\n\017gachaScheduleId\030\001 \001(\r\022\021\n\tg" +
+      "achaType\030\017 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

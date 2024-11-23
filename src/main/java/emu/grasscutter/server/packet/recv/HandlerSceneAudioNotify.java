@@ -1,11 +1,6 @@
-
 package emu.grasscutter.server.packet.recv;
 
-import javax.lang.model.type.TypeMirror;
-
-import emu.grasscutter.net.packet.Opcodes;
-import emu.grasscutter.net.packet.PacketHandler;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify;
 import emu.grasscutter.server.game.GameSession;
 import emu.grasscutter.server.packet.send.PacketSceneAudioNotify;
@@ -24,8 +19,9 @@ public class HandlerSceneAudioNotify extends PacketHandler {
         int type = notify.getType();
         List<Integer> param1 = notify.getParam1List();
 
-        session.getPlayer().getScene().broadcastPacket(new PacketSceneAudioNotify(sourceUid, param2, param3, type, param1));
+        session
+                .getPlayer()
+                .getScene()
+                .broadcastPacket(new PacketSceneAudioNotify(sourceUid, param2, param3, type, param1));
     }
-
 }
-

@@ -1,8 +1,7 @@
 package emu.grasscutter.server.packet.send;
 
 import emu.grasscutter.game.player.Player;
-import emu.grasscutter.net.packet.BasePacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.AvatarTeamAllDataNotifyOuterClass.AvatarTeamAllDataNotify;
 
 public class PacketAvatarTeamAllDataNotify extends BasePacket {
@@ -19,7 +18,10 @@ public class PacketAvatarTeamAllDataNotify extends BasePacket {
         }
 
         // Add the avatar lists for all the teams the player has.
-        player.getTeamManager().getTeams().forEach((id, teamInfo) -> proto.putAvatarTeamMap(id, teamInfo.toProto(player)));
+        player
+                .getTeamManager()
+                .getTeams()
+                .forEach((id, teamInfo) -> proto.putAvatarTeamMap(id, teamInfo.toProto(player)));
 
         this.setData(proto);
     }

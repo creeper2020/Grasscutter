@@ -19,20 +19,20 @@ public final class ArenaChallengeMonsterLevelOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 FCLFLMPGIKN = 4;</code>
-     * @return The fCLFLMPGIKN.
+     * <code>uint32 CCKGKFMEKKL = 7;</code>
+     * @return The cCKGKFMEKKL.
      */
-    int getFCLFLMPGIKN();
+    int getCCKGKFMEKKL();
 
     /**
-     * <code>uint32 GELFIDPMHLJ = 9;</code>
-     * @return The gELFIDPMHLJ.
+     * <code>uint32 OAHPACPBKJM = 9;</code>
+     * @return The oAHPACPBKJM.
      */
-    int getGELFIDPMHLJ();
+    int getOAHPACPBKJM();
   }
   /**
    * <pre>
-   * Name: OKLFPJCHPDD
+   * Obf: EABLJPHMFFJ
    * </pre>
    *
    * Protobuf type {@code ArenaChallengeMonsterLevel}
@@ -79,14 +79,14 @@ public final class ArenaChallengeMonsterLevelOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 56: {
 
-              fCLFLMPGIKN_ = input.readUInt32();
+              cCKGKFMEKKL_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              gELFIDPMHLJ_ = input.readUInt32();
+              oAHPACPBKJM_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +121,26 @@ public final class ArenaChallengeMonsterLevelOuterClass {
               emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.class, emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.Builder.class);
     }
 
-    public static final int FCLFLMPGIKN_FIELD_NUMBER = 4;
-    private int fCLFLMPGIKN_;
+    public static final int CCKGKFMEKKL_FIELD_NUMBER = 7;
+    private int cCKGKFMEKKL_;
     /**
-     * <code>uint32 FCLFLMPGIKN = 4;</code>
-     * @return The fCLFLMPGIKN.
+     * <code>uint32 CCKGKFMEKKL = 7;</code>
+     * @return The cCKGKFMEKKL.
      */
     @java.lang.Override
-    public int getFCLFLMPGIKN() {
-      return fCLFLMPGIKN_;
+    public int getCCKGKFMEKKL() {
+      return cCKGKFMEKKL_;
     }
 
-    public static final int GELFIDPMHLJ_FIELD_NUMBER = 9;
-    private int gELFIDPMHLJ_;
+    public static final int OAHPACPBKJM_FIELD_NUMBER = 9;
+    private int oAHPACPBKJM_;
     /**
-     * <code>uint32 GELFIDPMHLJ = 9;</code>
-     * @return The gELFIDPMHLJ.
+     * <code>uint32 OAHPACPBKJM = 9;</code>
+     * @return The oAHPACPBKJM.
      */
     @java.lang.Override
-    public int getGELFIDPMHLJ() {
-      return gELFIDPMHLJ_;
+    public int getOAHPACPBKJM() {
+      return oAHPACPBKJM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +157,11 @@ public final class ArenaChallengeMonsterLevelOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (fCLFLMPGIKN_ != 0) {
-        output.writeUInt32(4, fCLFLMPGIKN_);
+      if (cCKGKFMEKKL_ != 0) {
+        output.writeUInt32(7, cCKGKFMEKKL_);
       }
-      if (gELFIDPMHLJ_ != 0) {
-        output.writeUInt32(9, gELFIDPMHLJ_);
+      if (oAHPACPBKJM_ != 0) {
+        output.writeUInt32(9, oAHPACPBKJM_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class ArenaChallengeMonsterLevelOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (fCLFLMPGIKN_ != 0) {
+      if (cCKGKFMEKKL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, fCLFLMPGIKN_);
+          .computeUInt32Size(7, cCKGKFMEKKL_);
       }
-      if (gELFIDPMHLJ_ != 0) {
+      if (oAHPACPBKJM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, gELFIDPMHLJ_);
+          .computeUInt32Size(9, oAHPACPBKJM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class ArenaChallengeMonsterLevelOuterClass {
       }
       emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel other = (emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel) obj;
 
-      if (getFCLFLMPGIKN()
-          != other.getFCLFLMPGIKN()) return false;
-      if (getGELFIDPMHLJ()
-          != other.getGELFIDPMHLJ()) return false;
+      if (getCCKGKFMEKKL()
+          != other.getCCKGKFMEKKL()) return false;
+      if (getOAHPACPBKJM()
+          != other.getOAHPACPBKJM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +210,10 @@ public final class ArenaChallengeMonsterLevelOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FCLFLMPGIKN_FIELD_NUMBER;
-      hash = (53 * hash) + getFCLFLMPGIKN();
-      hash = (37 * hash) + GELFIDPMHLJ_FIELD_NUMBER;
-      hash = (53 * hash) + getGELFIDPMHLJ();
+      hash = (37 * hash) + CCKGKFMEKKL_FIELD_NUMBER;
+      hash = (53 * hash) + getCCKGKFMEKKL();
+      hash = (37 * hash) + OAHPACPBKJM_FIELD_NUMBER;
+      hash = (53 * hash) + getOAHPACPBKJM();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class ArenaChallengeMonsterLevelOuterClass {
     }
     /**
      * <pre>
-     * Name: OKLFPJCHPDD
+     * Obf: EABLJPHMFFJ
      * </pre>
      *
      * Protobuf type {@code ArenaChallengeMonsterLevel}
@@ -351,9 +351,9 @@ public final class ArenaChallengeMonsterLevelOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fCLFLMPGIKN_ = 0;
+        cCKGKFMEKKL_ = 0;
 
-        gELFIDPMHLJ_ = 0;
+        oAHPACPBKJM_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class ArenaChallengeMonsterLevelOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel buildPartial() {
         emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel result = new emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel(this);
-        result.fCLFLMPGIKN_ = fCLFLMPGIKN_;
-        result.gELFIDPMHLJ_ = gELFIDPMHLJ_;
+        result.cCKGKFMEKKL_ = cCKGKFMEKKL_;
+        result.oAHPACPBKJM_ = oAHPACPBKJM_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class ArenaChallengeMonsterLevelOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel other) {
         if (other == emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.getDefaultInstance()) return this;
-        if (other.getFCLFLMPGIKN() != 0) {
-          setFCLFLMPGIKN(other.getFCLFLMPGIKN());
+        if (other.getCCKGKFMEKKL() != 0) {
+          setCCKGKFMEKKL(other.getCCKGKFMEKKL());
         }
-        if (other.getGELFIDPMHLJ() != 0) {
-          setGELFIDPMHLJ(other.getGELFIDPMHLJ());
+        if (other.getOAHPACPBKJM() != 0) {
+          setOAHPACPBKJM(other.getOAHPACPBKJM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,64 +466,64 @@ public final class ArenaChallengeMonsterLevelOuterClass {
         return this;
       }
 
-      private int fCLFLMPGIKN_ ;
+      private int cCKGKFMEKKL_ ;
       /**
-       * <code>uint32 FCLFLMPGIKN = 4;</code>
-       * @return The fCLFLMPGIKN.
+       * <code>uint32 CCKGKFMEKKL = 7;</code>
+       * @return The cCKGKFMEKKL.
        */
       @java.lang.Override
-      public int getFCLFLMPGIKN() {
-        return fCLFLMPGIKN_;
+      public int getCCKGKFMEKKL() {
+        return cCKGKFMEKKL_;
       }
       /**
-       * <code>uint32 FCLFLMPGIKN = 4;</code>
-       * @param value The fCLFLMPGIKN to set.
+       * <code>uint32 CCKGKFMEKKL = 7;</code>
+       * @param value The cCKGKFMEKKL to set.
        * @return This builder for chaining.
        */
-      public Builder setFCLFLMPGIKN(int value) {
+      public Builder setCCKGKFMEKKL(int value) {
         
-        fCLFLMPGIKN_ = value;
+        cCKGKFMEKKL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FCLFLMPGIKN = 4;</code>
+       * <code>uint32 CCKGKFMEKKL = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFCLFLMPGIKN() {
+      public Builder clearCCKGKFMEKKL() {
         
-        fCLFLMPGIKN_ = 0;
+        cCKGKFMEKKL_ = 0;
         onChanged();
         return this;
       }
 
-      private int gELFIDPMHLJ_ ;
+      private int oAHPACPBKJM_ ;
       /**
-       * <code>uint32 GELFIDPMHLJ = 9;</code>
-       * @return The gELFIDPMHLJ.
+       * <code>uint32 OAHPACPBKJM = 9;</code>
+       * @return The oAHPACPBKJM.
        */
       @java.lang.Override
-      public int getGELFIDPMHLJ() {
-        return gELFIDPMHLJ_;
+      public int getOAHPACPBKJM() {
+        return oAHPACPBKJM_;
       }
       /**
-       * <code>uint32 GELFIDPMHLJ = 9;</code>
-       * @param value The gELFIDPMHLJ to set.
+       * <code>uint32 OAHPACPBKJM = 9;</code>
+       * @param value The oAHPACPBKJM to set.
        * @return This builder for chaining.
        */
-      public Builder setGELFIDPMHLJ(int value) {
+      public Builder setOAHPACPBKJM(int value) {
         
-        gELFIDPMHLJ_ = value;
+        oAHPACPBKJM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GELFIDPMHLJ = 9;</code>
+       * <code>uint32 OAHPACPBKJM = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGELFIDPMHLJ() {
+      public Builder clearOAHPACPBKJM() {
         
-        gELFIDPMHLJ_ = 0;
+        oAHPACPBKJM_ = 0;
         onChanged();
         return this;
       }
@@ -595,8 +595,8 @@ public final class ArenaChallengeMonsterLevelOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ArenaChallengeMonsterLevel.proto\"F\n\032Ar" +
-      "enaChallengeMonsterLevel\022\023\n\013FCLFLMPGIKN\030" +
-      "\004 \001(\r\022\023\n\013GELFIDPMHLJ\030\t \001(\rB\033\n\031emu.grassc" +
+      "enaChallengeMonsterLevel\022\023\n\013CCKGKFMEKKL\030" +
+      "\007 \001(\r\022\023\n\013OAHPACPBKJM\030\t \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +608,7 @@ public final class ArenaChallengeMonsterLevelOuterClass {
     internal_static_ArenaChallengeMonsterLevel_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ArenaChallengeMonsterLevel_descriptor,
-        new java.lang.String[] { "FCLFLMPGIKN", "GELFIDPMHLJ", });
+        new java.lang.String[] { "CCKGKFMEKKL", "OAHPACPBKJM", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,37 +19,37 @@ public final class CharAmusementAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 avatar_id_list = 3;</code>
-     * @return A list containing the avatarIdList.
-     */
-    java.util.List<java.lang.Integer> getAvatarIdListList();
-    /**
-     * <code>repeated uint32 avatar_id_list = 3;</code>
-     * @return The count of avatarIdList.
-     */
-    int getAvatarIdListCount();
-    /**
-     * <code>repeated uint32 avatar_id_list = 3;</code>
-     * @param index The index of the element to return.
-     * @return The avatarIdList at the given index.
-     */
-    int getAvatarIdList(int index);
-
-    /**
-     * <code>uint32 punish_time = 11;</code>
+     * <code>uint32 punish_time = 8;</code>
      * @return The punishTime.
      */
     int getPunishTime();
 
     /**
-     * <code>uint32 uid = 8;</code>
+     * <code>uint32 uid = 3;</code>
      * @return The uid.
      */
     int getUid();
+
+    /**
+     * <code>repeated uint32 avatar_id_list = 12;</code>
+     * @return A list containing the avatarIdList.
+     */
+    java.util.List<java.lang.Integer> getAvatarIdListList();
+    /**
+     * <code>repeated uint32 avatar_id_list = 12;</code>
+     * @return The count of avatarIdList.
+     */
+    int getAvatarIdListCount();
+    /**
+     * <code>repeated uint32 avatar_id_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The avatarIdList at the given index.
+     */
+    int getAvatarIdList(int index);
   }
   /**
    * <pre>
-   * Name: KEBACJLDGHN
+   * Obf: CLGMCBNFGLM
    * </pre>
    *
    * Protobuf type {@code CharAmusementAvatarInfo}
@@ -99,6 +99,16 @@ public final class CharAmusementAvatarInfoOuterClass {
               done = true;
               break;
             case 24: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              punishTime_ = input.readUInt32();
+              break;
+            }
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +116,7 @@ public final class CharAmusementAvatarInfoOuterClass {
               avatarIdList_.addInt(input.readUInt32());
               break;
             }
-            case 26: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -117,16 +127,6 @@ public final class CharAmusementAvatarInfoOuterClass {
                 avatarIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 64: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              punishTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -164,10 +164,32 @@ public final class CharAmusementAvatarInfoOuterClass {
               emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.class, emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.Builder.class);
     }
 
-    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 3;
+    public static final int PUNISH_TIME_FIELD_NUMBER = 8;
+    private int punishTime_;
+    /**
+     * <code>uint32 punish_time = 8;</code>
+     * @return The punishTime.
+     */
+    @java.lang.Override
+    public int getPunishTime() {
+      return punishTime_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 3;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 3;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList avatarIdList_;
     /**
-     * <code>repeated uint32 avatar_id_list = 3;</code>
+     * <code>repeated uint32 avatar_id_list = 12;</code>
      * @return A list containing the avatarIdList.
      */
     @java.lang.Override
@@ -176,14 +198,14 @@ public final class CharAmusementAvatarInfoOuterClass {
       return avatarIdList_;
     }
     /**
-     * <code>repeated uint32 avatar_id_list = 3;</code>
+     * <code>repeated uint32 avatar_id_list = 12;</code>
      * @return The count of avatarIdList.
      */
     public int getAvatarIdListCount() {
       return avatarIdList_.size();
     }
     /**
-     * <code>repeated uint32 avatar_id_list = 3;</code>
+     * <code>repeated uint32 avatar_id_list = 12;</code>
      * @param index The index of the element to return.
      * @return The avatarIdList at the given index.
      */
@@ -191,28 +213,6 @@ public final class CharAmusementAvatarInfoOuterClass {
       return avatarIdList_.getInt(index);
     }
     private int avatarIdListMemoizedSerializedSize = -1;
-
-    public static final int PUNISH_TIME_FIELD_NUMBER = 11;
-    private int punishTime_;
-    /**
-     * <code>uint32 punish_time = 11;</code>
-     * @return The punishTime.
-     */
-    @java.lang.Override
-    public int getPunishTime() {
-      return punishTime_;
-    }
-
-    public static final int UID_FIELD_NUMBER = 8;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 8;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -229,18 +229,18 @@ public final class CharAmusementAvatarInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (uid_ != 0) {
+        output.writeUInt32(3, uid_);
+      }
+      if (punishTime_ != 0) {
+        output.writeUInt32(8, punishTime_);
+      }
       if (getAvatarIdListList().size() > 0) {
-        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(avatarIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarIdList_.size(); i++) {
         output.writeUInt32NoTag(avatarIdList_.getInt(i));
-      }
-      if (uid_ != 0) {
-        output.writeUInt32(8, uid_);
-      }
-      if (punishTime_ != 0) {
-        output.writeUInt32(11, punishTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -251,6 +251,14 @@ public final class CharAmusementAvatarInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, uid_);
+      }
+      if (punishTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, punishTime_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < avatarIdList_.size(); i++) {
@@ -264,14 +272,6 @@ public final class CharAmusementAvatarInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         avatarIdListMemoizedSerializedSize = dataSize;
-      }
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, uid_);
-      }
-      if (punishTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, punishTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -288,12 +288,12 @@ public final class CharAmusementAvatarInfoOuterClass {
       }
       emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo other = (emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo) obj;
 
-      if (!getAvatarIdListList()
-          .equals(other.getAvatarIdListList())) return false;
       if (getPunishTime()
           != other.getPunishTime()) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (!getAvatarIdListList()
+          .equals(other.getAvatarIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -305,14 +305,14 @@ public final class CharAmusementAvatarInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getAvatarIdListCount() > 0) {
-        hash = (37 * hash) + AVATAR_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getAvatarIdListList().hashCode();
-      }
       hash = (37 * hash) + PUNISH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getPunishTime();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      if (getAvatarIdListCount() > 0) {
+        hash = (37 * hash) + AVATAR_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getAvatarIdListList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,7 +410,7 @@ public final class CharAmusementAvatarInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: KEBACJLDGHN
+     * Obf: CLGMCBNFGLM
      * </pre>
      *
      * Protobuf type {@code CharAmusementAvatarInfo}
@@ -450,12 +450,12 @@ public final class CharAmusementAvatarInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        avatarIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         punishTime_ = 0;
 
         uid_ = 0;
 
+        avatarIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -483,13 +483,13 @@ public final class CharAmusementAvatarInfoOuterClass {
       public emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo result = new emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo(this);
         int from_bitField0_ = bitField0_;
+        result.punishTime_ = punishTime_;
+        result.uid_ = uid_;
         if (((bitField0_ & 0x00000001) != 0)) {
           avatarIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.avatarIdList_ = avatarIdList_;
-        result.punishTime_ = punishTime_;
-        result.uid_ = uid_;
         onBuilt();
         return result;
       }
@@ -538,6 +538,12 @@ public final class CharAmusementAvatarInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo other) {
         if (other == emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.getDefaultInstance()) return this;
+        if (other.getPunishTime() != 0) {
+          setPunishTime(other.getPunishTime());
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
         if (!other.avatarIdList_.isEmpty()) {
           if (avatarIdList_.isEmpty()) {
             avatarIdList_ = other.avatarIdList_;
@@ -547,12 +553,6 @@ public final class CharAmusementAvatarInfoOuterClass {
             avatarIdList_.addAll(other.avatarIdList_);
           }
           onChanged();
-        }
-        if (other.getPunishTime() != 0) {
-          setPunishTime(other.getPunishTime());
-        }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -584,6 +584,68 @@ public final class CharAmusementAvatarInfoOuterClass {
       }
       private int bitField0_;
 
+      private int punishTime_ ;
+      /**
+       * <code>uint32 punish_time = 8;</code>
+       * @return The punishTime.
+       */
+      @java.lang.Override
+      public int getPunishTime() {
+        return punishTime_;
+      }
+      /**
+       * <code>uint32 punish_time = 8;</code>
+       * @param value The punishTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPunishTime(int value) {
+        
+        punishTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 punish_time = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPunishTime() {
+        
+        punishTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 3;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 3;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList avatarIdList_ = emptyIntList();
       private void ensureAvatarIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -592,7 +654,7 @@ public final class CharAmusementAvatarInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 3;</code>
+       * <code>repeated uint32 avatar_id_list = 12;</code>
        * @return A list containing the avatarIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -601,14 +663,14 @@ public final class CharAmusementAvatarInfoOuterClass {
                  java.util.Collections.unmodifiableList(avatarIdList_) : avatarIdList_;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 3;</code>
+       * <code>repeated uint32 avatar_id_list = 12;</code>
        * @return The count of avatarIdList.
        */
       public int getAvatarIdListCount() {
         return avatarIdList_.size();
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 3;</code>
+       * <code>repeated uint32 avatar_id_list = 12;</code>
        * @param index The index of the element to return.
        * @return The avatarIdList at the given index.
        */
@@ -616,7 +678,7 @@ public final class CharAmusementAvatarInfoOuterClass {
         return avatarIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 3;</code>
+       * <code>repeated uint32 avatar_id_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The avatarIdList to set.
        * @return This builder for chaining.
@@ -629,7 +691,7 @@ public final class CharAmusementAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 3;</code>
+       * <code>repeated uint32 avatar_id_list = 12;</code>
        * @param value The avatarIdList to add.
        * @return This builder for chaining.
        */
@@ -640,7 +702,7 @@ public final class CharAmusementAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 3;</code>
+       * <code>repeated uint32 avatar_id_list = 12;</code>
        * @param values The avatarIdList to add.
        * @return This builder for chaining.
        */
@@ -653,74 +715,12 @@ public final class CharAmusementAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 3;</code>
+       * <code>repeated uint32 avatar_id_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarIdList() {
         avatarIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int punishTime_ ;
-      /**
-       * <code>uint32 punish_time = 11;</code>
-       * @return The punishTime.
-       */
-      @java.lang.Override
-      public int getPunishTime() {
-        return punishTime_;
-      }
-      /**
-       * <code>uint32 punish_time = 11;</code>
-       * @param value The punishTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPunishTime(int value) {
-        
-        punishTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 punish_time = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPunishTime() {
-        
-        punishTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
         onChanged();
         return this;
       }
@@ -792,8 +792,8 @@ public final class CharAmusementAvatarInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035CharAmusementAvatarInfo.proto\"S\n\027CharA" +
-      "musementAvatarInfo\022\026\n\016avatar_id_list\030\003 \003" +
-      "(\r\022\023\n\013punish_time\030\013 \001(\r\022\013\n\003uid\030\010 \001(\rB\033\n\031" +
+      "musementAvatarInfo\022\023\n\013punish_time\030\010 \001(\r\022" +
+      "\013\n\003uid\030\003 \001(\r\022\026\n\016avatar_id_list\030\014 \003(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -805,7 +805,7 @@ public final class CharAmusementAvatarInfoOuterClass {
     internal_static_CharAmusementAvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CharAmusementAvatarInfo_descriptor,
-        new java.lang.String[] { "AvatarIdList", "PunishTime", "Uid", });
+        new java.lang.String[] { "PunishTime", "Uid", "AvatarIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

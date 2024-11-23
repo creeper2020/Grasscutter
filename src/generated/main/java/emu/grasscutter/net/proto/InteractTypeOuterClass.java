@@ -16,7 +16,7 @@ public final class InteractTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: JJNNDFMMKMA
+   * Obf: MMHNBMOLJBI
    * </pre>
    *
    * Protobuf enum {@code InteractType}

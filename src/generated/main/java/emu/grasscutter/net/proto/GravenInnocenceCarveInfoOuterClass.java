@@ -19,55 +19,55 @@ public final class GravenInnocenceCarveInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 can_edit_count = 1;</code>
+     * <code>uint32 can_edit_count = 8;</code>
      * @return The canEditCount.
      */
     int getCanEditCount();
 
     /**
-     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo> 
-        getStageInfoListList();
-    /**
-     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
-     */
-    emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo getStageInfoList(int index);
-    /**
-     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
-     */
-    int getStageInfoListCount();
-    /**
-     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder> 
-        getStageInfoListOrBuilderList();
-    /**
-     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
-     */
-    emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder getStageInfoListOrBuilder(
-        int index);
-
-    /**
-     * <code>repeated uint32 has_edit_config_id_list = 10;</code>
+     * <code>repeated uint32 has_edit_config_id_list = 13;</code>
      * @return A list containing the hasEditConfigIdList.
      */
     java.util.List<java.lang.Integer> getHasEditConfigIdListList();
     /**
-     * <code>repeated uint32 has_edit_config_id_list = 10;</code>
+     * <code>repeated uint32 has_edit_config_id_list = 13;</code>
      * @return The count of hasEditConfigIdList.
      */
     int getHasEditConfigIdListCount();
     /**
-     * <code>repeated uint32 has_edit_config_id_list = 10;</code>
+     * <code>repeated uint32 has_edit_config_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The hasEditConfigIdList at the given index.
      */
     int getHasEditConfigIdList(int index);
+
+    /**
+     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo> 
+        getStageInfoListList();
+    /**
+     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
+     */
+    emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo getStageInfoList(int index);
+    /**
+     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
+     */
+    int getStageInfoListCount();
+    /**
+     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder> 
+        getStageInfoListOrBuilderList();
+    /**
+     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
+     */
+    emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder getStageInfoListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * Name: DFKIFLPKDBK
+   * Obf: AGMFABMFAOF
    * </pre>
    *
    * Protobuf type {@code GravenInnocenceCarveInfo}
@@ -82,8 +82,8 @@ public final class GravenInnocenceCarveInfoOuterClass {
       super(builder);
     }
     private GravenInnocenceCarveInfo() {
-      stageInfoList_ = java.util.Collections.emptyList();
       hasEditConfigIdList_ = emptyIntList();
+      stageInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -117,34 +117,34 @@ public final class GravenInnocenceCarveInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
 
               canEditCount_ = input.readUInt32();
               break;
             }
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               stageInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.parser(), extensionRegistry));
               break;
             }
-            case 80: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 104: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 hasEditConfigIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               hasEditConfigIdList_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 hasEditConfigIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 hasEditConfigIdList_.addInt(input.readUInt32());
@@ -167,10 +167,10 @@ public final class GravenInnocenceCarveInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           stageInfoList_ = java.util.Collections.unmodifiableList(stageInfoList_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           hasEditConfigIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -190,10 +190,10 @@ public final class GravenInnocenceCarveInfoOuterClass {
               emu.grasscutter.net.proto.GravenInnocenceCarveInfoOuterClass.GravenInnocenceCarveInfo.class, emu.grasscutter.net.proto.GravenInnocenceCarveInfoOuterClass.GravenInnocenceCarveInfo.Builder.class);
     }
 
-    public static final int CAN_EDIT_COUNT_FIELD_NUMBER = 1;
+    public static final int CAN_EDIT_COUNT_FIELD_NUMBER = 8;
     private int canEditCount_;
     /**
-     * <code>uint32 can_edit_count = 1;</code>
+     * <code>uint32 can_edit_count = 8;</code>
      * @return The canEditCount.
      */
     @java.lang.Override
@@ -201,50 +201,10 @@ public final class GravenInnocenceCarveInfoOuterClass {
       return canEditCount_;
     }
 
-    public static final int STAGE_INFO_LIST_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo> stageInfoList_;
-    /**
-     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo> getStageInfoListList() {
-      return stageInfoList_;
-    }
-    /**
-     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder> 
-        getStageInfoListOrBuilderList() {
-      return stageInfoList_;
-    }
-    /**
-     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public int getStageInfoListCount() {
-      return stageInfoList_.size();
-    }
-    /**
-     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo getStageInfoList(int index) {
-      return stageInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder getStageInfoListOrBuilder(
-        int index) {
-      return stageInfoList_.get(index);
-    }
-
-    public static final int HAS_EDIT_CONFIG_ID_LIST_FIELD_NUMBER = 10;
+    public static final int HAS_EDIT_CONFIG_ID_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList hasEditConfigIdList_;
     /**
-     * <code>repeated uint32 has_edit_config_id_list = 10;</code>
+     * <code>repeated uint32 has_edit_config_id_list = 13;</code>
      * @return A list containing the hasEditConfigIdList.
      */
     @java.lang.Override
@@ -253,14 +213,14 @@ public final class GravenInnocenceCarveInfoOuterClass {
       return hasEditConfigIdList_;
     }
     /**
-     * <code>repeated uint32 has_edit_config_id_list = 10;</code>
+     * <code>repeated uint32 has_edit_config_id_list = 13;</code>
      * @return The count of hasEditConfigIdList.
      */
     public int getHasEditConfigIdListCount() {
       return hasEditConfigIdList_.size();
     }
     /**
-     * <code>repeated uint32 has_edit_config_id_list = 10;</code>
+     * <code>repeated uint32 has_edit_config_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The hasEditConfigIdList at the given index.
      */
@@ -268,6 +228,46 @@ public final class GravenInnocenceCarveInfoOuterClass {
       return hasEditConfigIdList_.getInt(index);
     }
     private int hasEditConfigIdListMemoizedSerializedSize = -1;
+
+    public static final int STAGE_INFO_LIST_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo> stageInfoList_;
+    /**
+     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo> getStageInfoListList() {
+      return stageInfoList_;
+    }
+    /**
+     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder> 
+        getStageInfoListOrBuilderList() {
+      return stageInfoList_;
+    }
+    /**
+     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public int getStageInfoListCount() {
+      return stageInfoList_.size();
+    }
+    /**
+     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo getStageInfoList(int index) {
+      return stageInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder getStageInfoListOrBuilder(
+        int index) {
+      return stageInfoList_.get(index);
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -285,13 +285,13 @@ public final class GravenInnocenceCarveInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (canEditCount_ != 0) {
-        output.writeUInt32(1, canEditCount_);
+        output.writeUInt32(8, canEditCount_);
       }
       for (int i = 0; i < stageInfoList_.size(); i++) {
-        output.writeMessage(7, stageInfoList_.get(i));
+        output.writeMessage(12, stageInfoList_.get(i));
       }
       if (getHasEditConfigIdListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(hasEditConfigIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < hasEditConfigIdList_.size(); i++) {
@@ -308,11 +308,11 @@ public final class GravenInnocenceCarveInfoOuterClass {
       size = 0;
       if (canEditCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, canEditCount_);
+          .computeUInt32Size(8, canEditCount_);
       }
       for (int i = 0; i < stageInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, stageInfoList_.get(i));
+          .computeMessageSize(12, stageInfoList_.get(i));
       }
       {
         int dataSize = 0;
@@ -345,10 +345,10 @@ public final class GravenInnocenceCarveInfoOuterClass {
 
       if (getCanEditCount()
           != other.getCanEditCount()) return false;
-      if (!getStageInfoListList()
-          .equals(other.getStageInfoListList())) return false;
       if (!getHasEditConfigIdListList()
           .equals(other.getHasEditConfigIdListList())) return false;
+      if (!getStageInfoListList()
+          .equals(other.getStageInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -362,13 +362,13 @@ public final class GravenInnocenceCarveInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CAN_EDIT_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getCanEditCount();
-      if (getStageInfoListCount() > 0) {
-        hash = (37 * hash) + STAGE_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getStageInfoListList().hashCode();
-      }
       if (getHasEditConfigIdListCount() > 0) {
         hash = (37 * hash) + HAS_EDIT_CONFIG_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getHasEditConfigIdListList().hashCode();
+      }
+      if (getStageInfoListCount() > 0) {
+        hash = (37 * hash) + STAGE_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getStageInfoListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -467,7 +467,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: DFKIFLPKDBK
+     * Obf: AGMFABMFAOF
      * </pre>
      *
      * Protobuf type {@code GravenInnocenceCarveInfo}
@@ -510,14 +510,14 @@ public final class GravenInnocenceCarveInfoOuterClass {
         super.clear();
         canEditCount_ = 0;
 
+        hasEditConfigIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         if (stageInfoListBuilder_ == null) {
           stageInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           stageInfoListBuilder_.clear();
         }
-        hasEditConfigIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -546,20 +546,20 @@ public final class GravenInnocenceCarveInfoOuterClass {
         emu.grasscutter.net.proto.GravenInnocenceCarveInfoOuterClass.GravenInnocenceCarveInfo result = new emu.grasscutter.net.proto.GravenInnocenceCarveInfoOuterClass.GravenInnocenceCarveInfo(this);
         int from_bitField0_ = bitField0_;
         result.canEditCount_ = canEditCount_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          hasEditConfigIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.hasEditConfigIdList_ = hasEditConfigIdList_;
         if (stageInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             stageInfoList_ = java.util.Collections.unmodifiableList(stageInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.stageInfoList_ = stageInfoList_;
         } else {
           result.stageInfoList_ = stageInfoListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000002) != 0)) {
-          hasEditConfigIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.hasEditConfigIdList_ = hasEditConfigIdList_;
         onBuilt();
         return result;
       }
@@ -611,11 +611,21 @@ public final class GravenInnocenceCarveInfoOuterClass {
         if (other.getCanEditCount() != 0) {
           setCanEditCount(other.getCanEditCount());
         }
+        if (!other.hasEditConfigIdList_.isEmpty()) {
+          if (hasEditConfigIdList_.isEmpty()) {
+            hasEditConfigIdList_ = other.hasEditConfigIdList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureHasEditConfigIdListIsMutable();
+            hasEditConfigIdList_.addAll(other.hasEditConfigIdList_);
+          }
+          onChanged();
+        }
         if (stageInfoListBuilder_ == null) {
           if (!other.stageInfoList_.isEmpty()) {
             if (stageInfoList_.isEmpty()) {
               stageInfoList_ = other.stageInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureStageInfoListIsMutable();
               stageInfoList_.addAll(other.stageInfoList_);
@@ -628,7 +638,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
               stageInfoListBuilder_.dispose();
               stageInfoListBuilder_ = null;
               stageInfoList_ = other.stageInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               stageInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getStageInfoListFieldBuilder() : null;
@@ -636,16 +646,6 @@ public final class GravenInnocenceCarveInfoOuterClass {
               stageInfoListBuilder_.addAllMessages(other.stageInfoList_);
             }
           }
-        }
-        if (!other.hasEditConfigIdList_.isEmpty()) {
-          if (hasEditConfigIdList_.isEmpty()) {
-            hasEditConfigIdList_ = other.hasEditConfigIdList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureHasEditConfigIdListIsMutable();
-            hasEditConfigIdList_.addAll(other.hasEditConfigIdList_);
-          }
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -679,7 +679,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
 
       private int canEditCount_ ;
       /**
-       * <code>uint32 can_edit_count = 1;</code>
+       * <code>uint32 can_edit_count = 8;</code>
        * @return The canEditCount.
        */
       @java.lang.Override
@@ -687,7 +687,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return canEditCount_;
       }
       /**
-       * <code>uint32 can_edit_count = 1;</code>
+       * <code>uint32 can_edit_count = 8;</code>
        * @param value The canEditCount to set.
        * @return This builder for chaining.
        */
@@ -698,7 +698,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 can_edit_count = 1;</code>
+       * <code>uint32 can_edit_count = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCanEditCount() {
@@ -708,12 +708,91 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
 
+      private com.google.protobuf.Internal.IntList hasEditConfigIdList_ = emptyIntList();
+      private void ensureHasEditConfigIdListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          hasEditConfigIdList_ = mutableCopy(hasEditConfigIdList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 has_edit_config_id_list = 13;</code>
+       * @return A list containing the hasEditConfigIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getHasEditConfigIdListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(hasEditConfigIdList_) : hasEditConfigIdList_;
+      }
+      /**
+       * <code>repeated uint32 has_edit_config_id_list = 13;</code>
+       * @return The count of hasEditConfigIdList.
+       */
+      public int getHasEditConfigIdListCount() {
+        return hasEditConfigIdList_.size();
+      }
+      /**
+       * <code>repeated uint32 has_edit_config_id_list = 13;</code>
+       * @param index The index of the element to return.
+       * @return The hasEditConfigIdList at the given index.
+       */
+      public int getHasEditConfigIdList(int index) {
+        return hasEditConfigIdList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 has_edit_config_id_list = 13;</code>
+       * @param index The index to set the value at.
+       * @param value The hasEditConfigIdList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHasEditConfigIdList(
+          int index, int value) {
+        ensureHasEditConfigIdListIsMutable();
+        hasEditConfigIdList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 has_edit_config_id_list = 13;</code>
+       * @param value The hasEditConfigIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addHasEditConfigIdList(int value) {
+        ensureHasEditConfigIdListIsMutable();
+        hasEditConfigIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 has_edit_config_id_list = 13;</code>
+       * @param values The hasEditConfigIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllHasEditConfigIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureHasEditConfigIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, hasEditConfigIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 has_edit_config_id_list = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHasEditConfigIdList() {
+        hasEditConfigIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo> stageInfoList_ =
         java.util.Collections.emptyList();
       private void ensureStageInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo>(stageInfoList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -721,7 +800,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
           emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo, emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder> stageInfoListBuilder_;
 
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo> getStageInfoListList() {
         if (stageInfoListBuilder_ == null) {
@@ -731,7 +810,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public int getStageInfoListCount() {
         if (stageInfoListBuilder_ == null) {
@@ -741,7 +820,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo getStageInfoList(int index) {
         if (stageInfoListBuilder_ == null) {
@@ -751,7 +830,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public Builder setStageInfoList(
           int index, emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo value) {
@@ -768,7 +847,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public Builder setStageInfoList(
           int index, emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.Builder builderForValue) {
@@ -782,7 +861,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public Builder addStageInfoList(emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo value) {
         if (stageInfoListBuilder_ == null) {
@@ -798,7 +877,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public Builder addStageInfoList(
           int index, emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo value) {
@@ -815,7 +894,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public Builder addStageInfoList(
           emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.Builder builderForValue) {
@@ -829,7 +908,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public Builder addStageInfoList(
           int index, emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.Builder builderForValue) {
@@ -843,7 +922,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public Builder addAllStageInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo> values) {
@@ -858,12 +937,12 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public Builder clearStageInfoList() {
         if (stageInfoListBuilder_ == null) {
           stageInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           stageInfoListBuilder_.clear();
@@ -871,7 +950,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public Builder removeStageInfoList(int index) {
         if (stageInfoListBuilder_ == null) {
@@ -884,14 +963,14 @@ public final class GravenInnocenceCarveInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.Builder getStageInfoListBuilder(
           int index) {
         return getStageInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder getStageInfoListOrBuilder(
           int index) {
@@ -901,7 +980,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder> 
            getStageInfoListOrBuilderList() {
@@ -912,14 +991,14 @@ public final class GravenInnocenceCarveInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.Builder addStageInfoListBuilder() {
         return getStageInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.Builder addStageInfoListBuilder(
           int index) {
@@ -927,7 +1006,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
             index, emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 7;</code>
+       * <code>repeated .GravenInnocenceCarveStageInfo stage_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.Builder> 
            getStageInfoListBuilderList() {
@@ -940,91 +1019,12 @@ public final class GravenInnocenceCarveInfoOuterClass {
           stageInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo, emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.GravenInnocenceCarveStageInfoOrBuilder>(
                   stageInfoList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           stageInfoList_ = null;
         }
         return stageInfoListBuilder_;
-      }
-
-      private com.google.protobuf.Internal.IntList hasEditConfigIdList_ = emptyIntList();
-      private void ensureHasEditConfigIdListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          hasEditConfigIdList_ = mutableCopy(hasEditConfigIdList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 has_edit_config_id_list = 10;</code>
-       * @return A list containing the hasEditConfigIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getHasEditConfigIdListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(hasEditConfigIdList_) : hasEditConfigIdList_;
-      }
-      /**
-       * <code>repeated uint32 has_edit_config_id_list = 10;</code>
-       * @return The count of hasEditConfigIdList.
-       */
-      public int getHasEditConfigIdListCount() {
-        return hasEditConfigIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 has_edit_config_id_list = 10;</code>
-       * @param index The index of the element to return.
-       * @return The hasEditConfigIdList at the given index.
-       */
-      public int getHasEditConfigIdList(int index) {
-        return hasEditConfigIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 has_edit_config_id_list = 10;</code>
-       * @param index The index to set the value at.
-       * @param value The hasEditConfigIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHasEditConfigIdList(
-          int index, int value) {
-        ensureHasEditConfigIdListIsMutable();
-        hasEditConfigIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 has_edit_config_id_list = 10;</code>
-       * @param value The hasEditConfigIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addHasEditConfigIdList(int value) {
-        ensureHasEditConfigIdListIsMutable();
-        hasEditConfigIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 has_edit_config_id_list = 10;</code>
-       * @param values The hasEditConfigIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllHasEditConfigIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureHasEditConfigIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, hasEditConfigIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 has_edit_config_id_list = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHasEditConfigIdList() {
-        hasEditConfigIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1095,10 +1095,10 @@ public final class GravenInnocenceCarveInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036GravenInnocenceCarveInfo.proto\032#Graven" +
       "InnocenceCarveStageInfo.proto\"\214\001\n\030Graven" +
-      "InnocenceCarveInfo\022\026\n\016can_edit_count\030\001 \001" +
-      "(\r\0227\n\017stage_info_list\030\007 \003(\0132\036.GravenInno" +
-      "cenceCarveStageInfo\022\037\n\027has_edit_config_i" +
-      "d_list\030\n \003(\rB\033\n\031emu.grasscutter.net.prot" +
+      "InnocenceCarveInfo\022\026\n\016can_edit_count\030\010 \001" +
+      "(\r\022\037\n\027has_edit_config_id_list\030\r \003(\r\0227\n\017s" +
+      "tage_info_list\030\014 \003(\0132\036.GravenInnocenceCa" +
+      "rveStageInfoB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1111,7 +1111,7 @@ public final class GravenInnocenceCarveInfoOuterClass {
     internal_static_GravenInnocenceCarveInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GravenInnocenceCarveInfo_descriptor,
-        new java.lang.String[] { "CanEditCount", "StageInfoList", "HasEditConfigIdList", });
+        new java.lang.String[] { "CanEditCount", "HasEditConfigIdList", "StageInfoList", });
     emu.grasscutter.net.proto.GravenInnocenceCarveStageInfoOuterClass.getDescriptor();
   }
 

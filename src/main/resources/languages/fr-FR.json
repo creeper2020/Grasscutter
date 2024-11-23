@@ -63,7 +63,10 @@
       "game_version": "Version du jeu: %s",
       "resources": {
         "loading": "Chargement des ressources...",
-        "finish": "Chargement des ressources terminé."
+        "finish": "Chargement des ressources terminé.",
+        "custom": "Obtenez des ressources additionelles à: 'Anime-Game-Servers/CustomGCResources'.",
+        "missing_server": "Pour utiliser pleinement les quetes, il est recommendé d'ajouter le dossier 'Server'.",
+        "missing_scenes": "Pour utiliser pleinement les quetes, il est recommendé d'ajouter le dossier 'ScriptSceneData'."
       }
     }
   },
@@ -84,6 +87,7 @@
         "artifactId": "ID de l'artéfact invalide.",
         "avatarId": "ID de l'avatar invalide.",
         "avatarLevel": "avatarLevel invalide.",
+        "cfgId": "ID de cfg invalide.",
         "entityId": "ID de l'entité invalide.",
         "itemId": "ID de l'objet invalide.",
         "itemLevel": "Niveau de l'objet invalide.",
@@ -166,6 +170,10 @@
       "in_dungeon_error": "Vous êtes déjà dans ce donjon.",
       "description": "Entrer dans un donjon"
     },
+    "entity": {
+      "description": "Modifie les propriétés d'une entité existante",
+      "not_found_error": "L'entité n'existe pas"
+    },
     "give": {
       "usage_relic": "Utilisation: give <artifactID> [mainPropID] [<appendPropID>[,<times>]]... [lv<level 0-20>]",
       "illegal_relic": "L'ID de cet artéfact appartient a une liste blacklistée, ce n'est peut-être pas celui que vous désirez.",
@@ -230,7 +238,32 @@
       "finished": "Quête terminée : %s.",
       "not_found": "Quête introuvable.",
       "invalid_id": "ID de la quête invalide.",
-      "description": "Ajoute ou termine une quête"
+      "description": "Ajoute ou termine une quête",
+      "running": "La quête %s est %s (%s).",
+      "talking": "Le dialogue %s est %s pour la quête principale %s (%s).",
+      "state": {
+        "none": "Inconnu (none)",
+        "unstarted": "Pas finie (pas démarée, pas complêtée)",
+        "unfinished": "Pas finie (Démarée, pas complêtée)",
+        "finished": "Terminée (complêtée)",
+        "failed": "Terminée (complêtée, mais échouée)",
+        "exists": "Trouvée",
+        "not_exists": "Introuvable"
+      },
+      "enabled": "Quêtes activées."
+    },
+    "group": {
+      "invalid_groupid": "ID de groupe invalide.",
+      "invalid_suiteid": "ID de suite invalide.",
+      "group_not_found": "Groupe introuvable",
+      "description": "Altère le chargement de groupe",
+      "refreshed": "Groupe %s actualisé"
+    },
+    "cutscene": {
+      "description": "Joue une cinématique"
+    },
+    "sound": {
+      "description": "Joue un son"
     },
     "reload": {
       "reload_start": "Rechargement de la configuration.",
@@ -291,6 +324,9 @@
     "setProp": {
       "description": "Définit des propriétes pour votre compte. Des choses comme le godemode peuvent être activés avec cette commande, et le déblocage de l'abysse ainsi que l'avancement du PB.\n\tValues for <prop>: godmode | nostamina | unlimitedenergy | abyss | worldlevel | bplevel\n\t(cont.) see PlayerProperty enum for other possible values, of form PROP_MAX_SPRING_VOLUME -> max_spring_volume"
     },
+    "setSceneTag": {
+      "description": "Définit les balises de scène spécifiques au compte. Cela permet de contrôler des choses comme les rochers qui bloquent les portes, les bâtiments qui sont visibles, et d'autres choses (généralement liées aux quêtes) qui affectent ce qui est visible dans votre monde."
+    },
     "setStats": {
       "description": "Définit les propriétés de combat de votre personnage actif\n\tValeurs pour <stat>: hp | maxhp | def | atk | em | er | crate | cdmg | cdr | heal | heali | shield | defi\n\t(cont.) Bonus de dégât élémentaire: epyro | ecryo | ehydro | egeo | edendro | eelectro | ephys\n\t(cont.) Résistance élémentaire: respyro | rescryo | reshydro | resgeo | resdendro | reselectro | resphys",
       "locked_to": "%s verrouillé à %s.",
@@ -321,7 +357,7 @@
     "team": {
       "invalid_usage": "Utilisation invalide.",
       "invalid_index": "Index invalide.",
-      "add_too_much": "Ce serveur autorise à avoir au maximum %s avatar(s) dans votre équipe.",
+      "add_too_much": "Ce serveur autorise à avoir au maximum %d avatar(s) dans votre équipe.",
       "failed_to_add_avatar": "Echec de l'ajout de l'avatar a l'ID %s dans votre équipe.",
       "failed_to_parse_index": "Echec de l'analyse de l'index index: %s",
       "remove_too_much": "Vous ne pouvez pas retirer tous les avatars.",
@@ -329,7 +365,7 @@
       "index_out_of_range": "L'index spécifié est en dehors du champ.",
       "failed_parse_avatar_id": "Echec de l'analyse de l'ID de l'avatar: %s",
       "avatar_already_in_team": "L'avatar est déjà dans votre équipe.",
-      "avatar_not_found": "L'avatar %s est introuvable.",
+      "avatar_not_found": "L'avatar %d est introuvable.",
       "description": "Modifie votre équipe manuellement."
     },
     "teleportAll": {
@@ -342,6 +378,17 @@
       "exists_error": "La scène spécifié n'existe pas.",
       "success": "%s a été téléporté à %s, %s, %s dans la scène %s.",
       "description": "Change la position du joueur"
+    },
+    "trialAvatarActivity": {
+      "description": "Manipuler les fonctionnalités de Trial Avatar Activity. Cela inclut le basculement des états de donjon et de récompense.",
+      "not_found": "Les données du lecteur d'activité d'avatar d'essai sont introuvables. Peut-être que l'activité n'est pas activée.",
+      "invalid_param": "Paramètre invalide.",
+      "schedule_not_found": "Horaire %s introuvable.",
+      "success_schedule": "ID de planification changé en %s.",
+      "success_dungeon": "Basculement du statut du donjon de l'avatar %s.",
+      "success_dungeon_all": "Basculement du statut de donjon de tous les avatars.",
+      "success_reward": "Basculement du statut de récompense de l'avatar %s.",
+      "success_reward_all": "Basculement du statut de récompense de tous les avatars."
     },
     "weather": {
       "success": "L'ID de la météo à été défini a %s avec le type de climat %s.",
@@ -362,6 +409,12 @@
       "success": "Succès.",
       "failure": "Échec, joueur introuvable.",
       "description": "Retire le bannissement d'un joueur"
+    },
+    "info": {
+      "description": "Génère des informations de déboguage pour le dépannage."
+    },
+    "debug": {
+      "description": "🇺🇸Useful debugging commands for developers."
     }
   },
   "gacha": {
@@ -394,9 +447,9 @@
       "header_monster": "Monstre"
     },
     "index": {
-      "title": "Documentation",
+      "title": "🇺🇸Documentation",
       "handbook": "Manuel GM",
-      "gacha_mapping": "Gacha mapping JSON"
+      "gacha_mapping": "🇺🇸Gacha mapping JSON"
     }
   },
   "plugin": {
@@ -413,6 +466,11 @@
     "enabling_plugin": "Activation du plugin %s",
     "enabling_failed": "Impossible d'activer le plugin %s",
     "disabling_plugin": "Désactivation du plugin %s",
-    "disabling_failed": "Impossible de désactiver le plugin %s"
+    "disabling_failed": "Impossible de désactiver le plugin %s",
+    "invalid_api": {
+      "not_present": "Le plugin %s ne spécifie pas de version d'API.",
+      "lower": "Le plugin %s utilise la version %s de l'API, alors que le serveur utilise la version %s.",
+      "outdated": "Le plugin %s utilise une fonction obsolète de l'API."
+    }
   }
 }

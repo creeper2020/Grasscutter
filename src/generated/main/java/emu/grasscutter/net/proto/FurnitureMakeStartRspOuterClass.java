@@ -19,30 +19,30 @@ public final class FurnitureMakeStartRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
      * @return Whether the furnitureMakeSlot field is set.
      */
     boolean hasFurnitureMakeSlot();
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
      * @return The furnitureMakeSlot.
      */
     emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot getFurnitureMakeSlot();
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
      */
     emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlotOrBuilder getFurnitureMakeSlotOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4465
-   * Name: CHBMNPCAJND
+   * CmdId: 21400
+   * Obf: BBEDDELOBIC
    * </pre>
    *
    * Protobuf type {@code FurnitureMakeStartRsp}
@@ -89,12 +89,12 @@ public final class FurnitureMakeStartRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 42: {
+            case 50: {
               emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder subBuilder = null;
               if (furnitureMakeSlot_ != null) {
                 subBuilder = furnitureMakeSlot_.toBuilder();
@@ -139,10 +139,10 @@ public final class FurnitureMakeStartRspOuterClass {
               emu.grasscutter.net.proto.FurnitureMakeStartRspOuterClass.FurnitureMakeStartRsp.class, emu.grasscutter.net.proto.FurnitureMakeStartRspOuterClass.FurnitureMakeStartRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class FurnitureMakeStartRspOuterClass {
       return retcode_;
     }
 
-    public static final int FURNITURE_MAKE_SLOT_FIELD_NUMBER = 5;
+    public static final int FURNITURE_MAKE_SLOT_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot furnitureMakeSlot_;
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
      * @return Whether the furnitureMakeSlot field is set.
      */
     @java.lang.Override
@@ -161,7 +161,7 @@ public final class FurnitureMakeStartRspOuterClass {
       return furnitureMakeSlot_ != null;
     }
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
      * @return The furnitureMakeSlot.
      */
     @java.lang.Override
@@ -169,7 +169,7 @@ public final class FurnitureMakeStartRspOuterClass {
       return furnitureMakeSlot_ == null ? emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.getDefaultInstance() : furnitureMakeSlot_;
     }
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlotOrBuilder getFurnitureMakeSlotOrBuilder() {
@@ -191,10 +191,10 @@ public final class FurnitureMakeStartRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (furnitureMakeSlot_ != null) {
-        output.writeMessage(5, getFurnitureMakeSlot());
+        output.writeMessage(6, getFurnitureMakeSlot());
       }
       unknownFields.writeTo(output);
     }
@@ -207,11 +207,11 @@ public final class FurnitureMakeStartRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (furnitureMakeSlot_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getFurnitureMakeSlot());
+          .computeMessageSize(6, getFurnitureMakeSlot());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -349,8 +349,8 @@ public final class FurnitureMakeStartRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4465
-     * Name: CHBMNPCAJND
+     * CmdId: 21400
+     * Obf: BBEDDELOBIC
      * </pre>
      *
      * Protobuf type {@code FurnitureMakeStartRsp}
@@ -515,7 +515,7 @@ public final class FurnitureMakeStartRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -523,7 +523,7 @@ public final class FurnitureMakeStartRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -534,7 +534,7 @@ public final class FurnitureMakeStartRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -548,14 +548,14 @@ public final class FurnitureMakeStartRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot, emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder, emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlotOrBuilder> furnitureMakeSlotBuilder_;
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
        * @return Whether the furnitureMakeSlot field is set.
        */
       public boolean hasFurnitureMakeSlot() {
         return furnitureMakeSlotBuilder_ != null || furnitureMakeSlot_ != null;
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
        * @return The furnitureMakeSlot.
        */
       public emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot getFurnitureMakeSlot() {
@@ -566,7 +566,7 @@ public final class FurnitureMakeStartRspOuterClass {
         }
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
        */
       public Builder setFurnitureMakeSlot(emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot value) {
         if (furnitureMakeSlotBuilder_ == null) {
@@ -582,7 +582,7 @@ public final class FurnitureMakeStartRspOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
        */
       public Builder setFurnitureMakeSlot(
           emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder builderForValue) {
@@ -596,7 +596,7 @@ public final class FurnitureMakeStartRspOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
        */
       public Builder mergeFurnitureMakeSlot(emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot value) {
         if (furnitureMakeSlotBuilder_ == null) {
@@ -614,7 +614,7 @@ public final class FurnitureMakeStartRspOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
        */
       public Builder clearFurnitureMakeSlot() {
         if (furnitureMakeSlotBuilder_ == null) {
@@ -628,7 +628,7 @@ public final class FurnitureMakeStartRspOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder getFurnitureMakeSlotBuilder() {
         
@@ -636,7 +636,7 @@ public final class FurnitureMakeStartRspOuterClass {
         return getFurnitureMakeSlotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlotOrBuilder getFurnitureMakeSlotOrBuilder() {
         if (furnitureMakeSlotBuilder_ != null) {
@@ -647,7 +647,7 @@ public final class FurnitureMakeStartRspOuterClass {
         }
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot, emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder, emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlotOrBuilder> 
@@ -731,8 +731,8 @@ public final class FurnitureMakeStartRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033FurnitureMakeStartRsp.proto\032\027Furniture" +
       "MakeSlot.proto\"Y\n\025FurnitureMakeStartRsp\022" +
-      "\017\n\007retcode\030\004 \001(\005\022/\n\023furniture_make_slot\030" +
-      "\005 \001(\0132\022.FurnitureMakeSlotB\033\n\031emu.grasscu" +
+      "\017\n\007retcode\030\001 \001(\005\022/\n\023furniture_make_slot\030" +
+      "\006 \001(\0132\022.FurnitureMakeSlotB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

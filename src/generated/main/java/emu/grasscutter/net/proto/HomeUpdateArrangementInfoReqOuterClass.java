@@ -35,8 +35,8 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4461
-   * Name: OIACCGHPIPD
+   * CmdId: 4976
+   * Obf: LBFIBLCPDEL
    * </pre>
    *
    * Protobuf type {@code HomeUpdateArrangementInfoReq}
@@ -316,8 +316,8 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4461
-     * Name: OIACCGHPIPD
+     * CmdId: 4976
+     * Obf: LBFIBLCPDEL
      * </pre>
      *
      * Protobuf type {@code HomeUpdateArrangementInfoReq}

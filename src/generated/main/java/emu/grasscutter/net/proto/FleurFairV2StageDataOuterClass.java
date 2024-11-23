@@ -19,19 +19,19 @@ public final class FleurFairV2StageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_finish = 9;</code>
-     * @return The isFinish.
-     */
-    boolean getIsFinish();
-
-    /**
-     * <code>bool is_open = 1;</code>
+     * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 best_score = 2;</code>
+     * <code>bool is_finish = 2;</code>
+     * @return The isFinish.
+     */
+    boolean getIsFinish();
+
+    /**
+     * <code>uint32 best_score = 12;</code>
      * @return The bestScore.
      */
     int getBestScore();
@@ -44,7 +44,7 @@ public final class FleurFairV2StageDataOuterClass {
   }
   /**
    * <pre>
-   * Name: MLFNNJGLGFA
+   * Obf: CECDBOPLBJJ
    * </pre>
    *
    * Protobuf type {@code FleurFairV2StageData}
@@ -91,14 +91,9 @@ public final class FleurFairV2StageDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
             case 16: {
 
-              bestScore_ = input.readUInt32();
+              isFinish_ = input.readBool();
               break;
             }
             case 24: {
@@ -106,9 +101,14 @@ public final class FleurFairV2StageDataOuterClass {
               stageId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 40: {
 
-              isFinish_ = input.readBool();
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 96: {
+
+              bestScore_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,21 +143,10 @@ public final class FleurFairV2StageDataOuterClass {
               emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.class, emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.Builder.class);
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 9;
-    private boolean isFinish_;
-    /**
-     * <code>bool is_finish = 9;</code>
-     * @return The isFinish.
-     */
-    @java.lang.Override
-    public boolean getIsFinish() {
-      return isFinish_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 1;
+    public static final int IS_OPEN_FIELD_NUMBER = 5;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 1;</code>
+     * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -165,10 +154,21 @@ public final class FleurFairV2StageDataOuterClass {
       return isOpen_;
     }
 
-    public static final int BEST_SCORE_FIELD_NUMBER = 2;
+    public static final int IS_FINISH_FIELD_NUMBER = 2;
+    private boolean isFinish_;
+    /**
+     * <code>bool is_finish = 2;</code>
+     * @return The isFinish.
+     */
+    @java.lang.Override
+    public boolean getIsFinish() {
+      return isFinish_;
+    }
+
+    public static final int BEST_SCORE_FIELD_NUMBER = 12;
     private int bestScore_;
     /**
-     * <code>uint32 best_score = 2;</code>
+     * <code>uint32 best_score = 12;</code>
      * @return The bestScore.
      */
     @java.lang.Override
@@ -201,17 +201,17 @@ public final class FleurFairV2StageDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOpen_ != false) {
-        output.writeBool(1, isOpen_);
-      }
-      if (bestScore_ != 0) {
-        output.writeUInt32(2, bestScore_);
+      if (isFinish_ != false) {
+        output.writeBool(2, isFinish_);
       }
       if (stageId_ != 0) {
         output.writeUInt32(3, stageId_);
       }
-      if (isFinish_ != false) {
-        output.writeBool(9, isFinish_);
+      if (isOpen_ != false) {
+        output.writeBool(5, isOpen_);
+      }
+      if (bestScore_ != 0) {
+        output.writeUInt32(12, bestScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +222,21 @@ public final class FleurFairV2StageDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOpen_ != false) {
+      if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isOpen_);
-      }
-      if (bestScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, bestScore_);
+          .computeBoolSize(2, isFinish_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, stageId_);
       }
-      if (isFinish_ != false) {
+      if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isFinish_);
+          .computeBoolSize(5, isOpen_);
+      }
+      if (bestScore_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, bestScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,10 +253,10 @@ public final class FleurFairV2StageDataOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData other = (emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData) obj;
 
-      if (getIsFinish()
-          != other.getIsFinish()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
+      if (getIsFinish()
+          != other.getIsFinish()) return false;
       if (getBestScore()
           != other.getBestScore()) return false;
       if (getStageId()
@@ -272,12 +272,12 @@ public final class FleurFairV2StageDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinish());
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
+      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFinish());
       hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getBestScore();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
@@ -379,7 +379,7 @@ public final class FleurFairV2StageDataOuterClass {
     }
     /**
      * <pre>
-     * Name: MLFNNJGLGFA
+     * Obf: CECDBOPLBJJ
      * </pre>
      *
      * Protobuf type {@code FleurFairV2StageData}
@@ -419,9 +419,9 @@ public final class FleurFairV2StageDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isFinish_ = false;
-
         isOpen_ = false;
+
+        isFinish_ = false;
 
         bestScore_ = 0;
 
@@ -453,8 +453,8 @@ public final class FleurFairV2StageDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData buildPartial() {
         emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData result = new emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData(this);
-        result.isFinish_ = isFinish_;
         result.isOpen_ = isOpen_;
+        result.isFinish_ = isFinish_;
         result.bestScore_ = bestScore_;
         result.stageId_ = stageId_;
         onBuilt();
@@ -505,11 +505,11 @@ public final class FleurFairV2StageDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData other) {
         if (other == emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.getDefaultInstance()) return this;
-        if (other.getIsFinish() != false) {
-          setIsFinish(other.getIsFinish());
-        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
+        }
+        if (other.getIsFinish() != false) {
+          setIsFinish(other.getIsFinish());
         }
         if (other.getBestScore() != 0) {
           setBestScore(other.getBestScore());
@@ -546,40 +546,9 @@ public final class FleurFairV2StageDataOuterClass {
         return this;
       }
 
-      private boolean isFinish_ ;
-      /**
-       * <code>bool is_finish = 9;</code>
-       * @return The isFinish.
-       */
-      @java.lang.Override
-      public boolean getIsFinish() {
-        return isFinish_;
-      }
-      /**
-       * <code>bool is_finish = 9;</code>
-       * @param value The isFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinish(boolean value) {
-        
-        isFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finish = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinish() {
-        
-        isFinish_ = false;
-        onChanged();
-        return this;
-      }
-
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 1;</code>
+       * <code>bool is_open = 5;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -587,7 +556,7 @@ public final class FleurFairV2StageDataOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 1;</code>
+       * <code>bool is_open = 5;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -598,7 +567,7 @@ public final class FleurFairV2StageDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 1;</code>
+       * <code>bool is_open = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -608,9 +577,40 @@ public final class FleurFairV2StageDataOuterClass {
         return this;
       }
 
+      private boolean isFinish_ ;
+      /**
+       * <code>bool is_finish = 2;</code>
+       * @return The isFinish.
+       */
+      @java.lang.Override
+      public boolean getIsFinish() {
+        return isFinish_;
+      }
+      /**
+       * <code>bool is_finish = 2;</code>
+       * @param value The isFinish to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinish(boolean value) {
+        
+        isFinish_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_finish = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinish() {
+        
+        isFinish_ = false;
+        onChanged();
+        return this;
+      }
+
       private int bestScore_ ;
       /**
-       * <code>uint32 best_score = 2;</code>
+       * <code>uint32 best_score = 12;</code>
        * @return The bestScore.
        */
       @java.lang.Override
@@ -618,7 +618,7 @@ public final class FleurFairV2StageDataOuterClass {
         return bestScore_;
       }
       /**
-       * <code>uint32 best_score = 2;</code>
+       * <code>uint32 best_score = 12;</code>
        * @param value The bestScore to set.
        * @return This builder for chaining.
        */
@@ -629,7 +629,7 @@ public final class FleurFairV2StageDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_score = 2;</code>
+       * <code>uint32 best_score = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestScore() {
@@ -737,8 +737,8 @@ public final class FleurFairV2StageDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032FleurFairV2StageData.proto\"`\n\024FleurFai" +
-      "rV2StageData\022\021\n\tis_finish\030\t \001(\010\022\017\n\007is_op" +
-      "en\030\001 \001(\010\022\022\n\nbest_score\030\002 \001(\r\022\020\n\010stage_id" +
+      "rV2StageData\022\017\n\007is_open\030\005 \001(\010\022\021\n\tis_fini" +
+      "sh\030\002 \001(\010\022\022\n\nbest_score\030\014 \001(\r\022\020\n\010stage_id" +
       "\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
@@ -751,7 +751,7 @@ public final class FleurFairV2StageDataOuterClass {
     internal_static_FleurFairV2StageData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairV2StageData_descriptor,
-        new java.lang.String[] { "IsFinish", "IsOpen", "BestScore", "StageId", });
+        new java.lang.String[] { "IsOpen", "IsFinish", "BestScore", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -16,7 +16,7 @@ public final class ChallengeFinishTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: DPDLJODAKKL
+   * Obf: KKEOIBNCMCK
    * </pre>
    *
    * Protobuf enum {@code ChallengeFinishType}

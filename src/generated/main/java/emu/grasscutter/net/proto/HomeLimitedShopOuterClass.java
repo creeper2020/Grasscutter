@@ -44,7 +44,7 @@ public final class HomeLimitedShopOuterClass {
   }
   /**
    * <pre>
-   * Name: KGGBKEKLNDP
+   * Obf: MDHPMMADLIK
    * </pre>
    *
    * Protobuf type {@code HomeLimitedShop}
@@ -336,7 +336,7 @@ public final class HomeLimitedShopOuterClass {
     }
     /**
      * <pre>
-     * Name: KGGBKEKLNDP
+     * Obf: MDHPMMADLIK
      * </pre>
      *
      * Protobuf type {@code HomeLimitedShop}

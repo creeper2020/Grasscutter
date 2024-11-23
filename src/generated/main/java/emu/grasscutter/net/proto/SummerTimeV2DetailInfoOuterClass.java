@@ -19,74 +19,74 @@ public final class SummerTimeV2DetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 BCAIGBJGEOD = 8;</code>
-     * @return The bCAIGBJGEOD.
+     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
      */
-    int getBCAIGBJGEOD();
-
+    java.util.List<emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo> 
+        getBoatStageInfoListList();
     /**
-     * <code>uint32 CFFPNHNDNNI = 1;</code>
-     * @return The cFFPNHNDNNI.
+     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
      */
-    int getCFFPNHNDNNI();
-
+    emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo getBoatStageInfoList(int index);
     /**
-     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
+     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> 
-        getDungeonStageInfoListList();
+    int getBoatStageInfoListCount();
     /**
-     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
+     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
      */
-    emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo getDungeonStageInfoList(int index);
+    java.util.List<? extends emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfoOrBuilder> 
+        getBoatStageInfoListOrBuilderList();
     /**
-     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
+     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
      */
-    int getDungeonStageInfoListCount();
-    /**
-     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder> 
-        getDungeonStageInfoListOrBuilderList();
-    /**
-     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-     */
-    emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder getDungeonStageInfoListOrBuilder(
+    emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfoOrBuilder getBoatStageInfoListOrBuilder(
         int index);
 
     /**
-     * <code>bool is_content_closed = 11;</code>
+     * <code>uint32 MBINEBFILLF = 12;</code>
+     * @return The mBINEBFILLF.
+     */
+    int getMBINEBFILLF();
+
+    /**
+     * <code>bool is_content_closed = 1;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
 
     /**
-     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+     * <code>uint32 LMALLBDPKGO = 6;</code>
+     * @return The lMALLBDPKGO.
      */
-    java.util.List<emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo> 
-        getBoatStageInfoListList();
+    int getLMALLBDPKGO();
+
     /**
-     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
      */
-    emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo getBoatStageInfoList(int index);
+    java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> 
+        getDungeonStageInfoListList();
     /**
-     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
      */
-    int getBoatStageInfoListCount();
+    emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo getDungeonStageInfoList(int index);
     /**
-     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfoOrBuilder> 
-        getBoatStageInfoListOrBuilderList();
+    int getDungeonStageInfoListCount();
     /**
-     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
      */
-    emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfoOrBuilder getBoatStageInfoListOrBuilder(
+    java.util.List<? extends emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder> 
+        getDungeonStageInfoListOrBuilderList();
+    /**
+     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+     */
+    emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder getDungeonStageInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * Name: GACMFCEKNNC
+   * Obf: OFEPIBOFMMO
    * </pre>
    *
    * Protobuf type {@code SummerTimeV2DetailInfo}
@@ -101,8 +101,8 @@ public final class SummerTimeV2DetailInfoOuterClass {
       super(builder);
     }
     private SummerTimeV2DetailInfo() {
-      dungeonStageInfoList_ = java.util.Collections.emptyList();
       boatStageInfoList_ = java.util.Collections.emptyList();
+      dungeonStageInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -138,32 +138,32 @@ public final class SummerTimeV2DetailInfoOuterClass {
               break;
             case 8: {
 
-              cFFPNHNDNNI_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              bCAIGBJGEOD_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
               isContentClosed_ = input.readBool();
               break;
             }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 48: {
+
+              lMALLBDPKGO_ = input.readUInt32();
+              break;
+            }
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 dungeonStageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               dungeonStageInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.parser(), extensionRegistry));
               break;
             }
-            case 122: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 96: {
+
+              mBINEBFILLF_ = input.readUInt32();
+              break;
+            }
+            case 114: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 boatStageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               boatStageInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.parser(), extensionRegistry));
@@ -184,10 +184,10 @@ public final class SummerTimeV2DetailInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           dungeonStageInfoList_ = java.util.Collections.unmodifiableList(dungeonStageInfoList_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           boatStageInfoList_ = java.util.Collections.unmodifiableList(boatStageInfoList_);
         }
         this.unknownFields = unknownFields.build();
@@ -207,90 +207,17 @@ public final class SummerTimeV2DetailInfoOuterClass {
               emu.grasscutter.net.proto.SummerTimeV2DetailInfoOuterClass.SummerTimeV2DetailInfo.class, emu.grasscutter.net.proto.SummerTimeV2DetailInfoOuterClass.SummerTimeV2DetailInfo.Builder.class);
     }
 
-    public static final int BCAIGBJGEOD_FIELD_NUMBER = 8;
-    private int bCAIGBJGEOD_;
-    /**
-     * <code>uint32 BCAIGBJGEOD = 8;</code>
-     * @return The bCAIGBJGEOD.
-     */
-    @java.lang.Override
-    public int getBCAIGBJGEOD() {
-      return bCAIGBJGEOD_;
-    }
-
-    public static final int CFFPNHNDNNI_FIELD_NUMBER = 1;
-    private int cFFPNHNDNNI_;
-    /**
-     * <code>uint32 CFFPNHNDNNI = 1;</code>
-     * @return The cFFPNHNDNNI.
-     */
-    @java.lang.Override
-    public int getCFFPNHNDNNI() {
-      return cFFPNHNDNNI_;
-    }
-
-    public static final int DUNGEON_STAGE_INFO_LIST_FIELD_NUMBER = 13;
-    private java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> dungeonStageInfoList_;
-    /**
-     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> getDungeonStageInfoListList() {
-      return dungeonStageInfoList_;
-    }
-    /**
-     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder> 
-        getDungeonStageInfoListOrBuilderList() {
-      return dungeonStageInfoList_;
-    }
-    /**
-     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-     */
-    @java.lang.Override
-    public int getDungeonStageInfoListCount() {
-      return dungeonStageInfoList_.size();
-    }
-    /**
-     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo getDungeonStageInfoList(int index) {
-      return dungeonStageInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder getDungeonStageInfoListOrBuilder(
-        int index) {
-      return dungeonStageInfoList_.get(index);
-    }
-
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 11;
-    private boolean isContentClosed_;
-    /**
-     * <code>bool is_content_closed = 11;</code>
-     * @return The isContentClosed.
-     */
-    @java.lang.Override
-    public boolean getIsContentClosed() {
-      return isContentClosed_;
-    }
-
-    public static final int BOAT_STAGE_INFO_LIST_FIELD_NUMBER = 15;
+    public static final int BOAT_STAGE_INFO_LIST_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo> boatStageInfoList_;
     /**
-     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo> getBoatStageInfoListList() {
       return boatStageInfoList_;
     }
     /**
-     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfoOrBuilder> 
@@ -298,26 +225,99 @@ public final class SummerTimeV2DetailInfoOuterClass {
       return boatStageInfoList_;
     }
     /**
-     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
      */
     @java.lang.Override
     public int getBoatStageInfoListCount() {
       return boatStageInfoList_.size();
     }
     /**
-     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo getBoatStageInfoList(int index) {
       return boatStageInfoList_.get(index);
     }
     /**
-     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+     * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfoOrBuilder getBoatStageInfoListOrBuilder(
         int index) {
       return boatStageInfoList_.get(index);
+    }
+
+    public static final int MBINEBFILLF_FIELD_NUMBER = 12;
+    private int mBINEBFILLF_;
+    /**
+     * <code>uint32 MBINEBFILLF = 12;</code>
+     * @return The mBINEBFILLF.
+     */
+    @java.lang.Override
+    public int getMBINEBFILLF() {
+      return mBINEBFILLF_;
+    }
+
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 1;
+    private boolean isContentClosed_;
+    /**
+     * <code>bool is_content_closed = 1;</code>
+     * @return The isContentClosed.
+     */
+    @java.lang.Override
+    public boolean getIsContentClosed() {
+      return isContentClosed_;
+    }
+
+    public static final int LMALLBDPKGO_FIELD_NUMBER = 6;
+    private int lMALLBDPKGO_;
+    /**
+     * <code>uint32 LMALLBDPKGO = 6;</code>
+     * @return The lMALLBDPKGO.
+     */
+    @java.lang.Override
+    public int getLMALLBDPKGO() {
+      return lMALLBDPKGO_;
+    }
+
+    public static final int DUNGEON_STAGE_INFO_LIST_FIELD_NUMBER = 7;
+    private java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> dungeonStageInfoList_;
+    /**
+     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> getDungeonStageInfoListList() {
+      return dungeonStageInfoList_;
+    }
+    /**
+     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder> 
+        getDungeonStageInfoListOrBuilderList() {
+      return dungeonStageInfoList_;
+    }
+    /**
+     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public int getDungeonStageInfoListCount() {
+      return dungeonStageInfoList_.size();
+    }
+    /**
+     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo getDungeonStageInfoList(int index) {
+      return dungeonStageInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder getDungeonStageInfoListOrBuilder(
+        int index) {
+      return dungeonStageInfoList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -334,20 +334,20 @@ public final class SummerTimeV2DetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cFFPNHNDNNI_ != 0) {
-        output.writeUInt32(1, cFFPNHNDNNI_);
-      }
-      if (bCAIGBJGEOD_ != 0) {
-        output.writeUInt32(8, bCAIGBJGEOD_);
-      }
       if (isContentClosed_ != false) {
-        output.writeBool(11, isContentClosed_);
+        output.writeBool(1, isContentClosed_);
+      }
+      if (lMALLBDPKGO_ != 0) {
+        output.writeUInt32(6, lMALLBDPKGO_);
       }
       for (int i = 0; i < dungeonStageInfoList_.size(); i++) {
-        output.writeMessage(13, dungeonStageInfoList_.get(i));
+        output.writeMessage(7, dungeonStageInfoList_.get(i));
+      }
+      if (mBINEBFILLF_ != 0) {
+        output.writeUInt32(12, mBINEBFILLF_);
       }
       for (int i = 0; i < boatStageInfoList_.size(); i++) {
-        output.writeMessage(15, boatStageInfoList_.get(i));
+        output.writeMessage(14, boatStageInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -358,25 +358,25 @@ public final class SummerTimeV2DetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cFFPNHNDNNI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, cFFPNHNDNNI_);
-      }
-      if (bCAIGBJGEOD_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, bCAIGBJGEOD_);
-      }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isContentClosed_);
+          .computeBoolSize(1, isContentClosed_);
+      }
+      if (lMALLBDPKGO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, lMALLBDPKGO_);
       }
       for (int i = 0; i < dungeonStageInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, dungeonStageInfoList_.get(i));
+          .computeMessageSize(7, dungeonStageInfoList_.get(i));
+      }
+      if (mBINEBFILLF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, mBINEBFILLF_);
       }
       for (int i = 0; i < boatStageInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, boatStageInfoList_.get(i));
+          .computeMessageSize(14, boatStageInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -393,16 +393,16 @@ public final class SummerTimeV2DetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.SummerTimeV2DetailInfoOuterClass.SummerTimeV2DetailInfo other = (emu.grasscutter.net.proto.SummerTimeV2DetailInfoOuterClass.SummerTimeV2DetailInfo) obj;
 
-      if (getBCAIGBJGEOD()
-          != other.getBCAIGBJGEOD()) return false;
-      if (getCFFPNHNDNNI()
-          != other.getCFFPNHNDNNI()) return false;
-      if (!getDungeonStageInfoListList()
-          .equals(other.getDungeonStageInfoListList())) return false;
-      if (getIsContentClosed()
-          != other.getIsContentClosed()) return false;
       if (!getBoatStageInfoListList()
           .equals(other.getBoatStageInfoListList())) return false;
+      if (getMBINEBFILLF()
+          != other.getMBINEBFILLF()) return false;
+      if (getIsContentClosed()
+          != other.getIsContentClosed()) return false;
+      if (getLMALLBDPKGO()
+          != other.getLMALLBDPKGO()) return false;
+      if (!getDungeonStageInfoListList()
+          .equals(other.getDungeonStageInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -414,20 +414,20 @@ public final class SummerTimeV2DetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BCAIGBJGEOD_FIELD_NUMBER;
-      hash = (53 * hash) + getBCAIGBJGEOD();
-      hash = (37 * hash) + CFFPNHNDNNI_FIELD_NUMBER;
-      hash = (53 * hash) + getCFFPNHNDNNI();
-      if (getDungeonStageInfoListCount() > 0) {
-        hash = (37 * hash) + DUNGEON_STAGE_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getDungeonStageInfoListList().hashCode();
-      }
-      hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsContentClosed());
       if (getBoatStageInfoListCount() > 0) {
         hash = (37 * hash) + BOAT_STAGE_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBoatStageInfoListList().hashCode();
+      }
+      hash = (37 * hash) + MBINEBFILLF_FIELD_NUMBER;
+      hash = (53 * hash) + getMBINEBFILLF();
+      hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsContentClosed());
+      hash = (37 * hash) + LMALLBDPKGO_FIELD_NUMBER;
+      hash = (53 * hash) + getLMALLBDPKGO();
+      if (getDungeonStageInfoListCount() > 0) {
+        hash = (37 * hash) + DUNGEON_STAGE_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getDungeonStageInfoListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -526,7 +526,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: GACMFCEKNNC
+     * Obf: OFEPIBOFMMO
      * </pre>
      *
      * Protobuf type {@code SummerTimeV2DetailInfo}
@@ -561,30 +561,30 @@ public final class SummerTimeV2DetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getDungeonStageInfoListFieldBuilder();
           getBoatStageInfoListFieldBuilder();
+          getDungeonStageInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bCAIGBJGEOD_ = 0;
+        if (boatStageInfoListBuilder_ == null) {
+          boatStageInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          boatStageInfoListBuilder_.clear();
+        }
+        mBINEBFILLF_ = 0;
 
-        cFFPNHNDNNI_ = 0;
+        isContentClosed_ = false;
+
+        lMALLBDPKGO_ = 0;
 
         if (dungeonStageInfoListBuilder_ == null) {
           dungeonStageInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          dungeonStageInfoListBuilder_.clear();
-        }
-        isContentClosed_ = false;
-
-        if (boatStageInfoListBuilder_ == null) {
-          boatStageInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          boatStageInfoListBuilder_.clear();
+          dungeonStageInfoListBuilder_.clear();
         }
         return this;
       }
@@ -613,26 +613,26 @@ public final class SummerTimeV2DetailInfoOuterClass {
       public emu.grasscutter.net.proto.SummerTimeV2DetailInfoOuterClass.SummerTimeV2DetailInfo buildPartial() {
         emu.grasscutter.net.proto.SummerTimeV2DetailInfoOuterClass.SummerTimeV2DetailInfo result = new emu.grasscutter.net.proto.SummerTimeV2DetailInfoOuterClass.SummerTimeV2DetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.bCAIGBJGEOD_ = bCAIGBJGEOD_;
-        result.cFFPNHNDNNI_ = cFFPNHNDNNI_;
-        if (dungeonStageInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            dungeonStageInfoList_ = java.util.Collections.unmodifiableList(dungeonStageInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.dungeonStageInfoList_ = dungeonStageInfoList_;
-        } else {
-          result.dungeonStageInfoList_ = dungeonStageInfoListBuilder_.build();
-        }
-        result.isContentClosed_ = isContentClosed_;
         if (boatStageInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             boatStageInfoList_ = java.util.Collections.unmodifiableList(boatStageInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.boatStageInfoList_ = boatStageInfoList_;
         } else {
           result.boatStageInfoList_ = boatStageInfoListBuilder_.build();
+        }
+        result.mBINEBFILLF_ = mBINEBFILLF_;
+        result.isContentClosed_ = isContentClosed_;
+        result.lMALLBDPKGO_ = lMALLBDPKGO_;
+        if (dungeonStageInfoListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            dungeonStageInfoList_ = java.util.Collections.unmodifiableList(dungeonStageInfoList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.dungeonStageInfoList_ = dungeonStageInfoList_;
+        } else {
+          result.dungeonStageInfoList_ = dungeonStageInfoListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -682,46 +682,11 @@ public final class SummerTimeV2DetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SummerTimeV2DetailInfoOuterClass.SummerTimeV2DetailInfo other) {
         if (other == emu.grasscutter.net.proto.SummerTimeV2DetailInfoOuterClass.SummerTimeV2DetailInfo.getDefaultInstance()) return this;
-        if (other.getBCAIGBJGEOD() != 0) {
-          setBCAIGBJGEOD(other.getBCAIGBJGEOD());
-        }
-        if (other.getCFFPNHNDNNI() != 0) {
-          setCFFPNHNDNNI(other.getCFFPNHNDNNI());
-        }
-        if (dungeonStageInfoListBuilder_ == null) {
-          if (!other.dungeonStageInfoList_.isEmpty()) {
-            if (dungeonStageInfoList_.isEmpty()) {
-              dungeonStageInfoList_ = other.dungeonStageInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureDungeonStageInfoListIsMutable();
-              dungeonStageInfoList_.addAll(other.dungeonStageInfoList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.dungeonStageInfoList_.isEmpty()) {
-            if (dungeonStageInfoListBuilder_.isEmpty()) {
-              dungeonStageInfoListBuilder_.dispose();
-              dungeonStageInfoListBuilder_ = null;
-              dungeonStageInfoList_ = other.dungeonStageInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              dungeonStageInfoListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getDungeonStageInfoListFieldBuilder() : null;
-            } else {
-              dungeonStageInfoListBuilder_.addAllMessages(other.dungeonStageInfoList_);
-            }
-          }
-        }
-        if (other.getIsContentClosed() != false) {
-          setIsContentClosed(other.getIsContentClosed());
-        }
         if (boatStageInfoListBuilder_ == null) {
           if (!other.boatStageInfoList_.isEmpty()) {
             if (boatStageInfoList_.isEmpty()) {
               boatStageInfoList_ = other.boatStageInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureBoatStageInfoListIsMutable();
               boatStageInfoList_.addAll(other.boatStageInfoList_);
@@ -734,12 +699,47 @@ public final class SummerTimeV2DetailInfoOuterClass {
               boatStageInfoListBuilder_.dispose();
               boatStageInfoListBuilder_ = null;
               boatStageInfoList_ = other.boatStageInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
               boatStageInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getBoatStageInfoListFieldBuilder() : null;
             } else {
               boatStageInfoListBuilder_.addAllMessages(other.boatStageInfoList_);
+            }
+          }
+        }
+        if (other.getMBINEBFILLF() != 0) {
+          setMBINEBFILLF(other.getMBINEBFILLF());
+        }
+        if (other.getIsContentClosed() != false) {
+          setIsContentClosed(other.getIsContentClosed());
+        }
+        if (other.getLMALLBDPKGO() != 0) {
+          setLMALLBDPKGO(other.getLMALLBDPKGO());
+        }
+        if (dungeonStageInfoListBuilder_ == null) {
+          if (!other.dungeonStageInfoList_.isEmpty()) {
+            if (dungeonStageInfoList_.isEmpty()) {
+              dungeonStageInfoList_ = other.dungeonStageInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureDungeonStageInfoListIsMutable();
+              dungeonStageInfoList_.addAll(other.dungeonStageInfoList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.dungeonStageInfoList_.isEmpty()) {
+            if (dungeonStageInfoListBuilder_.isEmpty()) {
+              dungeonStageInfoListBuilder_.dispose();
+              dungeonStageInfoListBuilder_ = null;
+              dungeonStageInfoList_ = other.dungeonStageInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              dungeonStageInfoListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getDungeonStageInfoListFieldBuilder() : null;
+            } else {
+              dungeonStageInfoListBuilder_.addAllMessages(other.dungeonStageInfoList_);
             }
           }
         }
@@ -773,345 +773,12 @@ public final class SummerTimeV2DetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private int bCAIGBJGEOD_ ;
-      /**
-       * <code>uint32 BCAIGBJGEOD = 8;</code>
-       * @return The bCAIGBJGEOD.
-       */
-      @java.lang.Override
-      public int getBCAIGBJGEOD() {
-        return bCAIGBJGEOD_;
-      }
-      /**
-       * <code>uint32 BCAIGBJGEOD = 8;</code>
-       * @param value The bCAIGBJGEOD to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBCAIGBJGEOD(int value) {
-        
-        bCAIGBJGEOD_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BCAIGBJGEOD = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBCAIGBJGEOD() {
-        
-        bCAIGBJGEOD_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cFFPNHNDNNI_ ;
-      /**
-       * <code>uint32 CFFPNHNDNNI = 1;</code>
-       * @return The cFFPNHNDNNI.
-       */
-      @java.lang.Override
-      public int getCFFPNHNDNNI() {
-        return cFFPNHNDNNI_;
-      }
-      /**
-       * <code>uint32 CFFPNHNDNNI = 1;</code>
-       * @param value The cFFPNHNDNNI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCFFPNHNDNNI(int value) {
-        
-        cFFPNHNDNNI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CFFPNHNDNNI = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCFFPNHNDNNI() {
-        
-        cFFPNHNDNNI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> dungeonStageInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureDungeonStageInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          dungeonStageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo>(dungeonStageInfoList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder> dungeonStageInfoListBuilder_;
-
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> getDungeonStageInfoListList() {
-        if (dungeonStageInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(dungeonStageInfoList_);
-        } else {
-          return dungeonStageInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public int getDungeonStageInfoListCount() {
-        if (dungeonStageInfoListBuilder_ == null) {
-          return dungeonStageInfoList_.size();
-        } else {
-          return dungeonStageInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo getDungeonStageInfoList(int index) {
-        if (dungeonStageInfoListBuilder_ == null) {
-          return dungeonStageInfoList_.get(index);
-        } else {
-          return dungeonStageInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public Builder setDungeonStageInfoList(
-          int index, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo value) {
-        if (dungeonStageInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureDungeonStageInfoListIsMutable();
-          dungeonStageInfoList_.set(index, value);
-          onChanged();
-        } else {
-          dungeonStageInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public Builder setDungeonStageInfoList(
-          int index, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder builderForValue) {
-        if (dungeonStageInfoListBuilder_ == null) {
-          ensureDungeonStageInfoListIsMutable();
-          dungeonStageInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          dungeonStageInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public Builder addDungeonStageInfoList(emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo value) {
-        if (dungeonStageInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureDungeonStageInfoListIsMutable();
-          dungeonStageInfoList_.add(value);
-          onChanged();
-        } else {
-          dungeonStageInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public Builder addDungeonStageInfoList(
-          int index, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo value) {
-        if (dungeonStageInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureDungeonStageInfoListIsMutable();
-          dungeonStageInfoList_.add(index, value);
-          onChanged();
-        } else {
-          dungeonStageInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public Builder addDungeonStageInfoList(
-          emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder builderForValue) {
-        if (dungeonStageInfoListBuilder_ == null) {
-          ensureDungeonStageInfoListIsMutable();
-          dungeonStageInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          dungeonStageInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public Builder addDungeonStageInfoList(
-          int index, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder builderForValue) {
-        if (dungeonStageInfoListBuilder_ == null) {
-          ensureDungeonStageInfoListIsMutable();
-          dungeonStageInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          dungeonStageInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public Builder addAllDungeonStageInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> values) {
-        if (dungeonStageInfoListBuilder_ == null) {
-          ensureDungeonStageInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, dungeonStageInfoList_);
-          onChanged();
-        } else {
-          dungeonStageInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public Builder clearDungeonStageInfoList() {
-        if (dungeonStageInfoListBuilder_ == null) {
-          dungeonStageInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          dungeonStageInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public Builder removeDungeonStageInfoList(int index) {
-        if (dungeonStageInfoListBuilder_ == null) {
-          ensureDungeonStageInfoListIsMutable();
-          dungeonStageInfoList_.remove(index);
-          onChanged();
-        } else {
-          dungeonStageInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder getDungeonStageInfoListBuilder(
-          int index) {
-        return getDungeonStageInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder getDungeonStageInfoListOrBuilder(
-          int index) {
-        if (dungeonStageInfoListBuilder_ == null) {
-          return dungeonStageInfoList_.get(index);  } else {
-          return dungeonStageInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder> 
-           getDungeonStageInfoListOrBuilderList() {
-        if (dungeonStageInfoListBuilder_ != null) {
-          return dungeonStageInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(dungeonStageInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder addDungeonStageInfoListBuilder() {
-        return getDungeonStageInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder addDungeonStageInfoListBuilder(
-          int index) {
-        return getDungeonStageInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder> 
-           getDungeonStageInfoListBuilderList() {
-        return getDungeonStageInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder> 
-          getDungeonStageInfoListFieldBuilder() {
-        if (dungeonStageInfoListBuilder_ == null) {
-          dungeonStageInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder>(
-                  dungeonStageInfoList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          dungeonStageInfoList_ = null;
-        }
-        return dungeonStageInfoListBuilder_;
-      }
-
-      private boolean isContentClosed_ ;
-      /**
-       * <code>bool is_content_closed = 11;</code>
-       * @return The isContentClosed.
-       */
-      @java.lang.Override
-      public boolean getIsContentClosed() {
-        return isContentClosed_;
-      }
-      /**
-       * <code>bool is_content_closed = 11;</code>
-       * @param value The isContentClosed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsContentClosed(boolean value) {
-        
-        isContentClosed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_content_closed = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsContentClosed() {
-        
-        isContentClosed_ = false;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo> boatStageInfoList_ =
         java.util.Collections.emptyList();
       private void ensureBoatStageInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           boatStageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo>(boatStageInfoList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000001;
          }
       }
 
@@ -1119,7 +786,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
           emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo, emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.Builder, emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfoOrBuilder> boatStageInfoListBuilder_;
 
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo> getBoatStageInfoListList() {
         if (boatStageInfoListBuilder_ == null) {
@@ -1129,7 +796,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public int getBoatStageInfoListCount() {
         if (boatStageInfoListBuilder_ == null) {
@@ -1139,7 +806,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo getBoatStageInfoList(int index) {
         if (boatStageInfoListBuilder_ == null) {
@@ -1149,7 +816,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public Builder setBoatStageInfoList(
           int index, emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo value) {
@@ -1166,7 +833,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public Builder setBoatStageInfoList(
           int index, emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.Builder builderForValue) {
@@ -1180,7 +847,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public Builder addBoatStageInfoList(emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo value) {
         if (boatStageInfoListBuilder_ == null) {
@@ -1196,7 +863,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public Builder addBoatStageInfoList(
           int index, emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo value) {
@@ -1213,7 +880,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public Builder addBoatStageInfoList(
           emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.Builder builderForValue) {
@@ -1227,7 +894,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public Builder addBoatStageInfoList(
           int index, emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.Builder builderForValue) {
@@ -1241,7 +908,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public Builder addAllBoatStageInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo> values) {
@@ -1256,12 +923,12 @@ public final class SummerTimeV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public Builder clearBoatStageInfoList() {
         if (boatStageInfoListBuilder_ == null) {
           boatStageInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           boatStageInfoListBuilder_.clear();
@@ -1269,7 +936,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public Builder removeBoatStageInfoList(int index) {
         if (boatStageInfoListBuilder_ == null) {
@@ -1282,14 +949,14 @@ public final class SummerTimeV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.Builder getBoatStageInfoListBuilder(
           int index) {
         return getBoatStageInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfoOrBuilder getBoatStageInfoListOrBuilder(
           int index) {
@@ -1299,7 +966,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfoOrBuilder> 
            getBoatStageInfoListOrBuilderList() {
@@ -1310,14 +977,14 @@ public final class SummerTimeV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.Builder addBoatStageInfoListBuilder() {
         return getBoatStageInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.Builder addBoatStageInfoListBuilder(
           int index) {
@@ -1325,7 +992,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
             index, emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 15;</code>
+       * <code>repeated .SummerTimeV2BoatStageInfo boat_stage_info_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.Builder> 
            getBoatStageInfoListBuilderList() {
@@ -1338,12 +1005,345 @@ public final class SummerTimeV2DetailInfoOuterClass {
           boatStageInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo, emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfo.Builder, emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.SummerTimeV2BoatStageInfoOrBuilder>(
                   boatStageInfoList_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
           boatStageInfoList_ = null;
         }
         return boatStageInfoListBuilder_;
+      }
+
+      private int mBINEBFILLF_ ;
+      /**
+       * <code>uint32 MBINEBFILLF = 12;</code>
+       * @return The mBINEBFILLF.
+       */
+      @java.lang.Override
+      public int getMBINEBFILLF() {
+        return mBINEBFILLF_;
+      }
+      /**
+       * <code>uint32 MBINEBFILLF = 12;</code>
+       * @param value The mBINEBFILLF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMBINEBFILLF(int value) {
+        
+        mBINEBFILLF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MBINEBFILLF = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMBINEBFILLF() {
+        
+        mBINEBFILLF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isContentClosed_ ;
+      /**
+       * <code>bool is_content_closed = 1;</code>
+       * @return The isContentClosed.
+       */
+      @java.lang.Override
+      public boolean getIsContentClosed() {
+        return isContentClosed_;
+      }
+      /**
+       * <code>bool is_content_closed = 1;</code>
+       * @param value The isContentClosed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsContentClosed(boolean value) {
+        
+        isContentClosed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_content_closed = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsContentClosed() {
+        
+        isContentClosed_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int lMALLBDPKGO_ ;
+      /**
+       * <code>uint32 LMALLBDPKGO = 6;</code>
+       * @return The lMALLBDPKGO.
+       */
+      @java.lang.Override
+      public int getLMALLBDPKGO() {
+        return lMALLBDPKGO_;
+      }
+      /**
+       * <code>uint32 LMALLBDPKGO = 6;</code>
+       * @param value The lMALLBDPKGO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLMALLBDPKGO(int value) {
+        
+        lMALLBDPKGO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LMALLBDPKGO = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLMALLBDPKGO() {
+        
+        lMALLBDPKGO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> dungeonStageInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureDungeonStageInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          dungeonStageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo>(dungeonStageInfoList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder> dungeonStageInfoListBuilder_;
+
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> getDungeonStageInfoListList() {
+        if (dungeonStageInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(dungeonStageInfoList_);
+        } else {
+          return dungeonStageInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public int getDungeonStageInfoListCount() {
+        if (dungeonStageInfoListBuilder_ == null) {
+          return dungeonStageInfoList_.size();
+        } else {
+          return dungeonStageInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo getDungeonStageInfoList(int index) {
+        if (dungeonStageInfoListBuilder_ == null) {
+          return dungeonStageInfoList_.get(index);
+        } else {
+          return dungeonStageInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public Builder setDungeonStageInfoList(
+          int index, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo value) {
+        if (dungeonStageInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDungeonStageInfoListIsMutable();
+          dungeonStageInfoList_.set(index, value);
+          onChanged();
+        } else {
+          dungeonStageInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public Builder setDungeonStageInfoList(
+          int index, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder builderForValue) {
+        if (dungeonStageInfoListBuilder_ == null) {
+          ensureDungeonStageInfoListIsMutable();
+          dungeonStageInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          dungeonStageInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public Builder addDungeonStageInfoList(emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo value) {
+        if (dungeonStageInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDungeonStageInfoListIsMutable();
+          dungeonStageInfoList_.add(value);
+          onChanged();
+        } else {
+          dungeonStageInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public Builder addDungeonStageInfoList(
+          int index, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo value) {
+        if (dungeonStageInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDungeonStageInfoListIsMutable();
+          dungeonStageInfoList_.add(index, value);
+          onChanged();
+        } else {
+          dungeonStageInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public Builder addDungeonStageInfoList(
+          emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder builderForValue) {
+        if (dungeonStageInfoListBuilder_ == null) {
+          ensureDungeonStageInfoListIsMutable();
+          dungeonStageInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          dungeonStageInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public Builder addDungeonStageInfoList(
+          int index, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder builderForValue) {
+        if (dungeonStageInfoListBuilder_ == null) {
+          ensureDungeonStageInfoListIsMutable();
+          dungeonStageInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          dungeonStageInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public Builder addAllDungeonStageInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo> values) {
+        if (dungeonStageInfoListBuilder_ == null) {
+          ensureDungeonStageInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, dungeonStageInfoList_);
+          onChanged();
+        } else {
+          dungeonStageInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public Builder clearDungeonStageInfoList() {
+        if (dungeonStageInfoListBuilder_ == null) {
+          dungeonStageInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          dungeonStageInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public Builder removeDungeonStageInfoList(int index) {
+        if (dungeonStageInfoListBuilder_ == null) {
+          ensureDungeonStageInfoListIsMutable();
+          dungeonStageInfoList_.remove(index);
+          onChanged();
+        } else {
+          dungeonStageInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder getDungeonStageInfoListBuilder(
+          int index) {
+        return getDungeonStageInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder getDungeonStageInfoListOrBuilder(
+          int index) {
+        if (dungeonStageInfoListBuilder_ == null) {
+          return dungeonStageInfoList_.get(index);  } else {
+          return dungeonStageInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder> 
+           getDungeonStageInfoListOrBuilderList() {
+        if (dungeonStageInfoListBuilder_ != null) {
+          return dungeonStageInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(dungeonStageInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder addDungeonStageInfoListBuilder() {
+        return getDungeonStageInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder addDungeonStageInfoListBuilder(
+          int index) {
+        return getDungeonStageInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 7;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder> 
+           getDungeonStageInfoListBuilderList() {
+        return getDungeonStageInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder> 
+          getDungeonStageInfoListFieldBuilder() {
+        if (dungeonStageInfoListBuilder_ == null) {
+          dungeonStageInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfo.Builder, emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.SummerTimeV2DungeonStageInfoOrBuilder>(
+                  dungeonStageInfoList_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          dungeonStageInfoList_ = null;
+        }
+        return dungeonStageInfoListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1415,11 +1415,11 @@ public final class SummerTimeV2DetailInfoOuterClass {
       "\n\034SummerTimeV2DetailInfo.proto\032\037SummerTi" +
       "meV2BoatStageInfo.proto\032\"SummerTimeV2Dun" +
       "geonStageInfo.proto\"\327\001\n\026SummerTimeV2Deta" +
-      "ilInfo\022\023\n\013BCAIGBJGEOD\030\010 \001(\r\022\023\n\013CFFPNHNDN" +
-      "NI\030\001 \001(\r\022>\n\027dungeon_stage_info_list\030\r \003(" +
-      "\0132\035.SummerTimeV2DungeonStageInfo\022\031\n\021is_c" +
-      "ontent_closed\030\013 \001(\010\0228\n\024boat_stage_info_l" +
-      "ist\030\017 \003(\0132\032.SummerTimeV2BoatStageInfoB\033\n" +
+      "ilInfo\0228\n\024boat_stage_info_list\030\016 \003(\0132\032.S" +
+      "ummerTimeV2BoatStageInfo\022\023\n\013MBINEBFILLF\030" +
+      "\014 \001(\r\022\031\n\021is_content_closed\030\001 \001(\010\022\023\n\013LMAL" +
+      "LBDPKGO\030\006 \001(\r\022>\n\027dungeon_stage_info_list" +
+      "\030\007 \003(\0132\035.SummerTimeV2DungeonStageInfoB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1433,7 +1433,7 @@ public final class SummerTimeV2DetailInfoOuterClass {
     internal_static_SummerTimeV2DetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SummerTimeV2DetailInfo_descriptor,
-        new java.lang.String[] { "BCAIGBJGEOD", "CFFPNHNDNNI", "DungeonStageInfoList", "IsContentClosed", "BoatStageInfoList", });
+        new java.lang.String[] { "BoatStageInfoList", "MBINEBFILLF", "IsContentClosed", "LMALLBDPKGO", "DungeonStageInfoList", });
     emu.grasscutter.net.proto.SummerTimeV2BoatStageInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SummerTimeV2DungeonStageInfoOuterClass.getDescriptor();
   }

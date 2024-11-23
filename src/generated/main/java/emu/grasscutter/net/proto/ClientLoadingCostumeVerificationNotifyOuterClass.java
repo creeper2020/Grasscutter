@@ -19,27 +19,27 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 costume_id = 3;</code>
+     * <code>uint32 costume_id = 13;</code>
      * @return The costumeId.
      */
     int getCostumeId();
 
     /**
-     * <code>uint64 guid = 7;</code>
+     * <code>uint64 guid = 9;</code>
      * @return The guid.
      */
     long getGuid();
 
     /**
-     * <code>uint64 prefab_hash = 4;</code>
+     * <code>uint64 prefab_hash = 14;</code>
      * @return The prefabHash.
      */
     long getPrefabHash();
   }
   /**
    * <pre>
-   * CmdId: 3270
-   * Name: FGNKEMCGCCD
+   * CmdId: 21932
+   * Obf: IPHKDOMBFFJ
    * </pre>
    *
    * Protobuf type {@code ClientLoadingCostumeVerificationNotify}
@@ -86,19 +86,19 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 72: {
+
+              guid_ = input.readUInt64();
+              break;
+            }
+            case 104: {
 
               costumeId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 112: {
 
               prefabHash_ = input.readUInt64();
-              break;
-            }
-            case 56: {
-
-              guid_ = input.readUInt64();
               break;
             }
             default: {
@@ -133,10 +133,10 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
               emu.grasscutter.net.proto.ClientLoadingCostumeVerificationNotifyOuterClass.ClientLoadingCostumeVerificationNotify.class, emu.grasscutter.net.proto.ClientLoadingCostumeVerificationNotifyOuterClass.ClientLoadingCostumeVerificationNotify.Builder.class);
     }
 
-    public static final int COSTUME_ID_FIELD_NUMBER = 3;
+    public static final int COSTUME_ID_FIELD_NUMBER = 13;
     private int costumeId_;
     /**
-     * <code>uint32 costume_id = 3;</code>
+     * <code>uint32 costume_id = 13;</code>
      * @return The costumeId.
      */
     @java.lang.Override
@@ -144,10 +144,10 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
       return costumeId_;
     }
 
-    public static final int GUID_FIELD_NUMBER = 7;
+    public static final int GUID_FIELD_NUMBER = 9;
     private long guid_;
     /**
-     * <code>uint64 guid = 7;</code>
+     * <code>uint64 guid = 9;</code>
      * @return The guid.
      */
     @java.lang.Override
@@ -155,10 +155,10 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
       return guid_;
     }
 
-    public static final int PREFAB_HASH_FIELD_NUMBER = 4;
+    public static final int PREFAB_HASH_FIELD_NUMBER = 14;
     private long prefabHash_;
     /**
-     * <code>uint64 prefab_hash = 4;</code>
+     * <code>uint64 prefab_hash = 14;</code>
      * @return The prefabHash.
      */
     @java.lang.Override
@@ -180,14 +180,14 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (guid_ != 0L) {
+        output.writeUInt64(9, guid_);
+      }
       if (costumeId_ != 0) {
-        output.writeUInt32(3, costumeId_);
+        output.writeUInt32(13, costumeId_);
       }
       if (prefabHash_ != 0L) {
-        output.writeUInt64(4, prefabHash_);
-      }
-      if (guid_ != 0L) {
-        output.writeUInt64(7, guid_);
+        output.writeUInt64(14, prefabHash_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (guid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(9, guid_);
+      }
       if (costumeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, costumeId_);
+          .computeUInt32Size(13, costumeId_);
       }
       if (prefabHash_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(4, prefabHash_);
-      }
-      if (guid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(7, guid_);
+          .computeUInt64Size(14, prefabHash_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -347,8 +347,8 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3270
-     * Name: FGNKEMCGCCD
+     * CmdId: 21932
+     * Obf: IPHKDOMBFFJ
      * </pre>
      *
      * Protobuf type {@code ClientLoadingCostumeVerificationNotify}
@@ -511,7 +511,7 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
 
       private int costumeId_ ;
       /**
-       * <code>uint32 costume_id = 3;</code>
+       * <code>uint32 costume_id = 13;</code>
        * @return The costumeId.
        */
       @java.lang.Override
@@ -519,7 +519,7 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
         return costumeId_;
       }
       /**
-       * <code>uint32 costume_id = 3;</code>
+       * <code>uint32 costume_id = 13;</code>
        * @param value The costumeId to set.
        * @return This builder for chaining.
        */
@@ -530,7 +530,7 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 costume_id = 3;</code>
+       * <code>uint32 costume_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostumeId() {
@@ -542,7 +542,7 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
 
       private long guid_ ;
       /**
-       * <code>uint64 guid = 7;</code>
+       * <code>uint64 guid = 9;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -550,7 +550,7 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
         return guid_;
       }
       /**
-       * <code>uint64 guid = 7;</code>
+       * <code>uint64 guid = 9;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
@@ -561,7 +561,7 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 guid = 7;</code>
+       * <code>uint64 guid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
@@ -573,7 +573,7 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
 
       private long prefabHash_ ;
       /**
-       * <code>uint64 prefab_hash = 4;</code>
+       * <code>uint64 prefab_hash = 14;</code>
        * @return The prefabHash.
        */
       @java.lang.Override
@@ -581,7 +581,7 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
         return prefabHash_;
       }
       /**
-       * <code>uint64 prefab_hash = 4;</code>
+       * <code>uint64 prefab_hash = 14;</code>
        * @param value The prefabHash to set.
        * @return This builder for chaining.
        */
@@ -592,7 +592,7 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 prefab_hash = 4;</code>
+       * <code>uint64 prefab_hash = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearPrefabHash() {
@@ -670,8 +670,8 @@ public final class ClientLoadingCostumeVerificationNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n,ClientLoadingCostumeVerificationNotify" +
       ".proto\"_\n&ClientLoadingCostumeVerificati" +
-      "onNotify\022\022\n\ncostume_id\030\003 \001(\r\022\014\n\004guid\030\007 \001" +
-      "(\004\022\023\n\013prefab_hash\030\004 \001(\004B\033\n\031emu.grasscutt" +
+      "onNotify\022\022\n\ncostume_id\030\r \001(\r\022\014\n\004guid\030\t \001" +
+      "(\004\022\023\n\013prefab_hash\030\016 \001(\004B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

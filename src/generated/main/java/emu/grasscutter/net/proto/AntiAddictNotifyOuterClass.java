@@ -19,19 +19,19 @@ public final class AntiAddictNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string level = 1;</code>
+     * <code>string level = 7;</code>
      * @return The level.
      */
     java.lang.String getLevel();
     /**
-     * <code>string level = 1;</code>
+     * <code>string level = 7;</code>
      * @return The bytes for level.
      */
     com.google.protobuf.ByteString
         getLevelBytes();
 
     /**
-     * <code>int32 msg_type = 5;</code>
+     * <code>int32 msg_type = 6;</code>
      * @return The msgType.
      */
     int getMsgType();
@@ -50,8 +50,8 @@ public final class AntiAddictNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 193
-   * Name: PLLBADBHJJB
+   * CmdId: 23699
+   * Obf: EOHKJFLKHHF
    * </pre>
    *
    * Protobuf type {@code AntiAddictNotify}
@@ -100,15 +100,15 @@ public final class AntiAddictNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 48: {
+
+              msgType_ = input.readInt32();
+              break;
+            }
+            case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
               level_ = s;
-              break;
-            }
-            case 40: {
-
-              msgType_ = input.readInt32();
               break;
             }
             case 98: {
@@ -149,10 +149,10 @@ public final class AntiAddictNotifyOuterClass {
               emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify.class, emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 1;
+    public static final int LEVEL_FIELD_NUMBER = 7;
     private volatile java.lang.Object level_;
     /**
-     * <code>string level = 1;</code>
+     * <code>string level = 7;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -169,7 +169,7 @@ public final class AntiAddictNotifyOuterClass {
       }
     }
     /**
-     * <code>string level = 1;</code>
+     * <code>string level = 7;</code>
      * @return The bytes for level.
      */
     @java.lang.Override
@@ -187,10 +187,10 @@ public final class AntiAddictNotifyOuterClass {
       }
     }
 
-    public static final int MSG_TYPE_FIELD_NUMBER = 5;
+    public static final int MSG_TYPE_FIELD_NUMBER = 6;
     private int msgType_;
     /**
-     * <code>int32 msg_type = 5;</code>
+     * <code>int32 msg_type = 6;</code>
      * @return The msgType.
      */
     @java.lang.Override
@@ -250,11 +250,11 @@ public final class AntiAddictNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(level_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, level_);
-      }
       if (msgType_ != 0) {
-        output.writeInt32(5, msgType_);
+        output.writeInt32(6, msgType_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(level_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, level_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(msg_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 12, msg_);
@@ -268,12 +268,12 @@ public final class AntiAddictNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(level_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, level_);
-      }
       if (msgType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, msgType_);
+          .computeInt32Size(6, msgType_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(level_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, level_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(msg_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, msg_);
@@ -413,8 +413,8 @@ public final class AntiAddictNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 193
-     * Name: PLLBADBHJJB
+     * CmdId: 23699
+     * Obf: EOHKJFLKHHF
      * </pre>
      *
      * Protobuf type {@code AntiAddictNotify}
@@ -579,7 +579,7 @@ public final class AntiAddictNotifyOuterClass {
 
       private java.lang.Object level_ = "";
       /**
-       * <code>string level = 1;</code>
+       * <code>string level = 7;</code>
        * @return The level.
        */
       public java.lang.String getLevel() {
@@ -595,7 +595,7 @@ public final class AntiAddictNotifyOuterClass {
         }
       }
       /**
-       * <code>string level = 1;</code>
+       * <code>string level = 7;</code>
        * @return The bytes for level.
        */
       public com.google.protobuf.ByteString
@@ -612,7 +612,7 @@ public final class AntiAddictNotifyOuterClass {
         }
       }
       /**
-       * <code>string level = 1;</code>
+       * <code>string level = 7;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -627,7 +627,7 @@ public final class AntiAddictNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string level = 1;</code>
+       * <code>string level = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -637,7 +637,7 @@ public final class AntiAddictNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string level = 1;</code>
+       * <code>string level = 7;</code>
        * @param value The bytes for level to set.
        * @return This builder for chaining.
        */
@@ -655,7 +655,7 @@ public final class AntiAddictNotifyOuterClass {
 
       private int msgType_ ;
       /**
-       * <code>int32 msg_type = 5;</code>
+       * <code>int32 msg_type = 6;</code>
        * @return The msgType.
        */
       @java.lang.Override
@@ -663,7 +663,7 @@ public final class AntiAddictNotifyOuterClass {
         return msgType_;
       }
       /**
-       * <code>int32 msg_type = 5;</code>
+       * <code>int32 msg_type = 6;</code>
        * @param value The msgType to set.
        * @return This builder for chaining.
        */
@@ -674,7 +674,7 @@ public final class AntiAddictNotifyOuterClass {
         return this;
       }
       /**
-       * <code>int32 msg_type = 5;</code>
+       * <code>int32 msg_type = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearMsgType() {
@@ -827,7 +827,7 @@ public final class AntiAddictNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026AntiAddictNotify.proto\"@\n\020AntiAddictNo" +
-      "tify\022\r\n\005level\030\001 \001(\t\022\020\n\010msg_type\030\005 \001(\005\022\013\n" +
+      "tify\022\r\n\005level\030\007 \001(\t\022\020\n\010msg_type\030\006 \001(\005\022\013\n" +
       "\003msg\030\014 \001(\tB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };

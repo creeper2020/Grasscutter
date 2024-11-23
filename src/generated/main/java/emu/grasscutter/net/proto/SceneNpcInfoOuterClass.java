@@ -44,7 +44,7 @@ public final class SceneNpcInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: KAMHNCPNIKM
+   * Obf: HHIHPEEHHNI
    * </pre>
    *
    * Protobuf type {@code SceneNpcInfo}
@@ -377,7 +377,7 @@ public final class SceneNpcInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: KAMHNCPNIKM
+     * Obf: HHIHPEEHHNI
      * </pre>
      *
      * Protobuf type {@code SceneNpcInfo}

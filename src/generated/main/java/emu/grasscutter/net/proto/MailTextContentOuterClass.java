@@ -56,7 +56,7 @@ public final class MailTextContentOuterClass {
   }
   /**
    * <pre>
-   * Name: JLNOLCOKGJD
+   * Obf: GONDLGCFODB
    * </pre>
    *
    * Protobuf type {@code MailTextContent}
@@ -446,7 +446,7 @@ public final class MailTextContentOuterClass {
     }
     /**
      * <pre>
-     * Name: JLNOLCOKGJD
+     * Obf: GONDLGCFODB
      * </pre>
      *
      * Protobuf type {@code MailTextContent}

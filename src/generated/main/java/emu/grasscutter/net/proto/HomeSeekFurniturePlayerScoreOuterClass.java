@@ -19,29 +19,29 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
      * @return Whether the playerInfo field is set.
      */
     boolean hasPlayerInfo();
     /**
-     * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
      * @return The playerInfo.
      */
     emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo getPlayerInfo();
     /**
-     * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
      */
     emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder getPlayerInfoOrBuilder();
 
     /**
-     * <code>uint32 score = 10;</code>
+     * <code>uint32 score = 15;</code>
      * @return The score.
      */
     int getScore();
   }
   /**
    * <pre>
-   * Name: PJIPFEBDAFF
+   * Obf: HGDAOFJDFAB
    * </pre>
    *
    * Protobuf type {@code HomeSeekFurniturePlayerScore}
@@ -88,7 +88,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 42: {
               emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder subBuilder = null;
               if (playerInfo_ != null) {
                 subBuilder = playerInfo_.toBuilder();
@@ -101,7 +101,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
 
               break;
             }
-            case 80: {
+            case 120: {
 
               score_ = input.readUInt32();
               break;
@@ -138,10 +138,10 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
               emu.grasscutter.net.proto.HomeSeekFurniturePlayerScoreOuterClass.HomeSeekFurniturePlayerScore.class, emu.grasscutter.net.proto.HomeSeekFurniturePlayerScoreOuterClass.HomeSeekFurniturePlayerScore.Builder.class);
     }
 
-    public static final int PLAYER_INFO_FIELD_NUMBER = 6;
+    public static final int PLAYER_INFO_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo playerInfo_;
     /**
-     * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
      * @return Whether the playerInfo field is set.
      */
     @java.lang.Override
@@ -149,7 +149,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
       return playerInfo_ != null;
     }
     /**
-     * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
      * @return The playerInfo.
      */
     @java.lang.Override
@@ -157,17 +157,17 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
       return playerInfo_ == null ? emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.getDefaultInstance() : playerInfo_;
     }
     /**
-     * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder getPlayerInfoOrBuilder() {
       return getPlayerInfo();
     }
 
-    public static final int SCORE_FIELD_NUMBER = 10;
+    public static final int SCORE_FIELD_NUMBER = 15;
     private int score_;
     /**
-     * <code>uint32 score = 10;</code>
+     * <code>uint32 score = 15;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -190,10 +190,10 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playerInfo_ != null) {
-        output.writeMessage(6, getPlayerInfo());
+        output.writeMessage(5, getPlayerInfo());
       }
       if (score_ != 0) {
-        output.writeUInt32(10, score_);
+        output.writeUInt32(15, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -206,11 +206,11 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
       size = 0;
       if (playerInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getPlayerInfo());
+          .computeMessageSize(5, getPlayerInfo());
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, score_);
+          .computeUInt32Size(15, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,7 +348,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
     }
     /**
      * <pre>
-     * Name: PJIPFEBDAFF
+     * Obf: HGDAOFJDFAB
      * </pre>
      *
      * Protobuf type {@code HomeSeekFurniturePlayerScore}
@@ -515,14 +515,14 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo, emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder, emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder> playerInfoBuilder_;
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
        * @return Whether the playerInfo field is set.
        */
       public boolean hasPlayerInfo() {
         return playerInfoBuilder_ != null || playerInfo_ != null;
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
        * @return The playerInfo.
        */
       public emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo getPlayerInfo() {
@@ -533,7 +533,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
         }
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
        */
       public Builder setPlayerInfo(emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -549,7 +549,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
         return this;
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
        */
       public Builder setPlayerInfo(
           emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder builderForValue) {
@@ -563,7 +563,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
         return this;
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
        */
       public Builder mergePlayerInfo(emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -581,7 +581,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
         return this;
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
        */
       public Builder clearPlayerInfo() {
         if (playerInfoBuilder_ == null) {
@@ -595,7 +595,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
         return this;
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
        */
       public emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder getPlayerInfoBuilder() {
         
@@ -603,7 +603,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
         return getPlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
        */
       public emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder getPlayerInfoOrBuilder() {
         if (playerInfoBuilder_ != null) {
@@ -614,7 +614,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
         }
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 6;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo, emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder, emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder> 
@@ -632,7 +632,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 15;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 15;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -729,8 +729,8 @@ public final class HomeSeekFurniturePlayerScoreOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"HomeSeekFurniturePlayerScore.proto\032\031Ho" +
       "meGroupPlayerInfo.proto\"X\n\034HomeSeekFurni" +
-      "turePlayerScore\022)\n\013player_info\030\006 \001(\0132\024.H" +
-      "omeGroupPlayerInfo\022\r\n\005score\030\n \001(\rB\033\n\031emu" +
+      "turePlayerScore\022)\n\013player_info\030\005 \001(\0132\024.H" +
+      "omeGroupPlayerInfo\022\r\n\005score\030\017 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

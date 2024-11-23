@@ -344,7 +344,7 @@ public final class RegionInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: ECJIHDDFOCO
+   * Obf: FHNLCIOBJDG
    * </pre>
    *
    * Protobuf type {@code RegionInfo}
@@ -2026,7 +2026,7 @@ public final class RegionInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: ECJIHDDFOCO
+     * Obf: FHNLCIOBJDG
      * </pre>
      *
      * Protobuf type {@code RegionInfo}

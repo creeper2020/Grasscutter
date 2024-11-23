@@ -54,8 +54,8 @@ public final class ItemCdGroupTimeNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 635
-   * Name: IPAGBGMDOJL
+   * CmdId: 21839
+   * Obf: JBDLPKOJPNC
    * </pre>
    *
    * Protobuf type {@code ItemCdGroupTimeNotify}
@@ -409,8 +409,8 @@ public final class ItemCdGroupTimeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 635
-     * Name: IPAGBGMDOJL
+     * CmdId: 21839
+     * Obf: JBDLPKOJPNC
      * </pre>
      *
      * Protobuf type {@code ItemCdGroupTimeNotify}

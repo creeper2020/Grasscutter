@@ -43,14 +43,14 @@ public final class PlayerWidgetInfoOuterClass {
         int index);
 
     /**
-     * <code>uint32 uid = 12;</code>
+     * <code>uint32 uid = 6;</code>
      * @return The uid.
      */
     int getUid();
   }
   /**
    * <pre>
-   * Name: LFEBJABCAOL
+   * Obf: IEIPNDOKJIG
    * </pre>
    *
    * Protobuf type {@code PlayerWidgetInfo}
@@ -99,7 +99,7 @@ public final class PlayerWidgetInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 48: {
 
               uid_ = input.readUInt32();
               break;
@@ -188,10 +188,10 @@ public final class PlayerWidgetInfoOuterClass {
       return slotList_.get(index);
     }
 
-    public static final int UID_FIELD_NUMBER = 12;
+    public static final int UID_FIELD_NUMBER = 6;
     private int uid_;
     /**
-     * <code>uint32 uid = 12;</code>
+     * <code>uint32 uid = 6;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -214,7 +214,7 @@ public final class PlayerWidgetInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (uid_ != 0) {
-        output.writeUInt32(12, uid_);
+        output.writeUInt32(6, uid_);
       }
       for (int i = 0; i < slotList_.size(); i++) {
         output.writeMessage(15, slotList_.get(i));
@@ -230,7 +230,7 @@ public final class PlayerWidgetInfoOuterClass {
       size = 0;
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, uid_);
+          .computeUInt32Size(6, uid_);
       }
       for (int i = 0; i < slotList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -369,7 +369,7 @@ public final class PlayerWidgetInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: LFEBJABCAOL
+     * Obf: IEIPNDOKJIG
      * </pre>
      *
      * Protobuf type {@code PlayerWidgetInfo}
@@ -804,7 +804,7 @@ public final class PlayerWidgetInfoOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 12;</code>
+       * <code>uint32 uid = 6;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -812,7 +812,7 @@ public final class PlayerWidgetInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 12;</code>
+       * <code>uint32 uid = 6;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -823,7 +823,7 @@ public final class PlayerWidgetInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 12;</code>
+       * <code>uint32 uid = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -901,7 +901,7 @@ public final class PlayerWidgetInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026PlayerWidgetInfo.proto\032\024WidgetSlotData" +
       ".proto\"C\n\020PlayerWidgetInfo\022\"\n\tslot_list\030" +
-      "\017 \003(\0132\017.WidgetSlotData\022\013\n\003uid\030\014 \001(\rB\033\n\031e" +
+      "\017 \003(\0132\017.WidgetSlotData\022\013\n\003uid\030\006 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

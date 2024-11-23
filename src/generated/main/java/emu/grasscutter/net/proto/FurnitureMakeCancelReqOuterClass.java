@@ -19,21 +19,21 @@ public final class FurnitureMakeCancelReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 make_id = 5;</code>
+     * <code>uint32 make_id = 1;</code>
      * @return The makeId.
      */
     int getMakeId();
 
     /**
-     * <code>uint32 index = 10;</code>
+     * <code>uint32 index = 12;</code>
      * @return The index.
      */
     int getIndex();
   }
   /**
    * <pre>
-   * CmdId: 4826
-   * Name: GHCLAJCOLDE
+   * CmdId: 29262
+   * Obf: EPJPMHPGODB
    * </pre>
    *
    * Protobuf type {@code FurnitureMakeCancelReq}
@@ -80,12 +80,12 @@ public final class FurnitureMakeCancelReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 8: {
 
               makeId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 96: {
 
               index_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class FurnitureMakeCancelReqOuterClass {
               emu.grasscutter.net.proto.FurnitureMakeCancelReqOuterClass.FurnitureMakeCancelReq.class, emu.grasscutter.net.proto.FurnitureMakeCancelReqOuterClass.FurnitureMakeCancelReq.Builder.class);
     }
 
-    public static final int MAKE_ID_FIELD_NUMBER = 5;
+    public static final int MAKE_ID_FIELD_NUMBER = 1;
     private int makeId_;
     /**
-     * <code>uint32 make_id = 5;</code>
+     * <code>uint32 make_id = 1;</code>
      * @return The makeId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class FurnitureMakeCancelReqOuterClass {
       return makeId_;
     }
 
-    public static final int INDEX_FIELD_NUMBER = 10;
+    public static final int INDEX_FIELD_NUMBER = 12;
     private int index_;
     /**
-     * <code>uint32 index = 10;</code>
+     * <code>uint32 index = 12;</code>
      * @return The index.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class FurnitureMakeCancelReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (makeId_ != 0) {
-        output.writeUInt32(5, makeId_);
+        output.writeUInt32(1, makeId_);
       }
       if (index_ != 0) {
-        output.writeUInt32(10, index_);
+        output.writeUInt32(12, index_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class FurnitureMakeCancelReqOuterClass {
       size = 0;
       if (makeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, makeId_);
+          .computeUInt32Size(1, makeId_);
       }
       if (index_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, index_);
+          .computeUInt32Size(12, index_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class FurnitureMakeCancelReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4826
-     * Name: GHCLAJCOLDE
+     * CmdId: 29262
+     * Obf: EPJPMHPGODB
      * </pre>
      *
      * Protobuf type {@code FurnitureMakeCancelReq}
@@ -470,7 +470,7 @@ public final class FurnitureMakeCancelReqOuterClass {
 
       private int makeId_ ;
       /**
-       * <code>uint32 make_id = 5;</code>
+       * <code>uint32 make_id = 1;</code>
        * @return The makeId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class FurnitureMakeCancelReqOuterClass {
         return makeId_;
       }
       /**
-       * <code>uint32 make_id = 5;</code>
+       * <code>uint32 make_id = 1;</code>
        * @param value The makeId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class FurnitureMakeCancelReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 make_id = 5;</code>
+       * <code>uint32 make_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMakeId() {
@@ -501,7 +501,7 @@ public final class FurnitureMakeCancelReqOuterClass {
 
       private int index_ ;
       /**
-       * <code>uint32 index = 10;</code>
+       * <code>uint32 index = 12;</code>
        * @return The index.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class FurnitureMakeCancelReqOuterClass {
         return index_;
       }
       /**
-       * <code>uint32 index = 10;</code>
+       * <code>uint32 index = 12;</code>
        * @param value The index to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class FurnitureMakeCancelReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 index = 10;</code>
+       * <code>uint32 index = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIndex() {
@@ -597,8 +597,8 @@ public final class FurnitureMakeCancelReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034FurnitureMakeCancelReq.proto\"8\n\026Furnit" +
-      "ureMakeCancelReq\022\017\n\007make_id\030\005 \001(\r\022\r\n\005ind" +
-      "ex\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "ureMakeCancelReq\022\017\n\007make_id\030\001 \001(\r\022\r\n\005ind" +
+      "ex\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

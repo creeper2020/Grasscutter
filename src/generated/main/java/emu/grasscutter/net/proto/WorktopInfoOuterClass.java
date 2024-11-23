@@ -43,7 +43,7 @@ public final class WorktopInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: PLAEKPJCLFB
+   * Obf: FHDMCJINDAH
    * </pre>
    *
    * Protobuf type {@code WorktopInfo}
@@ -378,7 +378,7 @@ public final class WorktopInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PLAEKPJCLFB
+     * Obf: FHDMCJINDAH
      * </pre>
      *
      * Protobuf type {@code WorktopInfo}

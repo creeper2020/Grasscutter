@@ -19,17 +19,23 @@ public final class FlightDailyRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 watcher_id_list = 13;</code>
+     * <code>bool is_touched = 13;</code>
+     * @return The isTouched.
+     */
+    boolean getIsTouched();
+
+    /**
+     * <code>repeated uint32 watcher_id_list = 5;</code>
      * @return A list containing the watcherIdList.
      */
     java.util.List<java.lang.Integer> getWatcherIdListList();
     /**
-     * <code>repeated uint32 watcher_id_list = 13;</code>
+     * <code>repeated uint32 watcher_id_list = 5;</code>
      * @return The count of watcherIdList.
      */
     int getWatcherIdListCount();
     /**
-     * <code>repeated uint32 watcher_id_list = 13;</code>
+     * <code>repeated uint32 watcher_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The watcherIdList at the given index.
      */
@@ -42,26 +48,20 @@ public final class FlightDailyRecordOuterClass {
     int getBestScore();
 
     /**
-     * <code>bool is_touched = 11;</code>
-     * @return The isTouched.
-     */
-    boolean getIsTouched();
-
-    /**
-     * <code>uint32 start_time = 4;</code>
+     * <code>uint32 start_time = 6;</code>
      * @return The startTime.
      */
     int getStartTime();
 
     /**
-     * <code>uint32 group_id = 14;</code>
+     * <code>uint32 group_id = 2;</code>
      * @return The groupId.
      */
     int getGroupId();
   }
   /**
    * <pre>
-   * Name: FONAIIICBPA
+   * Obf: KCHOONLHPDH
    * </pre>
    *
    * Protobuf type {@code FlightDailyRecord}
@@ -110,22 +110,12 @@ public final class FlightDailyRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
-              startTime_ = input.readUInt32();
+              groupId_ = input.readUInt32();
               break;
             }
-            case 88: {
-
-              isTouched_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              bestScore_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 40: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 watcherIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,7 +123,7 @@ public final class FlightDailyRecordOuterClass {
               watcherIdList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -146,9 +136,19 @@ public final class FlightDailyRecordOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 112: {
+            case 48: {
 
-              groupId_ = input.readUInt32();
+              startTime_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              bestScore_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              isTouched_ = input.readBool();
               break;
             }
             default: {
@@ -186,10 +186,21 @@ public final class FlightDailyRecordOuterClass {
               emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.class, emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.Builder.class);
     }
 
-    public static final int WATCHER_ID_LIST_FIELD_NUMBER = 13;
+    public static final int IS_TOUCHED_FIELD_NUMBER = 13;
+    private boolean isTouched_;
+    /**
+     * <code>bool is_touched = 13;</code>
+     * @return The isTouched.
+     */
+    @java.lang.Override
+    public boolean getIsTouched() {
+      return isTouched_;
+    }
+
+    public static final int WATCHER_ID_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList watcherIdList_;
     /**
-     * <code>repeated uint32 watcher_id_list = 13;</code>
+     * <code>repeated uint32 watcher_id_list = 5;</code>
      * @return A list containing the watcherIdList.
      */
     @java.lang.Override
@@ -198,14 +209,14 @@ public final class FlightDailyRecordOuterClass {
       return watcherIdList_;
     }
     /**
-     * <code>repeated uint32 watcher_id_list = 13;</code>
+     * <code>repeated uint32 watcher_id_list = 5;</code>
      * @return The count of watcherIdList.
      */
     public int getWatcherIdListCount() {
       return watcherIdList_.size();
     }
     /**
-     * <code>repeated uint32 watcher_id_list = 13;</code>
+     * <code>repeated uint32 watcher_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The watcherIdList at the given index.
      */
@@ -225,21 +236,10 @@ public final class FlightDailyRecordOuterClass {
       return bestScore_;
     }
 
-    public static final int IS_TOUCHED_FIELD_NUMBER = 11;
-    private boolean isTouched_;
-    /**
-     * <code>bool is_touched = 11;</code>
-     * @return The isTouched.
-     */
-    @java.lang.Override
-    public boolean getIsTouched() {
-      return isTouched_;
-    }
-
-    public static final int START_TIME_FIELD_NUMBER = 4;
+    public static final int START_TIME_FIELD_NUMBER = 6;
     private int startTime_;
     /**
-     * <code>uint32 start_time = 4;</code>
+     * <code>uint32 start_time = 6;</code>
      * @return The startTime.
      */
     @java.lang.Override
@@ -247,10 +247,10 @@ public final class FlightDailyRecordOuterClass {
       return startTime_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 14;
+    public static final int GROUP_ID_FIELD_NUMBER = 2;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 14;</code>
+     * <code>uint32 group_id = 2;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -273,24 +273,24 @@ public final class FlightDailyRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (startTime_ != 0) {
-        output.writeUInt32(4, startTime_);
-      }
-      if (isTouched_ != false) {
-        output.writeBool(11, isTouched_);
-      }
-      if (bestScore_ != 0) {
-        output.writeUInt32(12, bestScore_);
+      if (groupId_ != 0) {
+        output.writeUInt32(2, groupId_);
       }
       if (getWatcherIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(watcherIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < watcherIdList_.size(); i++) {
         output.writeUInt32NoTag(watcherIdList_.getInt(i));
       }
-      if (groupId_ != 0) {
-        output.writeUInt32(14, groupId_);
+      if (startTime_ != 0) {
+        output.writeUInt32(6, startTime_);
+      }
+      if (bestScore_ != 0) {
+        output.writeUInt32(12, bestScore_);
+      }
+      if (isTouched_ != false) {
+        output.writeBool(13, isTouched_);
       }
       unknownFields.writeTo(output);
     }
@@ -301,17 +301,9 @@ public final class FlightDailyRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (startTime_ != 0) {
+      if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, startTime_);
-      }
-      if (isTouched_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isTouched_);
-      }
-      if (bestScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, bestScore_);
+          .computeUInt32Size(2, groupId_);
       }
       {
         int dataSize = 0;
@@ -327,9 +319,17 @@ public final class FlightDailyRecordOuterClass {
         }
         watcherIdListMemoizedSerializedSize = dataSize;
       }
-      if (groupId_ != 0) {
+      if (startTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, groupId_);
+          .computeUInt32Size(6, startTime_);
+      }
+      if (bestScore_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, bestScore_);
+      }
+      if (isTouched_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isTouched_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,12 +346,12 @@ public final class FlightDailyRecordOuterClass {
       }
       emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord other = (emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord) obj;
 
+      if (getIsTouched()
+          != other.getIsTouched()) return false;
       if (!getWatcherIdListList()
           .equals(other.getWatcherIdListList())) return false;
       if (getBestScore()
           != other.getBestScore()) return false;
-      if (getIsTouched()
-          != other.getIsTouched()) return false;
       if (getStartTime()
           != other.getStartTime()) return false;
       if (getGroupId()
@@ -367,15 +367,15 @@ public final class FlightDailyRecordOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_TOUCHED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsTouched());
       if (getWatcherIdListCount() > 0) {
         hash = (37 * hash) + WATCHER_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getWatcherIdListList().hashCode();
       }
       hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getBestScore();
-      hash = (37 * hash) + IS_TOUCHED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTouched());
       hash = (37 * hash) + START_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getStartTime();
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
@@ -477,7 +477,7 @@ public final class FlightDailyRecordOuterClass {
     }
     /**
      * <pre>
-     * Name: FONAIIICBPA
+     * Obf: KCHOONLHPDH
      * </pre>
      *
      * Protobuf type {@code FlightDailyRecord}
@@ -517,11 +517,11 @@ public final class FlightDailyRecordOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        isTouched_ = false;
+
         watcherIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         bestScore_ = 0;
-
-        isTouched_ = false;
 
         startTime_ = 0;
 
@@ -554,13 +554,13 @@ public final class FlightDailyRecordOuterClass {
       public emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord buildPartial() {
         emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord result = new emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord(this);
         int from_bitField0_ = bitField0_;
+        result.isTouched_ = isTouched_;
         if (((bitField0_ & 0x00000001) != 0)) {
           watcherIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.watcherIdList_ = watcherIdList_;
         result.bestScore_ = bestScore_;
-        result.isTouched_ = isTouched_;
         result.startTime_ = startTime_;
         result.groupId_ = groupId_;
         onBuilt();
@@ -611,6 +611,9 @@ public final class FlightDailyRecordOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord other) {
         if (other == emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.getDefaultInstance()) return this;
+        if (other.getIsTouched() != false) {
+          setIsTouched(other.getIsTouched());
+        }
         if (!other.watcherIdList_.isEmpty()) {
           if (watcherIdList_.isEmpty()) {
             watcherIdList_ = other.watcherIdList_;
@@ -623,9 +626,6 @@ public final class FlightDailyRecordOuterClass {
         }
         if (other.getBestScore() != 0) {
           setBestScore(other.getBestScore());
-        }
-        if (other.getIsTouched() != false) {
-          setIsTouched(other.getIsTouched());
         }
         if (other.getStartTime() != 0) {
           setStartTime(other.getStartTime());
@@ -663,6 +663,37 @@ public final class FlightDailyRecordOuterClass {
       }
       private int bitField0_;
 
+      private boolean isTouched_ ;
+      /**
+       * <code>bool is_touched = 13;</code>
+       * @return The isTouched.
+       */
+      @java.lang.Override
+      public boolean getIsTouched() {
+        return isTouched_;
+      }
+      /**
+       * <code>bool is_touched = 13;</code>
+       * @param value The isTouched to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsTouched(boolean value) {
+        
+        isTouched_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_touched = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsTouched() {
+        
+        isTouched_ = false;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList watcherIdList_ = emptyIntList();
       private void ensureWatcherIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -671,7 +702,7 @@ public final class FlightDailyRecordOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * <code>repeated uint32 watcher_id_list = 5;</code>
        * @return A list containing the watcherIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -680,14 +711,14 @@ public final class FlightDailyRecordOuterClass {
                  java.util.Collections.unmodifiableList(watcherIdList_) : watcherIdList_;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * <code>repeated uint32 watcher_id_list = 5;</code>
        * @return The count of watcherIdList.
        */
       public int getWatcherIdListCount() {
         return watcherIdList_.size();
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * <code>repeated uint32 watcher_id_list = 5;</code>
        * @param index The index of the element to return.
        * @return The watcherIdList at the given index.
        */
@@ -695,7 +726,7 @@ public final class FlightDailyRecordOuterClass {
         return watcherIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * <code>repeated uint32 watcher_id_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The watcherIdList to set.
        * @return This builder for chaining.
@@ -708,7 +739,7 @@ public final class FlightDailyRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * <code>repeated uint32 watcher_id_list = 5;</code>
        * @param value The watcherIdList to add.
        * @return This builder for chaining.
        */
@@ -719,7 +750,7 @@ public final class FlightDailyRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * <code>repeated uint32 watcher_id_list = 5;</code>
        * @param values The watcherIdList to add.
        * @return This builder for chaining.
        */
@@ -732,7 +763,7 @@ public final class FlightDailyRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * <code>repeated uint32 watcher_id_list = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearWatcherIdList() {
@@ -773,40 +804,9 @@ public final class FlightDailyRecordOuterClass {
         return this;
       }
 
-      private boolean isTouched_ ;
-      /**
-       * <code>bool is_touched = 11;</code>
-       * @return The isTouched.
-       */
-      @java.lang.Override
-      public boolean getIsTouched() {
-        return isTouched_;
-      }
-      /**
-       * <code>bool is_touched = 11;</code>
-       * @param value The isTouched to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsTouched(boolean value) {
-        
-        isTouched_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_touched = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsTouched() {
-        
-        isTouched_ = false;
-        onChanged();
-        return this;
-      }
-
       private int startTime_ ;
       /**
-       * <code>uint32 start_time = 4;</code>
+       * <code>uint32 start_time = 6;</code>
        * @return The startTime.
        */
       @java.lang.Override
@@ -814,7 +814,7 @@ public final class FlightDailyRecordOuterClass {
         return startTime_;
       }
       /**
-       * <code>uint32 start_time = 4;</code>
+       * <code>uint32 start_time = 6;</code>
        * @param value The startTime to set.
        * @return This builder for chaining.
        */
@@ -825,7 +825,7 @@ public final class FlightDailyRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 start_time = 4;</code>
+       * <code>uint32 start_time = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearStartTime() {
@@ -837,7 +837,7 @@ public final class FlightDailyRecordOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 2;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -845,7 +845,7 @@ public final class FlightDailyRecordOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 2;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -856,7 +856,7 @@ public final class FlightDailyRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -933,9 +933,9 @@ public final class FlightDailyRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027FlightDailyRecord.proto\"z\n\021FlightDaily" +
-      "Record\022\027\n\017watcher_id_list\030\r \003(\r\022\022\n\nbest_" +
-      "score\030\014 \001(\r\022\022\n\nis_touched\030\013 \001(\010\022\022\n\nstart" +
-      "_time\030\004 \001(\r\022\020\n\010group_id\030\016 \001(\rB\033\n\031emu.gra" +
+      "Record\022\022\n\nis_touched\030\r \001(\010\022\027\n\017watcher_id" +
+      "_list\030\005 \003(\r\022\022\n\nbest_score\030\014 \001(\r\022\022\n\nstart" +
+      "_time\030\006 \001(\r\022\020\n\010group_id\030\002 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -947,7 +947,7 @@ public final class FlightDailyRecordOuterClass {
     internal_static_FlightDailyRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FlightDailyRecord_descriptor,
-        new java.lang.String[] { "WatcherIdList", "BestScore", "IsTouched", "StartTime", "GroupId", });
+        new java.lang.String[] { "IsTouched", "WatcherIdList", "BestScore", "StartTime", "GroupId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

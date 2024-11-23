@@ -19,39 +19,39 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
      * @return Whether the furnitureMakeHelpedData field is set.
      */
     boolean hasFurnitureMakeHelpedData();
     /**
-     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
      * @return The furnitureMakeHelpedData.
      */
     emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData getFurnitureMakeHelpedData();
     /**
-     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
      */
     emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedDataOrBuilder getFurnitureMakeHelpedDataOrBuilder();
 
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
      * @return Whether the furnitureMakeSlot field is set.
      */
     boolean hasFurnitureMakeSlot();
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
      * @return The furnitureMakeSlot.
      */
     emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot getFurnitureMakeSlot();
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
      */
     emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlotOrBuilder getFurnitureMakeSlotOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4881
-   * Name: GCEOMBOEIEP
+   * CmdId: 22219
+   * Obf: JAIJGEPLECI
    * </pre>
    *
    * Protobuf type {@code FurnitureMakeBeHelpedNotify}
@@ -98,20 +98,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
-              emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.Builder subBuilder = null;
-              if (furnitureMakeHelpedData_ != null) {
-                subBuilder = furnitureMakeHelpedData_.toBuilder();
-              }
-              furnitureMakeHelpedData_ = input.readMessage(emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(furnitureMakeHelpedData_);
-                furnitureMakeHelpedData_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 66: {
+            case 42: {
               emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder subBuilder = null;
               if (furnitureMakeSlot_ != null) {
                 subBuilder = furnitureMakeSlot_.toBuilder();
@@ -120,6 +107,19 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(furnitureMakeSlot_);
                 furnitureMakeSlot_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 74: {
+              emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.Builder subBuilder = null;
+              if (furnitureMakeHelpedData_ != null) {
+                subBuilder = furnitureMakeHelpedData_.toBuilder();
+              }
+              furnitureMakeHelpedData_ = input.readMessage(emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(furnitureMakeHelpedData_);
+                furnitureMakeHelpedData_ = subBuilder.buildPartial();
               }
 
               break;
@@ -156,10 +156,10 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
               emu.grasscutter.net.proto.FurnitureMakeBeHelpedNotifyOuterClass.FurnitureMakeBeHelpedNotify.class, emu.grasscutter.net.proto.FurnitureMakeBeHelpedNotifyOuterClass.FurnitureMakeBeHelpedNotify.Builder.class);
     }
 
-    public static final int FURNITURE_MAKE_HELPED_DATA_FIELD_NUMBER = 3;
+    public static final int FURNITURE_MAKE_HELPED_DATA_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData furnitureMakeHelpedData_;
     /**
-     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
      * @return Whether the furnitureMakeHelpedData field is set.
      */
     @java.lang.Override
@@ -167,7 +167,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
       return furnitureMakeHelpedData_ != null;
     }
     /**
-     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
      * @return The furnitureMakeHelpedData.
      */
     @java.lang.Override
@@ -175,17 +175,17 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
       return furnitureMakeHelpedData_ == null ? emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.getDefaultInstance() : furnitureMakeHelpedData_;
     }
     /**
-     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+     * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedDataOrBuilder getFurnitureMakeHelpedDataOrBuilder() {
       return getFurnitureMakeHelpedData();
     }
 
-    public static final int FURNITURE_MAKE_SLOT_FIELD_NUMBER = 8;
+    public static final int FURNITURE_MAKE_SLOT_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot furnitureMakeSlot_;
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
      * @return Whether the furnitureMakeSlot field is set.
      */
     @java.lang.Override
@@ -193,7 +193,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
       return furnitureMakeSlot_ != null;
     }
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
      * @return The furnitureMakeSlot.
      */
     @java.lang.Override
@@ -201,7 +201,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
       return furnitureMakeSlot_ == null ? emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.getDefaultInstance() : furnitureMakeSlot_;
     }
     /**
-     * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+     * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlotOrBuilder getFurnitureMakeSlotOrBuilder() {
@@ -222,11 +222,11 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (furnitureMakeHelpedData_ != null) {
-        output.writeMessage(3, getFurnitureMakeHelpedData());
-      }
       if (furnitureMakeSlot_ != null) {
-        output.writeMessage(8, getFurnitureMakeSlot());
+        output.writeMessage(5, getFurnitureMakeSlot());
+      }
+      if (furnitureMakeHelpedData_ != null) {
+        output.writeMessage(9, getFurnitureMakeHelpedData());
       }
       unknownFields.writeTo(output);
     }
@@ -237,13 +237,13 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (furnitureMakeHelpedData_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getFurnitureMakeHelpedData());
-      }
       if (furnitureMakeSlot_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getFurnitureMakeSlot());
+          .computeMessageSize(5, getFurnitureMakeSlot());
+      }
+      if (furnitureMakeHelpedData_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, getFurnitureMakeHelpedData());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -386,8 +386,8 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4881
-     * Name: GCEOMBOEIEP
+     * CmdId: 22219
+     * Obf: JAIJGEPLECI
      * </pre>
      *
      * Protobuf type {@code FurnitureMakeBeHelpedNotify}
@@ -562,14 +562,14 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData, emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.Builder, emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedDataOrBuilder> furnitureMakeHelpedDataBuilder_;
       /**
-       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
        * @return Whether the furnitureMakeHelpedData field is set.
        */
       public boolean hasFurnitureMakeHelpedData() {
         return furnitureMakeHelpedDataBuilder_ != null || furnitureMakeHelpedData_ != null;
       }
       /**
-       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
        * @return The furnitureMakeHelpedData.
        */
       public emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData getFurnitureMakeHelpedData() {
@@ -580,7 +580,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         }
       }
       /**
-       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
        */
       public Builder setFurnitureMakeHelpedData(emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData value) {
         if (furnitureMakeHelpedDataBuilder_ == null) {
@@ -596,7 +596,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
        */
       public Builder setFurnitureMakeHelpedData(
           emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.Builder builderForValue) {
@@ -610,7 +610,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
        */
       public Builder mergeFurnitureMakeHelpedData(emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData value) {
         if (furnitureMakeHelpedDataBuilder_ == null) {
@@ -628,7 +628,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
        */
       public Builder clearFurnitureMakeHelpedData() {
         if (furnitureMakeHelpedDataBuilder_ == null) {
@@ -642,7 +642,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.Builder getFurnitureMakeHelpedDataBuilder() {
         
@@ -650,7 +650,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         return getFurnitureMakeHelpedDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedDataOrBuilder getFurnitureMakeHelpedDataOrBuilder() {
         if (furnitureMakeHelpedDataBuilder_ != null) {
@@ -661,7 +661,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         }
       }
       /**
-       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 3;</code>
+       * <code>.FurnitureMakeBeHelpedData furniture_make_helped_data = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData, emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.Builder, emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedDataOrBuilder> 
@@ -681,14 +681,14 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot, emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder, emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlotOrBuilder> furnitureMakeSlotBuilder_;
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
        * @return Whether the furnitureMakeSlot field is set.
        */
       public boolean hasFurnitureMakeSlot() {
         return furnitureMakeSlotBuilder_ != null || furnitureMakeSlot_ != null;
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
        * @return The furnitureMakeSlot.
        */
       public emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot getFurnitureMakeSlot() {
@@ -699,7 +699,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         }
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
        */
       public Builder setFurnitureMakeSlot(emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot value) {
         if (furnitureMakeSlotBuilder_ == null) {
@@ -715,7 +715,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
        */
       public Builder setFurnitureMakeSlot(
           emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder builderForValue) {
@@ -729,7 +729,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
        */
       public Builder mergeFurnitureMakeSlot(emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot value) {
         if (furnitureMakeSlotBuilder_ == null) {
@@ -747,7 +747,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
        */
       public Builder clearFurnitureMakeSlot() {
         if (furnitureMakeSlotBuilder_ == null) {
@@ -761,7 +761,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder getFurnitureMakeSlotBuilder() {
         
@@ -769,7 +769,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         return getFurnitureMakeSlotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlotOrBuilder getFurnitureMakeSlotOrBuilder() {
         if (furnitureMakeSlotBuilder_ != null) {
@@ -780,7 +780,7 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
         }
       }
       /**
-       * <code>.FurnitureMakeSlot furniture_make_slot = 8;</code>
+       * <code>.FurnitureMakeSlot furniture_make_slot = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot, emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder, emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlotOrBuilder> 
@@ -865,9 +865,9 @@ public final class FurnitureMakeBeHelpedNotifyOuterClass {
       "\n!FurnitureMakeBeHelpedNotify.proto\032\037Fur" +
       "nitureMakeBeHelpedData.proto\032\027FurnitureM" +
       "akeSlot.proto\"\216\001\n\033FurnitureMakeBeHelpedN" +
-      "otify\022>\n\032furniture_make_helped_data\030\003 \001(" +
+      "otify\022>\n\032furniture_make_helped_data\030\t \001(" +
       "\0132\032.FurnitureMakeBeHelpedData\022/\n\023furnitu" +
-      "re_make_slot\030\010 \001(\0132\022.FurnitureMakeSlotB\033" +
+      "re_make_slot\030\005 \001(\0132\022.FurnitureMakeSlotB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

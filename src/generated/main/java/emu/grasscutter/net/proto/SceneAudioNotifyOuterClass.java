@@ -19,16 +19,29 @@ public final class SceneAudioNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 type = 9;</code>
-     * @return The type.
+     * <code>repeated string param3 = 11;</code>
+     * @return A list containing the param3.
      */
-    int getType();
-
+    java.util.List<java.lang.String>
+        getParam3List();
     /**
-     * <code>uint32 source_uid = 11;</code>
-     * @return The sourceUid.
+     * <code>repeated string param3 = 11;</code>
+     * @return The count of param3.
      */
-    int getSourceUid();
+    int getParam3Count();
+    /**
+     * <code>repeated string param3 = 11;</code>
+     * @param index The index of the element to return.
+     * @return The param3 at the given index.
+     */
+    java.lang.String getParam3(int index);
+    /**
+     * <code>repeated string param3 = 11;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the param3 at the given index.
+     */
+    com.google.protobuf.ByteString
+        getParam3Bytes(int index);
 
     /**
      * <code>repeated float param2 = 6;</code>
@@ -48,51 +61,38 @@ public final class SceneAudioNotifyOuterClass {
     float getParam2(int index);
 
     /**
-     * <code>repeated string param3 = 5;</code>
-     * @return A list containing the param3.
+     * <code>uint32 source_uid = 2;</code>
+     * @return The sourceUid.
      */
-    java.util.List<java.lang.String>
-        getParam3List();
-    /**
-     * <code>repeated string param3 = 5;</code>
-     * @return The count of param3.
-     */
-    int getParam3Count();
-    /**
-     * <code>repeated string param3 = 5;</code>
-     * @param index The index of the element to return.
-     * @return The param3 at the given index.
-     */
-    java.lang.String getParam3(int index);
-    /**
-     * <code>repeated string param3 = 5;</code>
-     * @param index The index of the value to return.
-     * @return The bytes of the param3 at the given index.
-     */
-    com.google.protobuf.ByteString
-        getParam3Bytes(int index);
+    int getSourceUid();
 
     /**
-     * <code>repeated uint32 param1 = 8;</code>
+     * <code>repeated uint32 param1 = 4;</code>
      * @return A list containing the param1.
      */
     java.util.List<java.lang.Integer> getParam1List();
     /**
-     * <code>repeated uint32 param1 = 8;</code>
+     * <code>repeated uint32 param1 = 4;</code>
      * @return The count of param1.
      */
     int getParam1Count();
     /**
-     * <code>repeated uint32 param1 = 8;</code>
+     * <code>repeated uint32 param1 = 4;</code>
      * @param index The index of the element to return.
      * @return The param1 at the given index.
      */
     int getParam1(int index);
+
+    /**
+     * <code>int32 type = 12;</code>
+     * @return The type.
+     */
+    int getType();
   }
   /**
    * <pre>
-   * CmdId: 3231
-   * Name: NNDJOINBKAB
+   * CmdId: 4490
+   * Obf: KJPABKOEPJN
    * </pre>
    *
    * Protobuf type {@code SceneAudioNotify}
@@ -107,8 +107,8 @@ public final class SceneAudioNotifyOuterClass {
       super(builder);
     }
     private SceneAudioNotify() {
-      param2_ = emptyFloatList();
       param3_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      param2_ = emptyFloatList();
       param1_ = emptyIntList();
     }
 
@@ -143,37 +143,12 @@ public final class SceneAudioNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
-              java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                param3_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              param3_.add(s);
+            case 16: {
+
+              sourceUid_ = input.readUInt32();
               break;
             }
-            case 53: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                param2_ = newFloatList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              param2_.addFloat(input.readFloat());
-              break;
-            }
-            case 50: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                param2_ = newFloatList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                param2_.addFloat(input.readFloat());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 64: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 param1_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
@@ -181,7 +156,7 @@ public final class SceneAudioNotifyOuterClass {
               param1_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
@@ -194,14 +169,39 @@ public final class SceneAudioNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 72: {
-
-              type_ = input.readInt32();
+            case 53: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                param2_ = newFloatList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              param2_.addFloat(input.readFloat());
               break;
             }
-            case 88: {
+            case 50: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                param2_ = newFloatList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                param2_.addFloat(input.readFloat());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 90: {
+              java.lang.String s = input.readStringRequireUtf8();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                param3_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              param3_.add(s);
+              break;
+            }
+            case 96: {
 
-              sourceUid_ = input.readUInt32();
+              type_ = input.readInt32();
               break;
             }
             default: {
@@ -219,14 +219,14 @@ public final class SceneAudioNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          param3_ = param3_.getUnmodifiableView();
-        }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          param2_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
           param1_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          param2_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          param3_ = param3_.getUnmodifiableView();
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -245,26 +245,39 @@ public final class SceneAudioNotifyOuterClass {
               emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify.class, emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify.Builder.class);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 9;
-    private int type_;
+    public static final int PARAM3_FIELD_NUMBER = 11;
+    private com.google.protobuf.LazyStringList param3_;
     /**
-     * <code>int32 type = 9;</code>
-     * @return The type.
+     * <code>repeated string param3 = 11;</code>
+     * @return A list containing the param3.
      */
-    @java.lang.Override
-    public int getType() {
-      return type_;
+    public com.google.protobuf.ProtocolStringList
+        getParam3List() {
+      return param3_;
     }
-
-    public static final int SOURCE_UID_FIELD_NUMBER = 11;
-    private int sourceUid_;
     /**
-     * <code>uint32 source_uid = 11;</code>
-     * @return The sourceUid.
+     * <code>repeated string param3 = 11;</code>
+     * @return The count of param3.
      */
-    @java.lang.Override
-    public int getSourceUid() {
-      return sourceUid_;
+    public int getParam3Count() {
+      return param3_.size();
+    }
+    /**
+     * <code>repeated string param3 = 11;</code>
+     * @param index The index of the element to return.
+     * @return The param3 at the given index.
+     */
+    public java.lang.String getParam3(int index) {
+      return param3_.get(index);
+    }
+    /**
+     * <code>repeated string param3 = 11;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the param3 at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getParam3Bytes(int index) {
+      return param3_.getByteString(index);
     }
 
     public static final int PARAM2_FIELD_NUMBER = 6;
@@ -295,45 +308,21 @@ public final class SceneAudioNotifyOuterClass {
     }
     private int param2MemoizedSerializedSize = -1;
 
-    public static final int PARAM3_FIELD_NUMBER = 5;
-    private com.google.protobuf.LazyStringList param3_;
+    public static final int SOURCE_UID_FIELD_NUMBER = 2;
+    private int sourceUid_;
     /**
-     * <code>repeated string param3 = 5;</code>
-     * @return A list containing the param3.
+     * <code>uint32 source_uid = 2;</code>
+     * @return The sourceUid.
      */
-    public com.google.protobuf.ProtocolStringList
-        getParam3List() {
-      return param3_;
-    }
-    /**
-     * <code>repeated string param3 = 5;</code>
-     * @return The count of param3.
-     */
-    public int getParam3Count() {
-      return param3_.size();
-    }
-    /**
-     * <code>repeated string param3 = 5;</code>
-     * @param index The index of the element to return.
-     * @return The param3 at the given index.
-     */
-    public java.lang.String getParam3(int index) {
-      return param3_.get(index);
-    }
-    /**
-     * <code>repeated string param3 = 5;</code>
-     * @param index The index of the value to return.
-     * @return The bytes of the param3 at the given index.
-     */
-    public com.google.protobuf.ByteString
-        getParam3Bytes(int index) {
-      return param3_.getByteString(index);
+    @java.lang.Override
+    public int getSourceUid() {
+      return sourceUid_;
     }
 
-    public static final int PARAM1_FIELD_NUMBER = 8;
+    public static final int PARAM1_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList param1_;
     /**
-     * <code>repeated uint32 param1 = 8;</code>
+     * <code>repeated uint32 param1 = 4;</code>
      * @return A list containing the param1.
      */
     @java.lang.Override
@@ -342,14 +331,14 @@ public final class SceneAudioNotifyOuterClass {
       return param1_;
     }
     /**
-     * <code>repeated uint32 param1 = 8;</code>
+     * <code>repeated uint32 param1 = 4;</code>
      * @return The count of param1.
      */
     public int getParam1Count() {
       return param1_.size();
     }
     /**
-     * <code>repeated uint32 param1 = 8;</code>
+     * <code>repeated uint32 param1 = 4;</code>
      * @param index The index of the element to return.
      * @return The param1 at the given index.
      */
@@ -357,6 +346,17 @@ public final class SceneAudioNotifyOuterClass {
       return param1_.getInt(index);
     }
     private int param1MemoizedSerializedSize = -1;
+
+    public static final int TYPE_FIELD_NUMBER = 12;
+    private int type_;
+    /**
+     * <code>int32 type = 12;</code>
+     * @return The type.
+     */
+    @java.lang.Override
+    public int getType() {
+      return type_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -373,8 +373,15 @@ public final class SceneAudioNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < param3_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, param3_.getRaw(i));
+      if (sourceUid_ != 0) {
+        output.writeUInt32(2, sourceUid_);
+      }
+      if (getParam1List().size() > 0) {
+        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(param1MemoizedSerializedSize);
+      }
+      for (int i = 0; i < param1_.size(); i++) {
+        output.writeUInt32NoTag(param1_.getInt(i));
       }
       if (getParam2List().size() > 0) {
         output.writeUInt32NoTag(50);
@@ -383,18 +390,11 @@ public final class SceneAudioNotifyOuterClass {
       for (int i = 0; i < param2_.size(); i++) {
         output.writeFloatNoTag(param2_.getFloat(i));
       }
-      if (getParam1List().size() > 0) {
-        output.writeUInt32NoTag(66);
-        output.writeUInt32NoTag(param1MemoizedSerializedSize);
-      }
-      for (int i = 0; i < param1_.size(); i++) {
-        output.writeUInt32NoTag(param1_.getInt(i));
+      for (int i = 0; i < param3_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, param3_.getRaw(i));
       }
       if (type_ != 0) {
-        output.writeInt32(9, type_);
-      }
-      if (sourceUid_ != 0) {
-        output.writeUInt32(11, sourceUid_);
+        output.writeInt32(12, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -405,24 +405,9 @@ public final class SceneAudioNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < param3_.size(); i++) {
-          dataSize += computeStringSizeNoTag(param3_.getRaw(i));
-        }
-        size += dataSize;
-        size += 1 * getParam3List().size();
-      }
-      {
-        int dataSize = 0;
-        dataSize = 4 * getParam2List().size();
-        size += dataSize;
-        if (!getParam2List().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        param2MemoizedSerializedSize = dataSize;
+      if (sourceUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, sourceUid_);
       }
       {
         int dataSize = 0;
@@ -438,13 +423,28 @@ public final class SceneAudioNotifyOuterClass {
         }
         param1MemoizedSerializedSize = dataSize;
       }
+      {
+        int dataSize = 0;
+        dataSize = 4 * getParam2List().size();
+        size += dataSize;
+        if (!getParam2List().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        param2MemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < param3_.size(); i++) {
+          dataSize += computeStringSizeNoTag(param3_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getParam3List().size();
+      }
       if (type_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, type_);
-      }
-      if (sourceUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, sourceUid_);
+          .computeInt32Size(12, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,16 +461,16 @@ public final class SceneAudioNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify other = (emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify) obj;
 
-      if (getType()
-          != other.getType()) return false;
-      if (getSourceUid()
-          != other.getSourceUid()) return false;
-      if (!getParam2List()
-          .equals(other.getParam2List())) return false;
       if (!getParam3List()
           .equals(other.getParam3List())) return false;
+      if (!getParam2List()
+          .equals(other.getParam2List())) return false;
+      if (getSourceUid()
+          != other.getSourceUid()) return false;
       if (!getParam1List()
           .equals(other.getParam1List())) return false;
+      if (getType()
+          != other.getType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -482,22 +482,22 @@ public final class SceneAudioNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType();
-      hash = (37 * hash) + SOURCE_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getSourceUid();
-      if (getParam2Count() > 0) {
-        hash = (37 * hash) + PARAM2_FIELD_NUMBER;
-        hash = (53 * hash) + getParam2List().hashCode();
-      }
       if (getParam3Count() > 0) {
         hash = (37 * hash) + PARAM3_FIELD_NUMBER;
         hash = (53 * hash) + getParam3List().hashCode();
       }
+      if (getParam2Count() > 0) {
+        hash = (37 * hash) + PARAM2_FIELD_NUMBER;
+        hash = (53 * hash) + getParam2List().hashCode();
+      }
+      hash = (37 * hash) + SOURCE_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getSourceUid();
       if (getParam1Count() > 0) {
         hash = (37 * hash) + PARAM1_FIELD_NUMBER;
         hash = (53 * hash) + getParam1List().hashCode();
       }
+      hash = (37 * hash) + TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -595,8 +595,8 @@ public final class SceneAudioNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3231
-     * Name: NNDJOINBKAB
+     * CmdId: 4490
+     * Obf: KJPABKOEPJN
      * </pre>
      *
      * Protobuf type {@code SceneAudioNotify}
@@ -636,16 +636,16 @@ public final class SceneAudioNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        type_ = 0;
-
+        param3_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        param2_ = emptyFloatList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         sourceUid_ = 0;
 
-        param2_ = emptyFloatList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        param3_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000002);
         param1_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
+        type_ = 0;
+
         return this;
       }
 
@@ -673,23 +673,23 @@ public final class SceneAudioNotifyOuterClass {
       public emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify buildPartial() {
         emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify result = new emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify(this);
         int from_bitField0_ = bitField0_;
-        result.type_ = type_;
-        result.sourceUid_ = sourceUid_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          param2_.makeImmutable();
+          param3_ = param3_.getUnmodifiableView();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.param2_ = param2_;
+        result.param3_ = param3_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          param3_ = param3_.getUnmodifiableView();
+          param2_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.param3_ = param3_;
+        result.param2_ = param2_;
+        result.sourceUid_ = sourceUid_;
         if (((bitField0_ & 0x00000004) != 0)) {
           param1_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.param1_ = param1_;
+        result.type_ = type_;
         onBuilt();
         return result;
       }
@@ -738,31 +738,28 @@ public final class SceneAudioNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify other) {
         if (other == emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify.getDefaultInstance()) return this;
-        if (other.getType() != 0) {
-          setType(other.getType());
-        }
-        if (other.getSourceUid() != 0) {
-          setSourceUid(other.getSourceUid());
+        if (!other.param3_.isEmpty()) {
+          if (param3_.isEmpty()) {
+            param3_ = other.param3_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureParam3IsMutable();
+            param3_.addAll(other.param3_);
+          }
+          onChanged();
         }
         if (!other.param2_.isEmpty()) {
           if (param2_.isEmpty()) {
             param2_ = other.param2_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureParam2IsMutable();
             param2_.addAll(other.param2_);
           }
           onChanged();
         }
-        if (!other.param3_.isEmpty()) {
-          if (param3_.isEmpty()) {
-            param3_ = other.param3_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureParam3IsMutable();
-            param3_.addAll(other.param3_);
-          }
-          onChanged();
+        if (other.getSourceUid() != 0) {
+          setSourceUid(other.getSourceUid());
         }
         if (!other.param1_.isEmpty()) {
           if (param1_.isEmpty()) {
@@ -773,6 +770,9 @@ public final class SceneAudioNotifyOuterClass {
             param1_.addAll(other.param1_);
           }
           onChanged();
+        }
+        if (other.getType() != 0) {
+          setType(other.getType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -804,73 +804,121 @@ public final class SceneAudioNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int type_ ;
-      /**
-       * <code>int32 type = 9;</code>
-       * @return The type.
-       */
-      @java.lang.Override
-      public int getType() {
-        return type_;
+      private com.google.protobuf.LazyStringList param3_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureParam3IsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          param3_ = new com.google.protobuf.LazyStringArrayList(param3_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>int32 type = 9;</code>
-       * @param value The type to set.
+       * <code>repeated string param3 = 11;</code>
+       * @return A list containing the param3.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getParam3List() {
+        return param3_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string param3 = 11;</code>
+       * @return The count of param3.
+       */
+      public int getParam3Count() {
+        return param3_.size();
+      }
+      /**
+       * <code>repeated string param3 = 11;</code>
+       * @param index The index of the element to return.
+       * @return The param3 at the given index.
+       */
+      public java.lang.String getParam3(int index) {
+        return param3_.get(index);
+      }
+      /**
+       * <code>repeated string param3 = 11;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the param3 at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getParam3Bytes(int index) {
+        return param3_.getByteString(index);
+      }
+      /**
+       * <code>repeated string param3 = 11;</code>
+       * @param index The index to set the value at.
+       * @param value The param3 to set.
        * @return This builder for chaining.
        */
-      public Builder setType(int value) {
-        
-        type_ = value;
+      public Builder setParam3(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureParam3IsMutable();
+        param3_.set(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>int32 type = 9;</code>
+       * <code>repeated string param3 = 11;</code>
+       * @param value The param3 to add.
        * @return This builder for chaining.
        */
-      public Builder clearType() {
-        
-        type_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sourceUid_ ;
-      /**
-       * <code>uint32 source_uid = 11;</code>
-       * @return The sourceUid.
-       */
-      @java.lang.Override
-      public int getSourceUid() {
-        return sourceUid_;
-      }
-      /**
-       * <code>uint32 source_uid = 11;</code>
-       * @param value The sourceUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSourceUid(int value) {
-        
-        sourceUid_ = value;
+      public Builder addParam3(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureParam3IsMutable();
+        param3_.add(value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 source_uid = 11;</code>
+       * <code>repeated string param3 = 11;</code>
+       * @param values The param3 to add.
        * @return This builder for chaining.
        */
-      public Builder clearSourceUid() {
-        
-        sourceUid_ = 0;
+      public Builder addAllParam3(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureParam3IsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, param3_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string param3 = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParam3() {
+        param3_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string param3 = 11;</code>
+       * @param value The bytes of the param3 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addParam3Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureParam3IsMutable();
+        param3_.add(value);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.Internal.FloatList param2_ = emptyFloatList();
       private void ensureParam2IsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           param2_ = mutableCopy(param2_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
       /**
@@ -879,7 +927,7 @@ public final class SceneAudioNotifyOuterClass {
        */
       public java.util.List<java.lang.Float>
           getParam2List() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(param2_) : param2_;
       }
       /**
@@ -940,117 +988,38 @@ public final class SceneAudioNotifyOuterClass {
        */
       public Builder clearParam2() {
         param2_ = emptyFloatList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.LazyStringList param3_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      private void ensureParam3IsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          param3_ = new com.google.protobuf.LazyStringArrayList(param3_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated string param3 = 5;</code>
-       * @return A list containing the param3.
-       */
-      public com.google.protobuf.ProtocolStringList
-          getParam3List() {
-        return param3_.getUnmodifiableView();
-      }
-      /**
-       * <code>repeated string param3 = 5;</code>
-       * @return The count of param3.
-       */
-      public int getParam3Count() {
-        return param3_.size();
-      }
-      /**
-       * <code>repeated string param3 = 5;</code>
-       * @param index The index of the element to return.
-       * @return The param3 at the given index.
-       */
-      public java.lang.String getParam3(int index) {
-        return param3_.get(index);
-      }
-      /**
-       * <code>repeated string param3 = 5;</code>
-       * @param index The index of the value to return.
-       * @return The bytes of the param3 at the given index.
-       */
-      public com.google.protobuf.ByteString
-          getParam3Bytes(int index) {
-        return param3_.getByteString(index);
-      }
-      /**
-       * <code>repeated string param3 = 5;</code>
-       * @param index The index to set the value at.
-       * @param value The param3 to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParam3(
-          int index, java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureParam3IsMutable();
-        param3_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string param3 = 5;</code>
-       * @param value The param3 to add.
-       * @return This builder for chaining.
-       */
-      public Builder addParam3(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureParam3IsMutable();
-        param3_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string param3 = 5;</code>
-       * @param values The param3 to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllParam3(
-          java.lang.Iterable<java.lang.String> values) {
-        ensureParam3IsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, param3_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string param3 = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParam3() {
-        param3_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
+
+      private int sourceUid_ ;
       /**
-       * <code>repeated string param3 = 5;</code>
-       * @param value The bytes of the param3 to add.
+       * <code>uint32 source_uid = 2;</code>
+       * @return The sourceUid.
+       */
+      @java.lang.Override
+      public int getSourceUid() {
+        return sourceUid_;
+      }
+      /**
+       * <code>uint32 source_uid = 2;</code>
+       * @param value The sourceUid to set.
        * @return This builder for chaining.
        */
-      public Builder addParam3Bytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        ensureParam3IsMutable();
-        param3_.add(value);
+      public Builder setSourceUid(int value) {
+        
+        sourceUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 source_uid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSourceUid() {
+        
+        sourceUid_ = 0;
         onChanged();
         return this;
       }
@@ -1063,7 +1032,7 @@ public final class SceneAudioNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 param1 = 8;</code>
+       * <code>repeated uint32 param1 = 4;</code>
        * @return A list containing the param1.
        */
       public java.util.List<java.lang.Integer>
@@ -1072,14 +1041,14 @@ public final class SceneAudioNotifyOuterClass {
                  java.util.Collections.unmodifiableList(param1_) : param1_;
       }
       /**
-       * <code>repeated uint32 param1 = 8;</code>
+       * <code>repeated uint32 param1 = 4;</code>
        * @return The count of param1.
        */
       public int getParam1Count() {
         return param1_.size();
       }
       /**
-       * <code>repeated uint32 param1 = 8;</code>
+       * <code>repeated uint32 param1 = 4;</code>
        * @param index The index of the element to return.
        * @return The param1 at the given index.
        */
@@ -1087,7 +1056,7 @@ public final class SceneAudioNotifyOuterClass {
         return param1_.getInt(index);
       }
       /**
-       * <code>repeated uint32 param1 = 8;</code>
+       * <code>repeated uint32 param1 = 4;</code>
        * @param index The index to set the value at.
        * @param value The param1 to set.
        * @return This builder for chaining.
@@ -1100,7 +1069,7 @@ public final class SceneAudioNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param1 = 8;</code>
+       * <code>repeated uint32 param1 = 4;</code>
        * @param value The param1 to add.
        * @return This builder for chaining.
        */
@@ -1111,7 +1080,7 @@ public final class SceneAudioNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param1 = 8;</code>
+       * <code>repeated uint32 param1 = 4;</code>
        * @param values The param1 to add.
        * @return This builder for chaining.
        */
@@ -1124,12 +1093,43 @@ public final class SceneAudioNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param1 = 8;</code>
+       * <code>repeated uint32 param1 = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam1() {
         param1_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+
+      private int type_ ;
+      /**
+       * <code>int32 type = 12;</code>
+       * @return The type.
+       */
+      @java.lang.Override
+      public int getType() {
+        return type_;
+      }
+      /**
+       * <code>int32 type = 12;</code>
+       * @param value The type to set.
+       * @return This builder for chaining.
+       */
+      public Builder setType(int value) {
+        
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 type = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearType() {
+        
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -1201,9 +1201,9 @@ public final class SceneAudioNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026SceneAudioNotify.proto\"d\n\020SceneAudioNo" +
-      "tify\022\014\n\004type\030\t \001(\005\022\022\n\nsource_uid\030\013 \001(\r\022\016" +
-      "\n\006param2\030\006 \003(\002\022\016\n\006param3\030\005 \003(\t\022\016\n\006param1" +
-      "\030\010 \003(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "tify\022\016\n\006param3\030\013 \003(\t\022\016\n\006param2\030\006 \003(\002\022\022\n\n" +
+      "source_uid\030\002 \001(\r\022\016\n\006param1\030\004 \003(\r\022\014\n\004type" +
+      "\030\014 \001(\005B\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1215,7 +1215,7 @@ public final class SceneAudioNotifyOuterClass {
     internal_static_SceneAudioNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneAudioNotify_descriptor,
-        new java.lang.String[] { "Type", "SourceUid", "Param2", "Param3", "Param1", });
+        new java.lang.String[] { "Param3", "Param2", "SourceUid", "Param1", "Type", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

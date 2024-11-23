@@ -16,7 +16,7 @@ public final class HitColliderTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: GHNPJLHELHH
+   * Obf: CDFCOLHODGF
    * </pre>
    *
    * Protobuf enum {@code HitColliderType}

@@ -16,7 +16,7 @@ public final class WindFieldDungeonFailReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: CJFCCJHOGFA
+   * Obf: EPFKHGDAOCP
    * </pre>
    *
    * Protobuf enum {@code WindFieldDungeonFailReason}

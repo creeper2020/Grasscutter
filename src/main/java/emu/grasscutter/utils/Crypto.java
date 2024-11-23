@@ -1,22 +1,14 @@
 package emu.grasscutter.utils;
 
-import emu.grasscutter.server.http.objects.QueryCurRegionRspJson;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.nio.file.Path;
-import java.security.KeyFactory;
-import java.security.PrivateKey;
-import java.security.PublicKey;
-import java.security.SecureRandom;
-import java.security.Signature;
-import java.security.spec.PKCS8EncodedKeySpec;
-import java.security.spec.X509EncodedKeySpec;
-import java.util.Arrays;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.regex.Pattern;
-
 import emu.grasscutter.Grasscutter;
+import emu.grasscutter.server.http.objects.QueryCurRegionRspJson;
+import emu.grasscutter.utils.algorithms.MersenneTwister64;
+import java.io.ByteArrayOutputStream;
+import java.nio.file.Path;
+import java.security.*;
+import java.security.spec.*;
+import java.util.*;
+import java.util.regex.Pattern;
 import javax.crypto.Cipher;
 
 public final class Crypto {
@@ -42,8 +34,10 @@ public final class Crypto {
         ENCRYPT_SEED_BUFFER = FileUtils.readResource("/keys/secretKeyBuffer.bin");
 
         try {
-            CUR_SIGNING_KEY = KeyFactory.getInstance("RSA")
-                .generatePrivate(new PKCS8EncodedKeySpec(FileUtils.readResource("/keys/SigningKey.der")));
+            CUR_SIGNING_KEY =
+                    KeyFactory.getInstance("RSA")
+                            .generatePrivate(
+                                    new PKCS8EncodedKeySpec(FileUtils.readResource("/keys/SigningKey.der")));
 
             Pattern pattern = Pattern.compile("([0-9]*)_Pub\\.der");
             for (Path path : FileUtils.getPathsFromResource("/keys/game_keys")) {
@@ -52,8 +46,9 @@ public final class Crypto {
                     var m = pattern.matcher(path.getFileName().toString());
 
                     if (m.matches()) {
-                        var key = KeyFactory.getInstance("RSA")
-                            .generatePublic(new X509EncodedKeySpec(FileUtils.read(path)));
+                        var key =
+                                KeyFactory.getInstance("RSA")
+                                        .generatePublic(new X509EncodedKeySpec(FileUtils.read(path)));
 
                         EncryptionKeys.put(Integer.valueOf(m.group(1)), key);
                     }
@@ -80,7 +75,28 @@ public final class Crypto {
         return bytes;
     }
 
-    public static QueryCurRegionRspJson encryptAndSignRegionData(byte[] regionInfo, String key_id) throws Exception {
+    public static long generateEncryptKeyAndSeed(byte[] encryptKey) {
+        var encryptSeed = secureRandom.nextLong();
+        var mt = new MersenneTwister64();
+        mt.setSeed(encryptSeed);
+        mt.setSeed(mt.nextLong());
+        mt.nextLong();
+        for (int i = 0; i < 4096 >> 3; i++) {
+            var rand = mt.nextLong();
+            encryptKey[i << 3] = (byte) (rand >> 56);
+            encryptKey[(i << 3) + 1] = (byte) (rand >> 48);
+            encryptKey[(i << 3) + 2] = (byte) (rand >> 40);
+            encryptKey[(i << 3) + 3] = (byte) (rand >> 32);
+            encryptKey[(i << 3) + 4] = (byte) (rand >> 24);
+            encryptKey[(i << 3) + 5] = (byte) (rand >> 16);
+            encryptKey[(i << 3) + 6] = (byte) (rand >> 8);
+            encryptKey[(i << 3) + 7] = (byte) rand;
+        }
+        return encryptSeed;
+    }
+
+    public static QueryCurRegionRspJson encryptAndSignRegionData(byte[] regionInfo, String key_id)
+            throws Exception {
         if (key_id == null) {
             throw new Exception("Key ID was not set");
         }
@@ -88,17 +104,18 @@ public final class Crypto {
         Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
         cipher.init(Cipher.ENCRYPT_MODE, EncryptionKeys.get(Integer.valueOf(key_id)));
 
-        //Encrypt regionInfo in chunks
+        // Encrypt regionInfo in chunks
         ByteArrayOutputStream encryptedRegionInfoStream = new ByteArrayOutputStream();
 
-        //Thank you so much GH Copilot
+        // Thank you so much GH Copilot
         int chunkSize = 256 - 11;
         int regionInfoLength = regionInfo.length;
         int numChunks = (int) Math.ceil(regionInfoLength / (double) chunkSize);
 
         for (int i = 0; i < numChunks; i++) {
-            byte[] chunk = Arrays.copyOfRange(regionInfo, i * chunkSize,
-                Math.min((i + 1) * chunkSize, regionInfoLength));
+            byte[] chunk =
+                    Arrays.copyOfRange(
+                            regionInfo, i * chunkSize, Math.min((i + 1) * chunkSize, regionInfoLength));
             byte[] encryptedChunk = cipher.doFinal(chunk);
             encryptedRegionInfoStream.write(encryptedChunk);
         }

@@ -26,8 +26,8 @@ public final class ClientLockGameTimeNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 191
-   * Name: AJKNMCDMLOI
+   * CmdId: 23994
+   * Obf: JMHDCBIFBBI
    * </pre>
    *
    * Protobuf type {@code ClientLockGameTimeNotify}
@@ -280,8 +280,8 @@ public final class ClientLockGameTimeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 191
-     * Name: AJKNMCDMLOI
+     * CmdId: 23994
+     * Obf: JMHDCBIFBBI
      * </pre>
      *
      * Protobuf type {@code ClientLockGameTimeNotify}

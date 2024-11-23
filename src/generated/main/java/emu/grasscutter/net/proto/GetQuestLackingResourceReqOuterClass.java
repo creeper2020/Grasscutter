@@ -26,8 +26,8 @@ public final class GetQuestLackingResourceReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 418
-   * Name: LEFCJKGALNG
+   * CmdId: 24145
+   * Obf: NNLDEBNHEEF
    * </pre>
    *
    * Protobuf type {@code GetQuestLackingResourceReq}
@@ -279,8 +279,8 @@ public final class GetQuestLackingResourceReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 418
-     * Name: LEFCJKGALNG
+     * CmdId: 24145
+     * Obf: NNLDEBNHEEF
      * </pre>
      *
      * Protobuf type {@code GetQuestLackingResourceReq}

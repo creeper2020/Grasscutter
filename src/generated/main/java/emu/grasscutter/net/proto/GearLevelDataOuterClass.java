@@ -19,44 +19,44 @@ public final class GearLevelDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 open_time = 3;</code>
-     * @return The openTime.
-     */
-    int getOpenTime();
-
-    /**
-     * <code>uint32 ACAPFNOLMKE = 1;</code>
-     * @return The aCAPFNOLMKE.
-     */
-    int getACAPFNOLMKE();
-
-    /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 NJPEANGOAMC = 9;</code>
-     * @return The nJPEANGOAMC.
+     * <code>uint32 EEMGKJOCHHK = 3;</code>
+     * @return The eEMGKJOCHHK.
      */
-    int getNJPEANGOAMC();
+    int getEEMGKJOCHHK();
 
     /**
-     * <code>bool is_open = 6;</code>
+     * <code>uint32 open_time = 14;</code>
+     * @return The openTime.
+     */
+    int getOpenTime();
+
+    /**
+     * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool is_finished = 15;</code>
+     * <code>bool is_finished = 8;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
+
+    /**
+     * <code>uint32 MMGJJBELBHF = 9;</code>
+     * @return The mMGJJBELBHF.
+     */
+    int getMMGJJBELBHF();
   }
   /**
    * <pre>
-   * Name: PFGKJAENJNE
+   * Obf: DFJGCCIKGLP
    * </pre>
    *
    * Protobuf type {@code GearLevelData}
@@ -103,34 +103,34 @@ public final class GearLevelDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
-              aCAPFNOLMKE_ = input.readUInt32();
+              eEMGKJOCHHK_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 32: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 64: {
 
-              openTime_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              isOpen_ = input.readBool();
+              isFinished_ = input.readBool();
               break;
             }
             case 72: {
 
-              nJPEANGOAMC_ = input.readUInt32();
+              mMGJJBELBHF_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 96: {
 
-              isFinished_ = input.readBool();
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              openTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,32 +165,10 @@ public final class GearLevelDataOuterClass {
               emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.class, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder.class);
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 3;
-    private int openTime_;
-    /**
-     * <code>uint32 open_time = 3;</code>
-     * @return The openTime.
-     */
-    @java.lang.Override
-    public int getOpenTime() {
-      return openTime_;
-    }
-
-    public static final int ACAPFNOLMKE_FIELD_NUMBER = 1;
-    private int aCAPFNOLMKE_;
-    /**
-     * <code>uint32 ACAPFNOLMKE = 1;</code>
-     * @return The aCAPFNOLMKE.
-     */
-    @java.lang.Override
-    public int getACAPFNOLMKE() {
-      return aCAPFNOLMKE_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    public static final int LEVEL_ID_FIELD_NUMBER = 4;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -198,21 +176,32 @@ public final class GearLevelDataOuterClass {
       return levelId_;
     }
 
-    public static final int NJPEANGOAMC_FIELD_NUMBER = 9;
-    private int nJPEANGOAMC_;
+    public static final int EEMGKJOCHHK_FIELD_NUMBER = 3;
+    private int eEMGKJOCHHK_;
     /**
-     * <code>uint32 NJPEANGOAMC = 9;</code>
-     * @return The nJPEANGOAMC.
+     * <code>uint32 EEMGKJOCHHK = 3;</code>
+     * @return The eEMGKJOCHHK.
      */
     @java.lang.Override
-    public int getNJPEANGOAMC() {
-      return nJPEANGOAMC_;
+    public int getEEMGKJOCHHK() {
+      return eEMGKJOCHHK_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 6;
+    public static final int OPEN_TIME_FIELD_NUMBER = 14;
+    private int openTime_;
+    /**
+     * <code>uint32 open_time = 14;</code>
+     * @return The openTime.
+     */
+    @java.lang.Override
+    public int getOpenTime() {
+      return openTime_;
+    }
+
+    public static final int IS_OPEN_FIELD_NUMBER = 12;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 6;</code>
+     * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -220,15 +209,26 @@ public final class GearLevelDataOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 15;
+    public static final int IS_FINISHED_FIELD_NUMBER = 8;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 15;</code>
+     * <code>bool is_finished = 8;</code>
      * @return The isFinished.
      */
     @java.lang.Override
     public boolean getIsFinished() {
       return isFinished_;
+    }
+
+    public static final int MMGJJBELBHF_FIELD_NUMBER = 9;
+    private int mMGJJBELBHF_;
+    /**
+     * <code>uint32 MMGJJBELBHF = 9;</code>
+     * @return The mMGJJBELBHF.
+     */
+    @java.lang.Override
+    public int getMMGJJBELBHF() {
+      return mMGJJBELBHF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -245,23 +245,23 @@ public final class GearLevelDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aCAPFNOLMKE_ != 0) {
-        output.writeUInt32(1, aCAPFNOLMKE_);
+      if (eEMGKJOCHHK_ != 0) {
+        output.writeUInt32(3, eEMGKJOCHHK_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
-      }
-      if (openTime_ != 0) {
-        output.writeUInt32(3, openTime_);
-      }
-      if (isOpen_ != false) {
-        output.writeBool(6, isOpen_);
-      }
-      if (nJPEANGOAMC_ != 0) {
-        output.writeUInt32(9, nJPEANGOAMC_);
+        output.writeUInt32(4, levelId_);
       }
       if (isFinished_ != false) {
-        output.writeBool(15, isFinished_);
+        output.writeBool(8, isFinished_);
+      }
+      if (mMGJJBELBHF_ != 0) {
+        output.writeUInt32(9, mMGJJBELBHF_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(12, isOpen_);
+      }
+      if (openTime_ != 0) {
+        output.writeUInt32(14, openTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,29 +272,29 @@ public final class GearLevelDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aCAPFNOLMKE_ != 0) {
+      if (eEMGKJOCHHK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, aCAPFNOLMKE_);
+          .computeUInt32Size(3, eEMGKJOCHHK_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
-      }
-      if (openTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, openTime_);
-      }
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isOpen_);
-      }
-      if (nJPEANGOAMC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, nJPEANGOAMC_);
+          .computeUInt32Size(4, levelId_);
       }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isFinished_);
+          .computeBoolSize(8, isFinished_);
+      }
+      if (mMGJJBELBHF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, mMGJJBELBHF_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isOpen_);
+      }
+      if (openTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, openTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,18 +311,18 @@ public final class GearLevelDataOuterClass {
       }
       emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData other = (emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData) obj;
 
-      if (getOpenTime()
-          != other.getOpenTime()) return false;
-      if (getACAPFNOLMKE()
-          != other.getACAPFNOLMKE()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getNJPEANGOAMC()
-          != other.getNJPEANGOAMC()) return false;
+      if (getEEMGKJOCHHK()
+          != other.getEEMGKJOCHHK()) return false;
+      if (getOpenTime()
+          != other.getOpenTime()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getIsFinished()
           != other.getIsFinished()) return false;
+      if (getMMGJJBELBHF()
+          != other.getMMGJJBELBHF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -334,20 +334,20 @@ public final class GearLevelDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getOpenTime();
-      hash = (37 * hash) + ACAPFNOLMKE_FIELD_NUMBER;
-      hash = (53 * hash) + getACAPFNOLMKE();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + NJPEANGOAMC_FIELD_NUMBER;
-      hash = (53 * hash) + getNJPEANGOAMC();
+      hash = (37 * hash) + EEMGKJOCHHK_FIELD_NUMBER;
+      hash = (53 * hash) + getEEMGKJOCHHK();
+      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getOpenTime();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
       hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinished());
+      hash = (37 * hash) + MMGJJBELBHF_FIELD_NUMBER;
+      hash = (53 * hash) + getMMGJJBELBHF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -445,7 +445,7 @@ public final class GearLevelDataOuterClass {
     }
     /**
      * <pre>
-     * Name: PFGKJAENJNE
+     * Obf: DFJGCCIKGLP
      * </pre>
      *
      * Protobuf type {@code GearLevelData}
@@ -485,17 +485,17 @@ public final class GearLevelDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        openTime_ = 0;
-
-        aCAPFNOLMKE_ = 0;
-
         levelId_ = 0;
 
-        nJPEANGOAMC_ = 0;
+        eEMGKJOCHHK_ = 0;
+
+        openTime_ = 0;
 
         isOpen_ = false;
 
         isFinished_ = false;
+
+        mMGJJBELBHF_ = 0;
 
         return this;
       }
@@ -523,12 +523,12 @@ public final class GearLevelDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData buildPartial() {
         emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData result = new emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData(this);
-        result.openTime_ = openTime_;
-        result.aCAPFNOLMKE_ = aCAPFNOLMKE_;
         result.levelId_ = levelId_;
-        result.nJPEANGOAMC_ = nJPEANGOAMC_;
+        result.eEMGKJOCHHK_ = eEMGKJOCHHK_;
+        result.openTime_ = openTime_;
         result.isOpen_ = isOpen_;
         result.isFinished_ = isFinished_;
+        result.mMGJJBELBHF_ = mMGJJBELBHF_;
         onBuilt();
         return result;
       }
@@ -577,23 +577,23 @@ public final class GearLevelDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData other) {
         if (other == emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.getDefaultInstance()) return this;
-        if (other.getOpenTime() != 0) {
-          setOpenTime(other.getOpenTime());
-        }
-        if (other.getACAPFNOLMKE() != 0) {
-          setACAPFNOLMKE(other.getACAPFNOLMKE());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getNJPEANGOAMC() != 0) {
-          setNJPEANGOAMC(other.getNJPEANGOAMC());
+        if (other.getEEMGKJOCHHK() != 0) {
+          setEEMGKJOCHHK(other.getEEMGKJOCHHK());
+        }
+        if (other.getOpenTime() != 0) {
+          setOpenTime(other.getOpenTime());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
         if (other.getIsFinished() != false) {
           setIsFinished(other.getIsFinished());
+        }
+        if (other.getMMGJJBELBHF() != 0) {
+          setMMGJJBELBHF(other.getMMGJJBELBHF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -624,71 +624,9 @@ public final class GearLevelDataOuterClass {
         return this;
       }
 
-      private int openTime_ ;
-      /**
-       * <code>uint32 open_time = 3;</code>
-       * @return The openTime.
-       */
-      @java.lang.Override
-      public int getOpenTime() {
-        return openTime_;
-      }
-      /**
-       * <code>uint32 open_time = 3;</code>
-       * @param value The openTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOpenTime(int value) {
-        
-        openTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 open_time = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOpenTime() {
-        
-        openTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aCAPFNOLMKE_ ;
-      /**
-       * <code>uint32 ACAPFNOLMKE = 1;</code>
-       * @return The aCAPFNOLMKE.
-       */
-      @java.lang.Override
-      public int getACAPFNOLMKE() {
-        return aCAPFNOLMKE_;
-      }
-      /**
-       * <code>uint32 ACAPFNOLMKE = 1;</code>
-       * @param value The aCAPFNOLMKE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setACAPFNOLMKE(int value) {
-        
-        aCAPFNOLMKE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ACAPFNOLMKE = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearACAPFNOLMKE() {
-        
-        aCAPFNOLMKE_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 4;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -696,7 +634,7 @@ public final class GearLevelDataOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 4;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -707,7 +645,7 @@ public final class GearLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -717,40 +655,71 @@ public final class GearLevelDataOuterClass {
         return this;
       }
 
-      private int nJPEANGOAMC_ ;
+      private int eEMGKJOCHHK_ ;
       /**
-       * <code>uint32 NJPEANGOAMC = 9;</code>
-       * @return The nJPEANGOAMC.
+       * <code>uint32 EEMGKJOCHHK = 3;</code>
+       * @return The eEMGKJOCHHK.
        */
       @java.lang.Override
-      public int getNJPEANGOAMC() {
-        return nJPEANGOAMC_;
+      public int getEEMGKJOCHHK() {
+        return eEMGKJOCHHK_;
       }
       /**
-       * <code>uint32 NJPEANGOAMC = 9;</code>
-       * @param value The nJPEANGOAMC to set.
+       * <code>uint32 EEMGKJOCHHK = 3;</code>
+       * @param value The eEMGKJOCHHK to set.
        * @return This builder for chaining.
        */
-      public Builder setNJPEANGOAMC(int value) {
+      public Builder setEEMGKJOCHHK(int value) {
         
-        nJPEANGOAMC_ = value;
+        eEMGKJOCHHK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NJPEANGOAMC = 9;</code>
+       * <code>uint32 EEMGKJOCHHK = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNJPEANGOAMC() {
+      public Builder clearEEMGKJOCHHK() {
         
-        nJPEANGOAMC_ = 0;
+        eEMGKJOCHHK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int openTime_ ;
+      /**
+       * <code>uint32 open_time = 14;</code>
+       * @return The openTime.
+       */
+      @java.lang.Override
+      public int getOpenTime() {
+        return openTime_;
+      }
+      /**
+       * <code>uint32 open_time = 14;</code>
+       * @param value The openTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOpenTime(int value) {
+        
+        openTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 open_time = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOpenTime() {
+        
+        openTime_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 12;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -758,7 +727,7 @@ public final class GearLevelDataOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 12;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -769,7 +738,7 @@ public final class GearLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -781,7 +750,7 @@ public final class GearLevelDataOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 15;</code>
+       * <code>bool is_finished = 8;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -789,7 +758,7 @@ public final class GearLevelDataOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 15;</code>
+       * <code>bool is_finished = 8;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -800,12 +769,43 @@ public final class GearLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 15;</code>
+       * <code>bool is_finished = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
         
         isFinished_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int mMGJJBELBHF_ ;
+      /**
+       * <code>uint32 MMGJJBELBHF = 9;</code>
+       * @return The mMGJJBELBHF.
+       */
+      @java.lang.Override
+      public int getMMGJJBELBHF() {
+        return mMGJJBELBHF_;
+      }
+      /**
+       * <code>uint32 MMGJJBELBHF = 9;</code>
+       * @param value The mMGJJBELBHF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMMGJJBELBHF(int value) {
+        
+        mMGJJBELBHF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MMGJJBELBHF = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMMGJJBELBHF() {
+        
+        mMGJJBELBHF_ = 0;
         onChanged();
         return this;
       }
@@ -877,9 +877,9 @@ public final class GearLevelDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023GearLevelData.proto\"\204\001\n\rGearLevelData\022" +
-      "\021\n\topen_time\030\003 \001(\r\022\023\n\013ACAPFNOLMKE\030\001 \001(\r\022" +
-      "\020\n\010level_id\030\002 \001(\r\022\023\n\013NJPEANGOAMC\030\t \001(\r\022\017" +
-      "\n\007is_open\030\006 \001(\010\022\023\n\013is_finished\030\017 \001(\010B\033\n\031" +
+      "\020\n\010level_id\030\004 \001(\r\022\023\n\013EEMGKJOCHHK\030\003 \001(\r\022\021" +
+      "\n\topen_time\030\016 \001(\r\022\017\n\007is_open\030\014 \001(\010\022\023\n\013is" +
+      "_finished\030\010 \001(\010\022\023\n\013MMGJJBELBHF\030\t \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -891,7 +891,7 @@ public final class GearLevelDataOuterClass {
     internal_static_GearLevelData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GearLevelData_descriptor,
-        new java.lang.String[] { "OpenTime", "ACAPFNOLMKE", "LevelId", "NJPEANGOAMC", "IsOpen", "IsFinished", });
+        new java.lang.String[] { "LevelId", "EEMGKJOCHHK", "OpenTime", "IsOpen", "IsFinished", "MMGJJBELBHF", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

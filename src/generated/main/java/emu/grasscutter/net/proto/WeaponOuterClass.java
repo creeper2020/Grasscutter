@@ -72,7 +72,7 @@ public final class WeaponOuterClass {
   }
   /**
    * <pre>
-   * Name: LKKKOFHDIBB
+   * Obf: NHOLFKPNLCH
    * </pre>
    *
    * Protobuf type {@code Weapon}
@@ -507,7 +507,7 @@ public final class WeaponOuterClass {
     }
     /**
      * <pre>
-     * Name: LKKKOFHDIBB
+     * Obf: NHOLFKPNLCH
      * </pre>
      *
      * Protobuf type {@code Weapon}

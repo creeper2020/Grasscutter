@@ -16,7 +16,7 @@ public final class FoundationStatusOuterClass {
   }
   /**
    * <pre>
-   * Name: BBEMLEOGGGN
+   * Obf: HGKOLBGFAEC
    * </pre>
    *
    * Protobuf enum {@code FoundationStatus}

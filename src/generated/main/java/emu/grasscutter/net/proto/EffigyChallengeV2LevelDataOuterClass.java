@@ -19,44 +19,44 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ONCDLGPLMIB = 9;</code>
-     * @return The oNCDLGPLMIB.
+     * <code>uint32 PPMPMJHEJHJ = 15;</code>
+     * @return The pPMPMJHEJHJ.
      */
-    int getONCDLGPLMIB();
+    int getPPMPMJHEJHJ();
 
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 LAICFKMFKEH = 6;</code>
+     * @return The lAICFKMFKEH.
+     */
+    int getLAICFKMFKEH();
+
+    /**
+     * <code>uint32 GGBMJHIMBDP = 3;</code>
+     * @return The gGBMJHIMBDP.
+     */
+    int getGGBMJHIMBDP();
+
+    /**
+     * <code>uint32 NPLPFHEKCIH = 14;</code>
+     * @return The nPLPFHEKCIH.
+     */
+    int getNPLPFHEKCIH();
+
+    /**
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 ENDDPMODPCG = 14;</code>
-     * @return The eNDDPMODPCG.
-     */
-    int getENDDPMODPCG();
-
-    /**
-     * <code>uint32 PHEIGICNDCJ = 8;</code>
-     * @return The pHEIGICNDCJ.
-     */
-    int getPHEIGICNDCJ();
-
-    /**
-     * <code>uint32 NNJLOECKLOM = 2;</code>
-     * @return The nNJLOECKLOM.
-     */
-    int getNNJLOECKLOM();
-
-    /**
-     * <code>bool is_level_open = 4;</code>
+     * <code>bool is_level_open = 11;</code>
      * @return The isLevelOpen.
      */
     boolean getIsLevelOpen();
   }
   /**
    * <pre>
-   * Name: CMPOJMGFCFM
+   * Obf: CAFLDJBAKMC
    * </pre>
    *
    * Protobuf type {@code EffigyChallengeV2LevelData}
@@ -103,34 +103,34 @@ public final class EffigyChallengeV2LevelDataOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              nNJLOECKLOM_ = input.readUInt32();
-              break;
-            }
             case 24: {
 
-              levelId_ = input.readUInt32();
+              gGBMJHIMBDP_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 48: {
+
+              lAICFKMFKEH_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               isLevelOpen_ = input.readBool();
               break;
             }
-            case 64: {
+            case 96: {
 
-              pHEIGICNDCJ_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              oNCDLGPLMIB_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              eNDDPMODPCG_ = input.readUInt32();
+              nPLPFHEKCIH_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              pPMPMJHEJHJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,21 +165,54 @@ public final class EffigyChallengeV2LevelDataOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData.class, emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData.Builder.class);
     }
 
-    public static final int ONCDLGPLMIB_FIELD_NUMBER = 9;
-    private int oNCDLGPLMIB_;
+    public static final int PPMPMJHEJHJ_FIELD_NUMBER = 15;
+    private int pPMPMJHEJHJ_;
     /**
-     * <code>uint32 ONCDLGPLMIB = 9;</code>
-     * @return The oNCDLGPLMIB.
+     * <code>uint32 PPMPMJHEJHJ = 15;</code>
+     * @return The pPMPMJHEJHJ.
      */
     @java.lang.Override
-    public int getONCDLGPLMIB() {
-      return oNCDLGPLMIB_;
+    public int getPPMPMJHEJHJ() {
+      return pPMPMJHEJHJ_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
+    public static final int LAICFKMFKEH_FIELD_NUMBER = 6;
+    private int lAICFKMFKEH_;
+    /**
+     * <code>uint32 LAICFKMFKEH = 6;</code>
+     * @return The lAICFKMFKEH.
+     */
+    @java.lang.Override
+    public int getLAICFKMFKEH() {
+      return lAICFKMFKEH_;
+    }
+
+    public static final int GGBMJHIMBDP_FIELD_NUMBER = 3;
+    private int gGBMJHIMBDP_;
+    /**
+     * <code>uint32 GGBMJHIMBDP = 3;</code>
+     * @return The gGBMJHIMBDP.
+     */
+    @java.lang.Override
+    public int getGGBMJHIMBDP() {
+      return gGBMJHIMBDP_;
+    }
+
+    public static final int NPLPFHEKCIH_FIELD_NUMBER = 14;
+    private int nPLPFHEKCIH_;
+    /**
+     * <code>uint32 NPLPFHEKCIH = 14;</code>
+     * @return The nPLPFHEKCIH.
+     */
+    @java.lang.Override
+    public int getNPLPFHEKCIH() {
+      return nPLPFHEKCIH_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -187,43 +220,10 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       return levelId_;
     }
 
-    public static final int ENDDPMODPCG_FIELD_NUMBER = 14;
-    private int eNDDPMODPCG_;
-    /**
-     * <code>uint32 ENDDPMODPCG = 14;</code>
-     * @return The eNDDPMODPCG.
-     */
-    @java.lang.Override
-    public int getENDDPMODPCG() {
-      return eNDDPMODPCG_;
-    }
-
-    public static final int PHEIGICNDCJ_FIELD_NUMBER = 8;
-    private int pHEIGICNDCJ_;
-    /**
-     * <code>uint32 PHEIGICNDCJ = 8;</code>
-     * @return The pHEIGICNDCJ.
-     */
-    @java.lang.Override
-    public int getPHEIGICNDCJ() {
-      return pHEIGICNDCJ_;
-    }
-
-    public static final int NNJLOECKLOM_FIELD_NUMBER = 2;
-    private int nNJLOECKLOM_;
-    /**
-     * <code>uint32 NNJLOECKLOM = 2;</code>
-     * @return The nNJLOECKLOM.
-     */
-    @java.lang.Override
-    public int getNNJLOECKLOM() {
-      return nNJLOECKLOM_;
-    }
-
-    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 4;
+    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 11;
     private boolean isLevelOpen_;
     /**
-     * <code>bool is_level_open = 4;</code>
+     * <code>bool is_level_open = 11;</code>
      * @return The isLevelOpen.
      */
     @java.lang.Override
@@ -245,23 +245,23 @@ public final class EffigyChallengeV2LevelDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (nNJLOECKLOM_ != 0) {
-        output.writeUInt32(2, nNJLOECKLOM_);
+      if (gGBMJHIMBDP_ != 0) {
+        output.writeUInt32(3, gGBMJHIMBDP_);
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
+      if (lAICFKMFKEH_ != 0) {
+        output.writeUInt32(6, lAICFKMFKEH_);
       }
       if (isLevelOpen_ != false) {
-        output.writeBool(4, isLevelOpen_);
+        output.writeBool(11, isLevelOpen_);
       }
-      if (pHEIGICNDCJ_ != 0) {
-        output.writeUInt32(8, pHEIGICNDCJ_);
+      if (levelId_ != 0) {
+        output.writeUInt32(12, levelId_);
       }
-      if (oNCDLGPLMIB_ != 0) {
-        output.writeUInt32(9, oNCDLGPLMIB_);
+      if (nPLPFHEKCIH_ != 0) {
+        output.writeUInt32(14, nPLPFHEKCIH_);
       }
-      if (eNDDPMODPCG_ != 0) {
-        output.writeUInt32(14, eNDDPMODPCG_);
+      if (pPMPMJHEJHJ_ != 0) {
+        output.writeUInt32(15, pPMPMJHEJHJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,29 +272,29 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (nNJLOECKLOM_ != 0) {
+      if (gGBMJHIMBDP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, nNJLOECKLOM_);
+          .computeUInt32Size(3, gGBMJHIMBDP_);
       }
-      if (levelId_ != 0) {
+      if (lAICFKMFKEH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
+          .computeUInt32Size(6, lAICFKMFKEH_);
       }
       if (isLevelOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isLevelOpen_);
+          .computeBoolSize(11, isLevelOpen_);
       }
-      if (pHEIGICNDCJ_ != 0) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, pHEIGICNDCJ_);
+          .computeUInt32Size(12, levelId_);
       }
-      if (oNCDLGPLMIB_ != 0) {
+      if (nPLPFHEKCIH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, oNCDLGPLMIB_);
+          .computeUInt32Size(14, nPLPFHEKCIH_);
       }
-      if (eNDDPMODPCG_ != 0) {
+      if (pPMPMJHEJHJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, eNDDPMODPCG_);
+          .computeUInt32Size(15, pPMPMJHEJHJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,16 +311,16 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       }
       emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData other = (emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData) obj;
 
-      if (getONCDLGPLMIB()
-          != other.getONCDLGPLMIB()) return false;
+      if (getPPMPMJHEJHJ()
+          != other.getPPMPMJHEJHJ()) return false;
+      if (getLAICFKMFKEH()
+          != other.getLAICFKMFKEH()) return false;
+      if (getGGBMJHIMBDP()
+          != other.getGGBMJHIMBDP()) return false;
+      if (getNPLPFHEKCIH()
+          != other.getNPLPFHEKCIH()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getENDDPMODPCG()
-          != other.getENDDPMODPCG()) return false;
-      if (getPHEIGICNDCJ()
-          != other.getPHEIGICNDCJ()) return false;
-      if (getNNJLOECKLOM()
-          != other.getNNJLOECKLOM()) return false;
       if (getIsLevelOpen()
           != other.getIsLevelOpen()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -334,16 +334,16 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ONCDLGPLMIB_FIELD_NUMBER;
-      hash = (53 * hash) + getONCDLGPLMIB();
+      hash = (37 * hash) + PPMPMJHEJHJ_FIELD_NUMBER;
+      hash = (53 * hash) + getPPMPMJHEJHJ();
+      hash = (37 * hash) + LAICFKMFKEH_FIELD_NUMBER;
+      hash = (53 * hash) + getLAICFKMFKEH();
+      hash = (37 * hash) + GGBMJHIMBDP_FIELD_NUMBER;
+      hash = (53 * hash) + getGGBMJHIMBDP();
+      hash = (37 * hash) + NPLPFHEKCIH_FIELD_NUMBER;
+      hash = (53 * hash) + getNPLPFHEKCIH();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + ENDDPMODPCG_FIELD_NUMBER;
-      hash = (53 * hash) + getENDDPMODPCG();
-      hash = (37 * hash) + PHEIGICNDCJ_FIELD_NUMBER;
-      hash = (53 * hash) + getPHEIGICNDCJ();
-      hash = (37 * hash) + NNJLOECKLOM_FIELD_NUMBER;
-      hash = (53 * hash) + getNNJLOECKLOM();
       hash = (37 * hash) + IS_LEVEL_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsLevelOpen());
@@ -444,7 +444,7 @@ public final class EffigyChallengeV2LevelDataOuterClass {
     }
     /**
      * <pre>
-     * Name: CMPOJMGFCFM
+     * Obf: CAFLDJBAKMC
      * </pre>
      *
      * Protobuf type {@code EffigyChallengeV2LevelData}
@@ -484,15 +484,15 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oNCDLGPLMIB_ = 0;
+        pPMPMJHEJHJ_ = 0;
+
+        lAICFKMFKEH_ = 0;
+
+        gGBMJHIMBDP_ = 0;
+
+        nPLPFHEKCIH_ = 0;
 
         levelId_ = 0;
-
-        eNDDPMODPCG_ = 0;
-
-        pHEIGICNDCJ_ = 0;
-
-        nNJLOECKLOM_ = 0;
 
         isLevelOpen_ = false;
 
@@ -522,11 +522,11 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData buildPartial() {
         emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData result = new emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData(this);
-        result.oNCDLGPLMIB_ = oNCDLGPLMIB_;
+        result.pPMPMJHEJHJ_ = pPMPMJHEJHJ_;
+        result.lAICFKMFKEH_ = lAICFKMFKEH_;
+        result.gGBMJHIMBDP_ = gGBMJHIMBDP_;
+        result.nPLPFHEKCIH_ = nPLPFHEKCIH_;
         result.levelId_ = levelId_;
-        result.eNDDPMODPCG_ = eNDDPMODPCG_;
-        result.pHEIGICNDCJ_ = pHEIGICNDCJ_;
-        result.nNJLOECKLOM_ = nNJLOECKLOM_;
         result.isLevelOpen_ = isLevelOpen_;
         onBuilt();
         return result;
@@ -576,20 +576,20 @@ public final class EffigyChallengeV2LevelDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData other) {
         if (other == emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData.getDefaultInstance()) return this;
-        if (other.getONCDLGPLMIB() != 0) {
-          setONCDLGPLMIB(other.getONCDLGPLMIB());
+        if (other.getPPMPMJHEJHJ() != 0) {
+          setPPMPMJHEJHJ(other.getPPMPMJHEJHJ());
+        }
+        if (other.getLAICFKMFKEH() != 0) {
+          setLAICFKMFKEH(other.getLAICFKMFKEH());
+        }
+        if (other.getGGBMJHIMBDP() != 0) {
+          setGGBMJHIMBDP(other.getGGBMJHIMBDP());
+        }
+        if (other.getNPLPFHEKCIH() != 0) {
+          setNPLPFHEKCIH(other.getNPLPFHEKCIH());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
-        }
-        if (other.getENDDPMODPCG() != 0) {
-          setENDDPMODPCG(other.getENDDPMODPCG());
-        }
-        if (other.getPHEIGICNDCJ() != 0) {
-          setPHEIGICNDCJ(other.getPHEIGICNDCJ());
-        }
-        if (other.getNNJLOECKLOM() != 0) {
-          setNNJLOECKLOM(other.getNNJLOECKLOM());
         }
         if (other.getIsLevelOpen() != false) {
           setIsLevelOpen(other.getIsLevelOpen());
@@ -623,40 +623,133 @@ public final class EffigyChallengeV2LevelDataOuterClass {
         return this;
       }
 
-      private int oNCDLGPLMIB_ ;
+      private int pPMPMJHEJHJ_ ;
       /**
-       * <code>uint32 ONCDLGPLMIB = 9;</code>
-       * @return The oNCDLGPLMIB.
+       * <code>uint32 PPMPMJHEJHJ = 15;</code>
+       * @return The pPMPMJHEJHJ.
        */
       @java.lang.Override
-      public int getONCDLGPLMIB() {
-        return oNCDLGPLMIB_;
+      public int getPPMPMJHEJHJ() {
+        return pPMPMJHEJHJ_;
       }
       /**
-       * <code>uint32 ONCDLGPLMIB = 9;</code>
-       * @param value The oNCDLGPLMIB to set.
+       * <code>uint32 PPMPMJHEJHJ = 15;</code>
+       * @param value The pPMPMJHEJHJ to set.
        * @return This builder for chaining.
        */
-      public Builder setONCDLGPLMIB(int value) {
+      public Builder setPPMPMJHEJHJ(int value) {
         
-        oNCDLGPLMIB_ = value;
+        pPMPMJHEJHJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ONCDLGPLMIB = 9;</code>
+       * <code>uint32 PPMPMJHEJHJ = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearONCDLGPLMIB() {
+      public Builder clearPPMPMJHEJHJ() {
         
-        oNCDLGPLMIB_ = 0;
+        pPMPMJHEJHJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lAICFKMFKEH_ ;
+      /**
+       * <code>uint32 LAICFKMFKEH = 6;</code>
+       * @return The lAICFKMFKEH.
+       */
+      @java.lang.Override
+      public int getLAICFKMFKEH() {
+        return lAICFKMFKEH_;
+      }
+      /**
+       * <code>uint32 LAICFKMFKEH = 6;</code>
+       * @param value The lAICFKMFKEH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLAICFKMFKEH(int value) {
+        
+        lAICFKMFKEH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LAICFKMFKEH = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLAICFKMFKEH() {
+        
+        lAICFKMFKEH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gGBMJHIMBDP_ ;
+      /**
+       * <code>uint32 GGBMJHIMBDP = 3;</code>
+       * @return The gGBMJHIMBDP.
+       */
+      @java.lang.Override
+      public int getGGBMJHIMBDP() {
+        return gGBMJHIMBDP_;
+      }
+      /**
+       * <code>uint32 GGBMJHIMBDP = 3;</code>
+       * @param value The gGBMJHIMBDP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGGBMJHIMBDP(int value) {
+        
+        gGBMJHIMBDP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 GGBMJHIMBDP = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGGBMJHIMBDP() {
+        
+        gGBMJHIMBDP_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nPLPFHEKCIH_ ;
+      /**
+       * <code>uint32 NPLPFHEKCIH = 14;</code>
+       * @return The nPLPFHEKCIH.
+       */
+      @java.lang.Override
+      public int getNPLPFHEKCIH() {
+        return nPLPFHEKCIH_;
+      }
+      /**
+       * <code>uint32 NPLPFHEKCIH = 14;</code>
+       * @param value The nPLPFHEKCIH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNPLPFHEKCIH(int value) {
+        
+        nPLPFHEKCIH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NPLPFHEKCIH = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNPLPFHEKCIH() {
+        
+        nPLPFHEKCIH_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -664,7 +757,7 @@ public final class EffigyChallengeV2LevelDataOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -675,7 +768,7 @@ public final class EffigyChallengeV2LevelDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -685,102 +778,9 @@ public final class EffigyChallengeV2LevelDataOuterClass {
         return this;
       }
 
-      private int eNDDPMODPCG_ ;
-      /**
-       * <code>uint32 ENDDPMODPCG = 14;</code>
-       * @return The eNDDPMODPCG.
-       */
-      @java.lang.Override
-      public int getENDDPMODPCG() {
-        return eNDDPMODPCG_;
-      }
-      /**
-       * <code>uint32 ENDDPMODPCG = 14;</code>
-       * @param value The eNDDPMODPCG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setENDDPMODPCG(int value) {
-        
-        eNDDPMODPCG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ENDDPMODPCG = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearENDDPMODPCG() {
-        
-        eNDDPMODPCG_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pHEIGICNDCJ_ ;
-      /**
-       * <code>uint32 PHEIGICNDCJ = 8;</code>
-       * @return The pHEIGICNDCJ.
-       */
-      @java.lang.Override
-      public int getPHEIGICNDCJ() {
-        return pHEIGICNDCJ_;
-      }
-      /**
-       * <code>uint32 PHEIGICNDCJ = 8;</code>
-       * @param value The pHEIGICNDCJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPHEIGICNDCJ(int value) {
-        
-        pHEIGICNDCJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PHEIGICNDCJ = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPHEIGICNDCJ() {
-        
-        pHEIGICNDCJ_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nNJLOECKLOM_ ;
-      /**
-       * <code>uint32 NNJLOECKLOM = 2;</code>
-       * @return The nNJLOECKLOM.
-       */
-      @java.lang.Override
-      public int getNNJLOECKLOM() {
-        return nNJLOECKLOM_;
-      }
-      /**
-       * <code>uint32 NNJLOECKLOM = 2;</code>
-       * @param value The nNJLOECKLOM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNNJLOECKLOM(int value) {
-        
-        nNJLOECKLOM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 NNJLOECKLOM = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNNJLOECKLOM() {
-        
-        nNJLOECKLOM_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isLevelOpen_ ;
       /**
-       * <code>bool is_level_open = 4;</code>
+       * <code>bool is_level_open = 11;</code>
        * @return The isLevelOpen.
        */
       @java.lang.Override
@@ -788,7 +788,7 @@ public final class EffigyChallengeV2LevelDataOuterClass {
         return isLevelOpen_;
       }
       /**
-       * <code>bool is_level_open = 4;</code>
+       * <code>bool is_level_open = 11;</code>
        * @param value The isLevelOpen to set.
        * @return This builder for chaining.
        */
@@ -799,7 +799,7 @@ public final class EffigyChallengeV2LevelDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_level_open = 4;</code>
+       * <code>bool is_level_open = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsLevelOpen() {
@@ -876,10 +876,10 @@ public final class EffigyChallengeV2LevelDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n EffigyChallengeV2LevelData.proto\"\231\001\n\032E" +
-      "ffigyChallengeV2LevelData\022\023\n\013ONCDLGPLMIB" +
-      "\030\t \001(\r\022\020\n\010level_id\030\003 \001(\r\022\023\n\013ENDDPMODPCG\030" +
-      "\016 \001(\r\022\023\n\013PHEIGICNDCJ\030\010 \001(\r\022\023\n\013NNJLOECKLO" +
-      "M\030\002 \001(\r\022\025\n\ris_level_open\030\004 \001(\010B\033\n\031emu.gr" +
+      "ffigyChallengeV2LevelData\022\023\n\013PPMPMJHEJHJ" +
+      "\030\017 \001(\r\022\023\n\013LAICFKMFKEH\030\006 \001(\r\022\023\n\013GGBMJHIMB" +
+      "DP\030\003 \001(\r\022\023\n\013NPLPFHEKCIH\030\016 \001(\r\022\020\n\010level_i" +
+      "d\030\014 \001(\r\022\025\n\ris_level_open\030\013 \001(\010B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -891,7 +891,7 @@ public final class EffigyChallengeV2LevelDataOuterClass {
     internal_static_EffigyChallengeV2LevelData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyChallengeV2LevelData_descriptor,
-        new java.lang.String[] { "ONCDLGPLMIB", "LevelId", "ENDDPMODPCG", "PHEIGICNDCJ", "NNJLOECKLOM", "IsLevelOpen", });
+        new java.lang.String[] { "PPMPMJHEJHJ", "LAICFKMFKEH", "GGBMJHIMBDP", "NPLPFHEKCIH", "LevelId", "IsLevelOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
